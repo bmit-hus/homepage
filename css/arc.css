@@ -1,0 +1,103 @@
+@charset "UFT-8";
+
+@import url( imported/reset.css );
+@import url( grid.css );
+@import url( 'https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap' );
+
+
+:root{
+    --normal: black;
+    --side: dimgray;
+    --slight: darkcyan;
+    --strong: crimson;
+
+    --bg: snow;
+}
+
+body{
+    overflow: hidden;
+
+    /** 
+     *  the following argument corresponds with 
+     *  the set widht/height values for 
+     *  the ./grid.css/".container" class
+     **/
+        margin: 3vh 2vw;
+    
+    font-family: 'Anonymous Pro', monospace;
+    color: var(--normal);
+    background-color: var(--bg);
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+header{
+    overflow: inherit;
+}
+header p{ 
+    margin: 0;
+    display: inline-block;
+}
+
+nav{
+    overflow: inherit;
+    list-style: none;
+    margin-top: 5em;
+    color: var(--slight);
+}
+
+aside{
+    overflow: inherit;
+    color: var(--side);
+    margin-top: 5em;
+}
+
+main{
+    overflow: auto;
+}
+
+footer{
+    overflow: inherit;
+}
+
+h1{ 
+    padding: 1em 0;
+    font-size: 1.5em;
+    color: var(--strong);
+}
+h2{ 
+    padding-top: 1em;
+    font-size: 1.25em;
+    color: var(--strong);
+}
+h3{ 
+    padding-top: 1em;
+    font-size: 1em;
+    color: var(--normal);
+}
+
+
+p{  
+    color: inherit; 
+}
+    strong{ 
+        color: var(--slight); 
+    }
+    em{ 
+        color: var(--slight); 
+    }
+
+a{  
+    color: currentColor; 
+    text-decoration: underline;
+}
+    a:hover{ 
+        color: var(--slight); 
+        text-decoration: none;
+    }
+
+blockquote{  
+    color: currentColor; 
+    margin-left: 1em; 
+}
+q{  color: var(--slight); }
