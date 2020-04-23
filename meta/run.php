@@ -1,8 +1,7 @@
 <?php
 
 // include Database
-include_once "meta/inc/dbh.inc.php";
-
+include_once "sql/dbh.php";
 
 // enable parsedown:
 include "imported/parsedown.php";
@@ -22,6 +21,3 @@ else
 
 // next...
 
-
-
-?>
