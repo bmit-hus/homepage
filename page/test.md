@@ -1,8 +1,8 @@
 <!-- ___________________________________________________________________________________________ -->
 
 
-Test File
-=========
+Test Thing
+==========
 
 This is a simple test file.
 I put this one in place to test the loading of a different file in my PHP code.

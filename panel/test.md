@@ -1,4 +1,4 @@
-## The Test Sidepanel
+## The Sidepanel
 
 This is the Test Sidepanel - as its name suggests.
 Same as in the text to *my* left, so yeah...

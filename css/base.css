@@ -15,13 +15,14 @@ html{
     line-height:      var( --tall );
 }
 
-header q{ color:      var( --slight );}
-header p{ color:      var( --normal );}
-
+#quote{ color:      var( --slight );}
+#author{
+    margin: 0;
+    display: inline-block;
+}
 
 footer{ 
     position: absolute;
     bottom: 0;
     background-color: var( --side );
-
 }
