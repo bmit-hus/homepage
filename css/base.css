@@ -1,0 +1,27 @@
+/* media queries */
+
+html{
+    /** 
+     *  the following argument corresponds with 
+     *  the set widht/height values for 
+     *  the ./grid.css/".container" class
+     **/
+    margin: 3vh 2vw;
+    
+    font-family:      var( --font );
+    font-size:        var( --size );
+    color:            var( --normal );
+    background-color: var( --bg );
+    line-height:      var( --tall );
+}
+
+header q{ color:      var( --slight );}
+header p{ color:      var( --normal );}
+
+
+footer{ 
+    position: absolute;
+    bottom: 0;
+    background-color: var( --side );
+
+}

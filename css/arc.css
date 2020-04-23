@@ -1,22 +1,33 @@
 @charset "UFT-8";
 @import url( imported/reset.css );
-@import url( grid.css );
-@import url( 'https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap' );
 @import url( 'https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap' );
 
-
 :root{
-    --bg: snow;
 
+    /* fonts */
+    --font: 'Cutive', serif;
+    --mono: 'Cutive Mono', monospace;
+    --size: 1em;
+    --tall: 1.5;
+
+    /* light theme */
+    --bg: snow;
     --normal: black;
     --side: dimgray;
     --slight: darkcyan;
     --strong: crimson;
 
-    --font: 'Cutive', serif;
-    --mono: 'Cutive Mono', monospace ;
+    /* dark theme */
+
+
+
 }
 
+@import url( base.css );
+@import url( grid.css );
+@import url( lyra.css );
+
+/*
 body{
     overflow: hidden;
 
@@ -24,7 +35,7 @@ body{
      *  the following argument corresponds with 
      *  the set widht/height values for 
      *  the ./grid.css/".container" class
-     **/
+     **
         margin: 3vh 2vw;
     
     font-family: var(--font);

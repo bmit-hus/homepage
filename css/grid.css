@@ -1,14 +1,22 @@
+/* mobile */
+[class*="item-"]
+/* tablet */
+
+/* desktop */
+
+
 .item{
     padding: 1em;
     /* keep line below for testing purposes: */
         /* background-color: pink; */
 }
-.item1{ grid-area: hd; }
-.item2{ grid-area: nv; }
-.item3{ grid-area: sd; }
-.item4{ grid-area: mn; }
-.item5{ grid-area: ft; }
-/* grid testing class */ .foo  { grid-area: f;  }
+.item-1{ grid-area: hd; }
+.item-2{ grid-area: nv; }
+.item-3{ grid-area: sd; }
+.item-4{ grid-area: mn; }
+.item-5{ grid-area: ft; }
+/* grid testing class */ 
+.foo  { grid-area: f;  }
 
 .container{
     display: grid;
