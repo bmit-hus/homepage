@@ -1,4 +1,6 @@
 @import url( run.css );
+
+/* site needs to adjust to visible height as well - just like google >:( */
  
 .container {
     display: grid;

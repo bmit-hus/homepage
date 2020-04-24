@@ -1,22 +1,30 @@
 <?php
-    include "meta/run.php";
-    include "meta/vars.php";
-    include "meta/arc.php";
-?>
 
-<body>
+$open_body = '<body>';
+$shut_body = '</body> </html>';
 
-<?php
+include 'meta/inc.php';
+include 'meta/use.php';
+include 'meta/run.php';
 
-// include items:
+// set site meta variables:
+$language       = 'en';
+$author         = 'Stigie Huber';
+
+$title          = 'blve.ch'; // $_POST['title'];
+$description    = 'blve Stigie Huber Personal Website'; // $_POST['description'];
+$keywords       = 'blve Stigie Huber Personal Website'; // $_POST['keywords'];
+
+$pathCSS        = 'css/arc.css';
+$pathJS         = 'js/quotes.js';
+$pathAJAX       = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+
+include 'meta/arc.php';
+
+echo $open_body;
+
 include "items/header.php";
-
 include "items/main.php";
-
 include "items/footer.php";
 
-?>
-
-</body>
-
-</html>
+echo $shut_body;

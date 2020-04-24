@@ -1,34 +1,32 @@
-@import url( run.css );
-
 html {
-    margin: var( --smol );
+    margin: var(--smol);
 
-    font-family: var( --font );
-    font-size: var( --size );
-    line-height: var( --tall );
+    font-family: var(--font);
+    font-size: var(--size);
+    line-height: var(--tall);
 
-    color: var( --main-one );
-    background-color: var( --base-one );
+    color: var(--main-one);
+    background: var(--base-one);
 }
 main {
-    margin: var( --smol ) 0;
+    margin: var(--smol) 0;
 }
 .element {
-    padding: var( --size );
-    border-radius: var( --size );
-    background-color: var( --base-two );
+    padding: var(--size);
+    border-radius: var(--size);
+    background: var(--base-two);
 }
 
 .roof, .floor {
     display: block;
-    color: var( --main-two );
-    background-color: var( --base-nil );
+    color: var(--main-two);
+    background: var(--base-nil);
 }
 .floor {
     text-align: right;
 }
 #quote {
-    color: var( --emph-one );
+    color: var( --blue-two );
 }
 #author {
     margin: 0;

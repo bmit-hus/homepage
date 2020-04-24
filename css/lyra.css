@@ -1,47 +1,40 @@
-@import url( run.css );
-
-/*
-h1{ 
-    padding: 1em 0;
-    font-size: 1.5em;
-    color: var(--strong);
+h1{ padding: var(--smol) 0;
+    font-size: var(--huge);
+    color: var(--bold);
 }
-h2{ 
-    padding-top: 1em;
-    font-size: 1.25em;
-    color: var(--strong);
+h2{ padding-top: var(--smol);
+    font-size: var(--larj);
+    color: var(--emph);
 }
-h3{ 
-    padding-top: 1em;
-    font-size: 1em;
-    color: var(--normal);
+h3{ padding-top: var(--tiny);
+    font-size: var(--size);
+    color: var(--main-two);
 }
 
-
-p{  
-    color: inherit; 
+strong{ 
+    color: var(--bold); 
 }
-    strong{ 
-        color: var(--slight); 
-    }
-    em{ 
-        color: var(--slight); 
-    }
-
-a{  
-    color: currentColor; 
-    text-decoration: underline;
+em{ color: var(--emph);
+    font-style: normal; 
 }
-    a:hover{ 
-        color: var(--slight); 
-        text-decoration: none;
-    }
+a{  color: var(--blue-one); 
+    text-decoration: none; 
+}
+a:hover{
+    color: var(--blue-two);
+}
 
 blockquote{  
     color: currentColor; 
-    margin-left: 1em; 
-    border-left: 0.2em solid;
-    padding: 0.01em 1em;
-    border-color: var(--slight);
+    margin: var(--size) var(--tiny) var(--tiny) var(--tiny);
+    border-left: var(--tiny) solid;
+    padding: var(--tiny) var(--smol);
+    border-color: var(--blue-one);
+    background: var(--base-one);
 }
-q{  color: var(--slight); }
+q{  color: var(--emph); }
+
+li{ list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
