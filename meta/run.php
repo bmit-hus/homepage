@@ -1,4 +1,4 @@
-<?php
+<?php // global functions
 
 // include Database
 include_once "sql/dbh.php";

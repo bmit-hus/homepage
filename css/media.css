@@ -1,0 +1,50 @@
+@import url( run.css );
+ 
+.container {
+    display: grid;
+    grid-gap: var( --smol ); /*: grid-row-gap grid-column-gap; */
+    grid-template-areas: 'nav' 'side' 'main';
+}
+
+.navbar  { grid-area: nav; }
+.sidebar { grid-area: side; }
+.content { grid-area: main; }
+
+@media only screen and (min-width: 500px) {
+    .container {
+        grid-template-areas: 
+            'nav  main'
+            'side main';
+        grid-template-columns: 
+             2fr  3fr;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .container {
+        grid-template-areas: 
+            'nav  main'
+            'side main';
+        grid-template-columns: 
+             2fr  4fr;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .container {
+        grid-template-areas: 
+            'nav  main'
+            'side main';
+        grid-template-columns: 
+             2fr  5fr;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        grid-template-areas: 
+            'nav main side';
+        grid-template-columns: 
+             2fr 5fr  3fr;
+    }
+}

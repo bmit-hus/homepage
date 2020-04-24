@@ -1,3 +1,3 @@
-<footer class="item item5" >
-    <?php echo "© Copyright by Stigie Huber, " . date("M Y") . ". "; ?>
+<footer class="element floor">
+    <?php echo "© Copyright by $author, " . date("M Y") . ". "; ?>
 </footer>

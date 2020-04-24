@@ -1,28 +1,36 @@
-/* media queries */
+@import url( run.css );
 
-html{
-    /** 
-     *  the following argument corresponds with 
-     *  the set widht/height values for 
-     *  the ./grid.css/".container" class
-     **/
-    margin: 3vh 2vw;
-    
-    font-family:      var( --font );
-    font-size:        var( --size );
-    color:            var( --normal );
-    background-color: var( --bg );
-    line-height:      var( --tall );
+html {
+    margin: var( --smol );
+
+    font-family: var( --font );
+    font-size: var( --size );
+    line-height: var( --tall );
+
+    color: var( --main-one );
+    background-color: var( --base-one );
+}
+main {
+    margin: var( --smol ) 0;
+}
+.element {
+    padding: var( --size );
+    border-radius: var( --size );
+    background-color: var( --base-two );
 }
 
-#quote{ color:      var( --slight );}
-#author{
+.roof, .floor {
+    display: block;
+    color: var( --main-two );
+    background-color: var( --base-nil );
+}
+.floor {
+    text-align: right;
+}
+#quote {
+    color: var( --emph-one );
+}
+#author {
     margin: 0;
     display: inline-block;
-}
-
-footer{ 
-    position: absolute;
-    bottom: 0;
-    background-color: var( --side );
 }

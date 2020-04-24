@@ -1,0 +1,36 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap' );
+
+:root{
+    /* fonts */
+    --font: 'Cutive', serif;
+    --mono: 'Cutive Mono', monospace;
+
+    /* sizes */
+    --tall: 1.5;
+
+    --tiny: 3.43px;
+    --smol: 6.86px;
+    --size: 11.7px;
+    --larj: 23.4px;
+    --huge: 34.3px;
+
+    /* color scheme */
+    --base-one: #; /* prussian */
+    --base-two: #47a8bd; /* munsell */
+    --main-one: #47a8bd; /* lava */
+    --main-two: #47a8bd; /* pacific */
+    --side-one: #ff6600; /* orange */
+    --side-two: #ec7d10; /* tangerine */
+    --emph-one: #fcc9b9; /* sakura */
+    --emph-two: #DC143C; /* crimson */
+
+    --base-nil: #00072d; /* oxford */
+    --base-one: #043565; /* prussian*/
+    --base-two: #001c55; /* royal */
+    --main-one: #aeb7b3; /* ash */
+    --main-two: #bbb891; /* sage */
+    --side-one: #06aed5; /* cerulean */
+    --side-two: #086788; /* pacific */
+    --emph-one: #ec7d10; /* tangerine */
+    --emph-two: #f0c808; /* jonquil */
+}
