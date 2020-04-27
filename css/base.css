@@ -1,32 +1,34 @@
 html {
-    margin: var(--smol);
+    margin: var(--mini);
 
-    font-family: var(--font);
+    font-family: var(--sans);
     font-size: var(--size);
     line-height: var(--tall);
 
-    color: var(--main-one);
-    background: var(--base-one);
+    color: var(--main);
+    background: var(--none);
 }
 main {
     margin: var(--smol) 0;
 }
 .element {
     padding: var(--size);
+    border: var(--tiny) groove;
     border-radius: var(--size);
-    background: var(--base-two);
+    border-color: var(--dark);
+    background: var(--base);
 }
 
 .roof, .floor {
     display: block;
-    color: var(--main-two);
-    background: var(--base-nil);
+    color: var(--blue);
+    background: var(--base);
 }
 .floor {
     text-align: right;
 }
 #quote {
-    color: var( --blue-two );
+    color: var(--main);
 }
 #author {
     margin: 0;

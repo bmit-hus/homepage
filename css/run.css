@@ -1,6 +1,7 @@
 :root{
     /* fonts */
     --font: 'Cutive', serif;
+    --sans: 'Roboto', sans-serif;
     --mono: 'Cutive Mono', monospace;
 
     /* sizes */
@@ -16,13 +17,12 @@
     --giga: 34.3px;
 
     /* color scheme */
-    --base-nil: #00072d; /* oxford */
-    --base-one: #043565; /* prussian*/
-    --base-two: #001c55; /* royal */
-    --main-one: #aeb7b3; /* ash */
-    --main-two: #bbb891; /* sage */
-    --blue-one: #086788; /* pacific */
-    --blue-two: #06aed5; /* cerulean */
-    --emph    : #ec7d10; /* tangerine */
-    --bold    : #f0c808; /* jonquil */
+    --none: #07020D;
+    --base: #00072d;
+    --main: #bbb891;
+    --dark: #043565;
+    --blue: #2274a5;
+    --high: #009ffd;
+    --emph: #ffc800;
+    --bold: #c20114;
 }
