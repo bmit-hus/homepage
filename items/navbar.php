@@ -1,19 +1,19 @@
-<?php 
+<?php // make links appear as TREE.
 
 $open_navbar = '<nav class="navbar element">';
-$close_navbar = '</nav>';
+$shut_navbar = '</nav>';
 
-function createLink( $link )
-{ 
-    echo " <li> <a href=\"?page=$link\" > " . ucfirst($link) . " </a> </li> "; 
-}
+$open_list = '<ul>';
+$shut_list = '</ul>';
+$next_list = "$shut_list$open_list";
 
-echo $open_navbar;
+echo $open_navbar.$open_list;
 
-createLink( "home" );
-createLink( "portfolio" );
-createLink( "test" );
+make_pagelink('home');
+make_pagelink('portfolio');
 
-// make links appear as TREE.
+echo $next_list;
 
-echo $close_navbar;
+make_pagelink('test');
+
+echo $shut_list.$shut_navbar;

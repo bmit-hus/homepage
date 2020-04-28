@@ -11,9 +11,9 @@ include 'meta/run.php';
 $language       = 'en';
 $author         = 'Stigie Huber';
 
-$title          = 'blve.ch'; // $_POST['title'];
-$description    = 'blve Stigie Huber Personal Website'; // $_POST['description'];
-$keywords       = 'blve Stigie Huber Personal Website'; // $_POST['keywords'];
+$title          = 'blve.ch';
+$description    = 'blve Stigie Huber Personal Website';
+$keywords       = 'blve Stigie Huber Personal Website';
 
 $pathCSS        = 'css/arc.css';
 $pathJS         = 'js/quotes.js';

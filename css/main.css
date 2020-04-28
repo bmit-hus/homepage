@@ -1,0 +1,25 @@
+.element {
+    padding: var(--size);
+    border-radius: var(--size);
+}
+
+/* 
+/* ROOF and BASE
+*/
+.roof, .base {
+    display: block;
+    color: var(--blue);
+}
+.roof {
+    text-align: center;
+}
+.base {
+    text-align: right;
+}
+#quote {
+    color: var(--main);
+}
+#author {
+    margin: 0;
+    display: inline-block;
+}

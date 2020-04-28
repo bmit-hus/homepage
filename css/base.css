@@ -11,26 +11,60 @@ html {
 main {
     margin: var(--smol) 0;
 }
-.element {
-    padding: var(--size);
-    border: var(--tiny) groove;
-    border-radius: var(--size);
-    border-color: var(--dark);
-    background: var(--base);
+
+
+h1{ padding: var(--smol) 0;
+    font-size: var(--huge);
+    color: var(--bold);
+}
+h2{ padding-top: var(--smol);
+    font-size: var(--larj);
+    color: var(--emph);
+}
+h3{ padding-top: var(--tiny);
+    font-size: var(--size);
+    color: var(--high);
 }
 
-.roof, .floor {
-    display: block;
-    color: var(--blue);
+strong, em{ 
+    color: var(--blue);  
+}
+a{  color: var(--blue); 
+    text-decoration: none;
+}
+a:hover{
+    color: var(--high);
+}
+
+
+blockquote{  
+    margin: var(--size) var(--tiny) var(--tiny) var(--tiny);
+    border-left: var(--tiny) groove;
+    border-right: var(--tiny) groove;
+    border-radius: var(--size);
+    padding: var(--mini) var(--smol);
+
+    border-color: var(--blue);
     background: var(--base);
 }
-.floor {
-    text-align: right;
+pre {
+    background: var(--base);
+    border-left: var(--tiny) groove;
+    border-right: var(--tiny) groove;
+    border-radius: var(--size);
+    padding: var(--smol);
+    
+    border-color: var(--blue);
+    color: var(--blue);
 }
-#quote {
-    color: var(--main);
+q{  color: var(--high);
 }
-#author {
+
+ul, ol {
     margin: 0;
-    display: inline-block;
+    padding: var(--smol);
+}
+li {
+    padding: var(--mini);
+    list-style-type: none;
 }
