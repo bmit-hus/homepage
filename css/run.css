@@ -1,0 +1,28 @@
+:root{
+    /* fonts */
+    --font: 'Cutive', serif;
+    --sans: 'Roboto', sans-serif;
+    --mono: 'Cutive Mono', monospace;
+
+    /* sizes */
+    --tall: 1.5;
+
+    --mini: 1.17px;
+    --tiny: 3.43px;
+    --smol: 6.86px;
+    --size: 11.7px;
+    --larj: 15.13px; /* size+tiny */
+    --huge: 18.56px; /* size+smol */
+    --mega: 23.4px;  /* 2*size */
+    --giga: 34.3px;
+
+    /* color scheme */
+    --none: #07020D;
+    --base: #00072d;
+    --main: #bbb891;
+    --dark: #043565;
+    --blue: #2274a5;
+    --high: #009ffd;
+    --emph: #ffc800;
+    --bold: #c20114;
+}

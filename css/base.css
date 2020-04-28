@@ -1,0 +1,36 @@
+html {
+    margin: var(--mini);
+
+    font-family: var(--sans);
+    font-size: var(--size);
+    line-height: var(--tall);
+
+    color: var(--main);
+    background: var(--none);
+}
+main {
+    margin: var(--smol) 0;
+}
+.element {
+    padding: var(--size);
+    border: var(--tiny) groove;
+    border-radius: var(--size);
+    border-color: var(--dark);
+    background: var(--base);
+}
+
+.roof, .floor {
+    display: block;
+    color: var(--blue);
+    background: var(--base);
+}
+.floor {
+    text-align: right;
+}
+#quote {
+    color: var(--main);
+}
+#author {
+    margin: 0;
+    display: inline-block;
+}

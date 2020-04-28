@@ -1,0 +1,39 @@
+h1{ padding: var(--smol) 0;
+    font-size: var(--huge);
+    color: var(--bold);
+}
+h2{ padding-top: var(--smol);
+    font-size: var(--larj);
+    color: var(--emph);
+}
+h3{ padding-top: var(--tiny);
+    font-size: var(--size);
+    color: var(--high);
+}
+
+strong, em{ 
+    color: var(--blue);  
+}
+a{  color: var(--blue); 
+    text-decoration: none;
+}
+a:hover{
+    color: var(--high);
+}
+
+blockquote{  
+    margin: var(--size) var(--tiny) var(--tiny) var(--tiny);
+    border-left: var(--tiny) groove;
+    border-right: var(--tiny) groove;
+    border-radius: var(--size);
+    padding: var(--mini) var(--smol);
+
+    border-color: var(--blue);
+    background: var(--dark);
+}
+q{  color: var(--high); }
+
+li{ list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
