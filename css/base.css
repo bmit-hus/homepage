@@ -11,7 +11,7 @@ html {
 h1 { 
     background: var(--dark);
     border-radius: var(--size);
-    margin: var(--smol) 0;
+    margin: var(--smol);
     padding: var(--tiny) 0;
 
     color: var(--bold);

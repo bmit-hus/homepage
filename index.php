@@ -1,8 +1,5 @@
 <?php
 
-$open_body = '<body>';
-$shut_body = '</body> </html>';
-
 include 'meta/inc.php';
 include 'meta/use.php';
 include 'meta/run.php';
@@ -21,10 +18,10 @@ $pathAJAX       = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min
 
 include 'meta/arc.php';
 
-echo $open_body;
+open('body');
 
-include "items/header.php";
-include "items/main.php";
-include "items/footer.php";
+include 'items/header.php';
+include 'items/main.php';
+include 'items/footer.php';
 
-echo $shut_body;
+shut('body');

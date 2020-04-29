@@ -1,4 +1,6 @@
-<header class="element roof">
-    <q id="quote"> </q>
-    <p id="author"> </p>
-</header>
+<?php
+
+openw('header', 'element roof');
+    openw_ids('q', 'quote'); shut('q');
+    openw_ids('p', 'author'); shut('p');
+shut('header');

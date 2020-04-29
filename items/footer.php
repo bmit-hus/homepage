@@ -1,3 +1,5 @@
-<footer class="element base">
-    <?php echo "© Copyright by $author " . date("M, Y") . ". "; ?>
-</footer>
+<?php
+
+openw('footer', 'element base');
+    echo "$CR Copyright by $author $date_short. ";
+shut('footer');
