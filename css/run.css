@@ -7,14 +7,14 @@
     /* sizes */
     --tall: 1.5;
 
-    --mini: 1.17px;
-    --tiny: 3.43px;
-    --smol: 6.86px;
-    --size: 11.7px;
-    --larj: 15.13px; /* size+tiny */
-    --huge: 18.56px; /* size+smol */
-    --mega: 23.4px;  /* 2*size */
-    --giga: 34.3px;
+    --mini: 0.1rem;
+    --tiny: 0.3rem;
+    --smol: 0.6rem;
+    --size: 1.0rem;
+    --larj: 1.2rem;
+    --huge: 1.4rem;
+    --mega: 1.8rem;
+    --giga: 2.0rem;
 
     /* color scheme */
     --none: #07020D;

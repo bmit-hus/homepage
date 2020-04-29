@@ -1,68 +1,84 @@
 html {
+    background: var(--none);
     margin: var(--mini);
 
     font-family: var(--sans);
     font-size: var(--size);
     line-height: var(--tall);
-
     color: var(--main);
-    background: var(--none);
 }
-main {
+
+h1 { 
+    background: var(--dark);
+    border-radius: var(--size);
     margin: var(--smol) 0;
-}
+    padding: var(--tiny) 0;
 
-
-h1{ padding: var(--smol) 0;
-    font-size: var(--huge);
     color: var(--bold);
+    font-size: var(--huge);
+    text-align: center;
 }
-h2{ padding-top: var(--smol);
-    font-size: var(--larj);
+h2 { 
+    margin: 0;
+    padding: var(--size) 0 0;
+
     color: var(--emph);
+    font-size: var(--larj);
+    text-align: center;
 }
-h3{ padding-top: var(--tiny);
+h3 { 
+    margin: 0;
+    padding: var(--smol) 0 0;
+
+    color: var(--emph);
     font-size: var(--size);
-    color: var(--high);
+}
+h3::after {
+    display: inline-block;
+    margin: 0;
+}
+p {
+    margin: 0 0 var(--smol);
 }
 
-strong, em{ 
+strong, em { 
     color: var(--blue);  
 }
-a{  color: var(--blue); 
+a {  
+    color: var(--blue); 
     text-decoration: none;
 }
-a:hover{
+a:hover {
     color: var(--high);
 }
 
 
-blockquote{  
-    margin: var(--size) var(--tiny) var(--tiny) var(--tiny);
+blockquote {  
+    margin: var(--size) var(--tiny);
+    background: var(--base);
+    border-radius: var(--size);
     border-left: var(--tiny) groove;
     border-right: var(--tiny) groove;
-    border-radius: var(--size);
-    padding: var(--mini) var(--smol);
-
     border-color: var(--blue);
-    background: var(--base);
+    padding: var(--smol) var(--smol);
 }
 pre {
     background: var(--base);
+    border-radius: var(--size);
     border-left: var(--tiny) groove;
     border-right: var(--tiny) groove;
-    border-radius: var(--size);
+    border-color: var(--blue);
     padding: var(--smol);
     
-    border-color: var(--blue);
     color: var(--blue);
 }
-q{  color: var(--high);
+q {
+    color: var(--high);
 }
 
 ul, ol {
     margin: 0;
-    padding: var(--smol);
+    padding: var(--tiny);
 }
 li {
     padding: var(--mini);
