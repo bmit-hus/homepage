@@ -1,8 +1,8 @@
-<!-- ___________________________________________________________________________________________ -->
+<!-- _______________________________________________________________________ -->
 
 
-If you're lost, [ask the Duck][1]. You can also ask [some metal][2], [some sound][3] or 
-[a mario shout][4].
+If you're lost, [ask the Duck][1]. You can also ask [this soundboard][3] or 
+[this mario shout][4].
 
 <!-- --- -->
 

@@ -5,7 +5,7 @@ include 'meta/use.php';
 include 'meta/run.php';
 
 // set site meta variables:
-$language       = 'en';
+// $language       = 'en'; // check: run>51
 $author         = 'Stigie Huber';
 
 $title          = 'blve.ch';
@@ -18,10 +18,8 @@ $pathAJAX       = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min
 
 include 'meta/arc.php';
 
-open('body');
-
 include 'items/header.php';
 include 'items/main.php';
 include 'items/footer.php';
 
-shut('body');
+html('fin');

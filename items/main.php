@@ -1,18 +1,19 @@
 <?php
 
-openw('main', 'container');
+openw('main', 'container main');
 
-if($page != 'blog')
-{
-    include 'items/navbar.php';
-}
+include 'items/navbar.php';
 
 openw('aside', 'element sidebar');
-echo $parsedown->text(file_get_contents("panel/$page.md"));
+
+md_panel($page);
+
 shut('aside');
 
 openw('div', 'element content');
-echo $parsedown->text(file_get_contents("page/$page.md"));
+
+md_page($page);
+
 shut('div');
 
 shut('main');

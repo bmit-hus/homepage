@@ -25,6 +25,9 @@
     border-radius: var(--size);
 }
 
+/* : MAIN */
+
+
 /* : NAVBAR */
 .navbar {
     border-top: var(--main) groove;
