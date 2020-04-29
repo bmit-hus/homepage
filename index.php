@@ -1,8 +1,11 @@
 <?php
 
-include 'meta/inc.php';
-include 'meta/use.php';
+// include_once 'sql/dbh.php';
+include 'imported/parsedown.php';
+
 include 'meta/run.php';
+include 'meta/lib.php';
+include 'meta/var.php';
 
 // set site meta variables:
 // $language       = 'en'; // check: run>51
@@ -17,7 +20,6 @@ $pathJS         = 'js/quotes.js';
 $pathAJAX       = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
 
 include 'meta/arc.php';
-
 include 'items/header.php';
 include 'items/main.php';
 include 'items/footer.php';
