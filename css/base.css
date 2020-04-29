@@ -9,12 +9,12 @@ html {
 }
 
 h1 { 
-    background: var(--dark);
+    background: var(--main);
     border-radius: var(--size);
-    margin: var(--smol);
+    margin: 0 0 var(--smol);
     padding: var(--tiny) 0;
 
-    color: var(--bold);
+    color: var(--none);
     font-size: var(--huge);
     text-align: center;
 }
@@ -33,10 +33,12 @@ h3 {
     color: var(--emph);
     font-size: var(--size);
 }
+/*
 h3::after {
     display: inline-block;
     margin: 0;
 }
+*/
 p {
     margin: 0 0 var(--smol);
 }

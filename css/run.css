@@ -10,6 +10,7 @@
     --mini: 0.1rem;
     --tiny: 0.3rem;
     --smol: 0.6rem;
+    --cyde: 0.8rem;
     --size: 1.0rem;
     --larj: 1.2rem;
     --huge: 1.4rem;
@@ -25,5 +26,6 @@
     --high: #009ffd;
     --emph: #ffc800;
     --bold: #c20114;
+    --gold: #ffd700;
     /* --code: #39FF14; */
 }

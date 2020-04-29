@@ -22,10 +22,6 @@ function another($thing, $classes)
     open($thing, $classes);
 }
 
-
-
-
-
 function make_pagelink($input)
 {
     $open_item = "<a class=\"navobj\" href=\"";

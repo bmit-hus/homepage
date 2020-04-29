@@ -28,4 +28,18 @@
 /* : NAVBAR */
 .navbar {
     border-top: var(--main) groove;
+    text-align: center;
+}
+
+/* : SIDEBAR */
+.sidebar, .sidebar h3 {
+    font-size: var(--cyde);
+}
+.sidebar h2 {
+    font-size: var(--size);
+}
+
+/* : CONTENT */
+.content {
+    border-top: var(--main) groove;
 }
