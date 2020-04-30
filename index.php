@@ -3,25 +3,14 @@
 // include_once 'sql/dbh.php';
 include 'imported/parsedown.php';
 
-include 'meta/run.php';
-include 'meta/lib.php';
 include 'meta/var.php';
 
 // set site meta variables:
-// $language       = 'en'; // check: run>51
-$author         = 'Stigie Huber';
+$title          = "hus.bm-it.ch | $page";
+$description    = "$author Personal Website";
+$keywords       = "$author $title $description";
 
-$title          = 'blve.ch';
-$description    = 'blve Stigie Huber Personal Website';
-$keywords       = 'blve Stigie Huber Personal Website';
+include 'meta/run.php';
+include 'meta/lib.php';
 
-$pathCSS        = 'css/arc.css';
-$pathJS         = 'js/quotes.js';
-$pathAJAX       = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
-
-include 'meta/arc.php';
-include 'items/header.php';
-include 'items/main.php';
-include 'items/footer.php';
-
-html('fin');
+include 'arc.php';
