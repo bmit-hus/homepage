@@ -18,6 +18,10 @@ h1 {
     font-size: var(--huge);
     text-align: center;
 }
+h1 em{
+    color: var(--emph);
+    font-style: normal;
+}
 h2 { 
     margin: 0;
     padding: var(--size) 0 0;
