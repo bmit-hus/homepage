@@ -30,7 +30,7 @@
 
 /* : NAVBAR */
 .navbar {
-    border-top: var(--main) groove;
+    border-top: var(--dark) groove;
     text-align: center;
 }
 
@@ -44,5 +44,5 @@
 
 /* : CONTENT */
 .content {
-    border-top: var(--main) groove;
+    border-top: var(--high) groove;
 }

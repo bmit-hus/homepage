@@ -13,20 +13,41 @@
     {
         echo "<$thing id=\"$ids\">";
     }
+
+
     function shut($thing)
     {
         echo "</$thing>";
     }
-    function closethenopen($close, $open)
+    function shutopen($close, $open)
     {
         shut($close);
         open($open);
     }
-    function closethenopenw($close, $open, $classes)
+    function shutopenw($close, $open, $classes)
     {
         shut($close);
         openw($open, $classes);
     }
+
+
+    function makelink($name, $classes, $page)
+    {
+        $_page = '?page=';
+        if ($page='')
+        {
+            echo "<a class=\"$classes\" href=\"$_page$name\">" . ucfirst($name)."</a>";
+        }
+        else
+        {
+            echo "<a class=\"$classes\" href=\"sub/$page$_page$name\">" . ucfirst($name)."</a>";
+        }
+    }
+    function add($something)
+    {
+        echo "$something";
+    }
+
 
     function html()
     {
@@ -52,31 +73,10 @@
     function md_panel($page)
     {
         $parsedown = new Parsedown();
-        echo $parsedown->text(file_get_contents("panel/$page.md"));
+        echo $parsedown->text(file_get_contents("side/$page.md"));
     }
     function md_page($page)
     {
         $parsedown = new Parsedown();
-        echo $parsedown->text(file_get_contents("page/$page.md"));
-    }
-
-
-// Link functions
-    function make_pagelink($input)
-    {
-        $open_item = "<a class=\"navobj\" href=\"";
-        $shut_item = "\">".ucfirst($input)."</a>";
-        echo "$open_item?page=$input $shut_item"; 
-    }
-
-    function make_sitelink($input)
-    {
-        $open_item = "<li class=\"navobj\"><a href=\"";
-        $shut_item = "\">".ucfirst($input)."</a></li>";
-        echo "$open_item/$input $shut_item"; 
-    }
-
-    function make_linkseparator()
-    {
-        echo " | ";
+        echo $parsedown->text(file_get_contents("main/$page.md"));
     }

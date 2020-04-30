@@ -8,7 +8,7 @@ open('head');
 
 meta();
 
-closethenopen('head', 'body');
+shutopen('head', 'body');
 
 include 'items/header.php';
 include 'items/main.php';

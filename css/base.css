@@ -9,12 +9,12 @@ html {
 }
 
 h1 { 
-    background: var(--main);
+    background: var(--high);
     border-radius: var(--size);
     margin: 0 0 var(--smol);
     padding: var(--tiny) 0;
 
-    color: var(--none);
+    color: var(--base);
     font-size: var(--huge);
     text-align: center;
 }
@@ -72,7 +72,7 @@ pre {
     border-color: var(--blue);
     padding: var(--smol);
     
-    color: var(--blue);
+    color: var(--code);
 }
 q {
     color: var(--high);
