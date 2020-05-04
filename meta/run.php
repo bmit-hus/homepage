@@ -1,23 +1,27 @@
 <?php
 
 // HTML functions
-function open($thing)
+function open($stuff)
 {
-    echo "<$thing>";
+    echo "<$stuff>";
 }
-function openw($thing, $class)
+function openw($stuff, $class)
 {
-    echo "<$thing class=\"$class\">";
+    echo "<$stuff class=\"$class\">";
 }
-function openw_id($thing, $id)
+function openw_id($stuff, $id)
 {
-    echo "<$thing id=\"$id\">";
+    echo "<$stuff id=\"$id\">";
 }
 
 
-function shut($thing)
+function shut($stuff)
 {
-    echo "</$thing>";
+    $foos = [$stuff];
+    foreach ($foos as $foo)
+    {
+        echo "</$foo>";
+    }
 }
 function shutopen($close, $open)
 {
@@ -30,9 +34,13 @@ function shutopenw($close, $open, $class)
     openw($open, $class);
 }
 
-function add($something)
+function add($stuff)
 {
-    echo " $something ";
+    $foos = [$stuff];
+    foreach ($foos as $foo)
+    {
+        echo " $foo ";
+    }
 }
 
 function makeNavLink($name)
@@ -41,6 +49,8 @@ function makeNavLink($name)
     echo "<a class=\"navobj\" href=\"?page=$name\">$linkName</a>";
     add('|');
 }
+
+
 
 class Page {
 
@@ -73,7 +83,6 @@ class Page {
         $this->keywords     = "$this->title $this->description";
     }
 
-    // get
     function get($query)
     {
         return $this->$query;
@@ -107,7 +116,7 @@ class Page {
 
     function metadata()
     {
-        echo "<meta charset=\"UTF-8\">";
+        echo "<meta charset=\"utf-8\">";
         echo "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">";
         echo "<meta name=\"author\" content=\"$this->full\">";
         echo "<title>$this->title</title>";

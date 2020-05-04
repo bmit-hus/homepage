@@ -25,5 +25,4 @@ include "meta/header.php";
 
 include "meta/footer.php";
 
-shut('body');
-shut('html');
+shut('body', 'html');
