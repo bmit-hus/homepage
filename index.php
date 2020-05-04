@@ -2,13 +2,15 @@
 
 include_once "meta/db-handler.php";
 include "imported/parsedown.php";
-include "meta/var.php";
 include "meta/run.php";
-include "meta/lib.php";
+include "meta/var.php";
 
-html();
+$load->html();
+
 open('head');
-meta();
+
+$load->metadata();
+
 shutopen('head', 'body');
 
 include "meta/header.php";
@@ -17,8 +19,7 @@ include "meta/header.php";
 
         include "meta/navbar.php";
 
-        parse_side();
-        parse_main();
+        $load->content();
 
     shut('div');
 
