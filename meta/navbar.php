@@ -11,6 +11,6 @@ makeNavLink('blog');
 
 // shut('ul');
 
-// open('ul'); makeNavLink('empty'); makeNavLink('test'); shut('ul');
+open('ul'); makeNavLink('empty'); makeNavLink('test'); shut('ul');
 
 shut('nav');

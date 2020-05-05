@@ -111,7 +111,7 @@ class Page {
 
     function html()
     {
-        echo "<!doctype html><html lang=\"$this->lang\"";
+        echo "<!doctype html><html lang=\"$this->lang\">";
     }
 
     function metadata()
