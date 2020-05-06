@@ -2,15 +2,25 @@
 
 openw('nav', 'navbar element');
 
-// open('ul');
+open('ul');
 
-makeNavLink('home');
-makeNavLink('skills');
-makeNavLink('story');
-makeNavLink('blog');
+    add('homepage:');
 
-// shut('ul');
+    makeLink('home');
+    makeLink('skills');
+    makeLink('story');
+    makeLink('blog');
 
-open('ul'); makeNavLink('empty'); makeNavLink('test'); shut('ul');
+shut('ul');
+
+open('ul');
+
+    add('blog:');
+
+    makeLink_sub('blog','home');
+
+shut('ul');
+
+open('ul'); add('test files:'); makeLink('empty'); makeLink('test'); shut('ul');
 
 shut('nav');
