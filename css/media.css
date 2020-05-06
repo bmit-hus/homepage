@@ -1,5 +1,3 @@
-@import url( run.css );
-
 /* site needs to adjust to visible height as well - just like google >:( */
  
 .container {
@@ -10,7 +8,7 @@
 
 .navbar  { grid-area: nav; }
 .sidebar { grid-area: side; }
-.content { grid-area: main; }
+.main    { grid-area: main; }
 
 @media only screen and (min-width: 500px) {
     .container {

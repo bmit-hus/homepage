@@ -1,30 +1,28 @@
-<?php
+<?php // look up "Font Awesome" for icons:
 
-$open_body = '<body>';
-$shut_body = '</body> </html>';
+include_once "meta/db-handler.php";
+include "imported/parsedown.php";
+include "meta/run.php";
+include "meta/var.php";
 
-include 'meta/inc.php';
-include 'meta/use.php';
-include 'meta/run.php';
+$load->html();
 
-// set site meta variables:
-$language       = 'en';
-$author         = 'Stigie Huber';
+open('head');
 
-$title          = 'blve.ch'; // $_POST['title'];
-$description    = 'blve Stigie Huber Personal Website'; // $_POST['description'];
-$keywords       = 'blve Stigie Huber Personal Website'; // $_POST['keywords'];
+$load->metadata();
 
-$pathCSS        = 'css/arc.css';
-$pathJS         = 'js/quotes.js';
-$pathAJAX       = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+shutopen('head', 'body');
 
-include 'meta/arc.php';
+include "meta/header.php";
 
-echo $open_body;
+    openw('div', 'container frame');
 
-include "items/header.php";
-include "items/main.php";
-include "items/footer.php";
+        include "meta/navbar.php";
 
-echo $shut_body;
+        $load->content();
+
+    shut('div');
+
+include "meta/footer.php";
+
+shut('body', 'html');

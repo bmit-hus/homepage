@@ -7,4 +7,4 @@ $dbName       = "hus.bm-it";
 
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
-include "code.php";
+include "meta/db-code.php";
