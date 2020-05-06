@@ -2,6 +2,6 @@
 
 openw('footer', 'element base');
 
-echo "$CR Copyright by $Author $date_short.";
+echo "$CR Copyright by ".$load->get('Full')." $date_short.";
 
 shut('footer');

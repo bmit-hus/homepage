@@ -4,18 +4,13 @@ openw('nav', 'navbar element');
 
 // open('ul');
 
-makelink('home','navobj link');
-add(' | ');
-makelink('skills','navobj link');
-add(' | ');
-makelink('story','navobj link');
-add(' | ');
-makelink('blog','navobj link');
-add(' | ');
-makelink('empty','navobj link');
+makeNavLink('home');
+makeNavLink('skills');
+makeNavLink('story');
+makeNavLink('blog');
 
 // shut('ul');
 
-open('ul'); makelink('test','navobj link'); shut('ul');
+open('ul'); makeNavLink('empty'); makeNavLink('test'); shut('ul');
 
 shut('nav');
