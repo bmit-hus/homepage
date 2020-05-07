@@ -6,8 +6,8 @@ openw('nav', 'navbar element');
 
 makeNavLink('home');
 makeNavLink('skills');
-makeNavLink('story');
-makeNavLink('blog');
+// makeNavLink('story');
+// makeNavLink('blog');
 
 // shut('ul');
 
