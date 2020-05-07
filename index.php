@@ -1,6 +1,6 @@
 <?php // look up "Font Awesome" for icons:
 
-include_once "meta/db-handler.php";
+// include_once "meta/db-handler.php";
 include "imported/parsedown.php";
 include "meta/run.php";
 include "meta/var.php";
