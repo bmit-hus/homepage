@@ -1,9 +1,9 @@
-<?php // look up "Font Awesome" for icons:
+<?php $root = "."; // look up "Font Awesome" for icons:
 
 // include_once "db/db-handler.php";
-include "imported/parsedown.php";
-include "meta/run.php";
-include "meta/var.php";
+include "$root/imported/parsedown.php";
+include "$root/meta/run.php";
+include "$root/meta/var.php";
 
 $load->html();
 
@@ -13,16 +13,16 @@ $load->metadata();
 
 shutopen('head', 'body');
 
-include "meta/header.php";
+include "$root/meta/header.php";
 
     openw('div', 'container frame');
 
-        include "meta/navbar.php";
+        include "$root/meta/navbar.php";
 
         $load->content();
 
     shut('div');
 
-include "meta/footer.php";
+include "$root/meta/footer.php";
 
 shut('body', 'html');
