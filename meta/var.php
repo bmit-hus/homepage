@@ -21,6 +21,7 @@ $blog       = new Page('blog','en','blog overview landing page');
 $test       = new Page('test','en','test page');
 $empty      = new Page('empty','en','test blank page');
 
+
 if (!isset($_GET['p']))
 {
     $load = $home;

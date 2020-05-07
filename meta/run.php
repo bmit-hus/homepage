@@ -93,21 +93,6 @@ class Page {
     {
         return $this->$query;
     }
-    // function getall()
-    // {
-    //     return $this->page;
-    //     return $this->lang;
-    //     return $this->first;
-    //     return $this->last;
-    //     return $this->full;
-    //     return $this->Full;
-    //     return $this->css;
-    //     return $this->js;
-    //     return $this->ajax;
-    //     return $this->title;
-    //     return $this->description;
-    //     return $this->keywords;
-    // }
 
     // set
     function set($attribute, $value)
