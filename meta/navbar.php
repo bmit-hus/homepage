@@ -13,7 +13,7 @@ shut('ul');
 
 open('ul');
 
-    add('portfolio');
+    add('portfolio:');
 
     makeLink('overview');
     makeLink('skills');
