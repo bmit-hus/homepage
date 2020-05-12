@@ -1,28 +1,5 @@
-<?php $root = "."; // look up "Font Awesome" for icons:
+<?php
 
-// include_once "db/db-handler.php";
-include "$root/imported/parsedown.php";
-include "$root/meta/run.php";
-include "$root/meta/var.php";
-
-$load->html();
-
-open('head');
-
-$load->metadata();
-
-shutopen('head', 'body');
-
-include "$root/meta/header.php";
-
-    openw('div', 'container frame');
-
-        include "$root/meta/navbar.php";
-
-        $load->content();
-
-    shut('div');
-
-include "$root/meta/footer.php";
-
-shut('body', 'html');
+include 'inc/auto/class.auto.inc.php';
+include 'inc/fnc/run-html.fnc.inc.php';
+include 'inc/var/global.var.inc.php';
