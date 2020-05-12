@@ -1,5 +1,5 @@
 <?php
 
-include 'inc/auto/class.auto.inc.php';
-include 'inc/fnc/run-html.fnc.inc.php';
-include 'inc/var/global.var.inc.php';
+include 'includes/class.autoloader.inc.php';
+include 'functions/html.run.php';
+include 'variables/global.var.php';
