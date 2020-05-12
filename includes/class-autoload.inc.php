@@ -1,10 +1,10 @@
 <?php
 
-spl_autoload_register('class_autoloader');
+spl_autoload_register('autoloader');
 
-function class_autoloader($class)
+function autoloader($class)
 {
-    $url    = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
     if (strpos($url, 'includes') !== false)
     {
@@ -14,7 +14,6 @@ function class_autoloader($class)
     {
         $path = 'classes/';
     }
-    $ext    = '.class.php';
+    $ext = '.class.php';
     require_once $path . $class . $ext;
-
 }
