@@ -9,8 +9,8 @@ include 'library/subdomain.lib.php';
 include 'library/page.lib.php';
 include 'includes/page-handler.inc.php';
 
-$activeDomain->html_start();
+$active->html_abc();
 
 
 
-$activeDomain->html_end();
+$active->html_xyz();
