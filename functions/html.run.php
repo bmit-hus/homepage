@@ -1,29 +1,25 @@
 <?php
 
-class HTMLcode
+function html_open($html_tag)
 {
-    public function html_open($html_tag)
+    $foos = [$html_tag];
+    foreach ($foos as $foo)
     {
-        $foos = [$html_tag];
-        foreach ($foos as $foo)
-        {
-            echo "<$foo>";
-        }
+        echo "<$foo>";
     }
+}
 
-    public function html_close($html_tag)
+function html_close($html_tag)
+{
+    $foos = [$html_tag];
+    foreach ($foos as $foo)
     {
-        $foos = [$html_tag];
-        foreach ($foos as $foo)
-        {
-            echo "</$foo>";
-        }
+        echo "</$foo>";
     }
+}
 
-    public function html_peekaboo($html_close, $html_open)
-    {
-        html_close($html_close);
-        html_open($html_open);
-    }
-
+function html_peekaboo($html_close, $html_open)
+{
+    html_close($html_close);
+    html_open($html_open);
 }

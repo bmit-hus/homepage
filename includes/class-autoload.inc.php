@@ -14,6 +14,12 @@ function autoloader($class)
     {
         $path = 'classes/';
     }
-    $ext = '.class.php';
-    require_once $path . $class . $ext;
+    $ext = '.cls.php';
+
+    $file_query = $path . $class . $ext;
+    if (!file_exists($file_query))
+    {
+        return false;
+    }
+    require_once $file_query;
 }
