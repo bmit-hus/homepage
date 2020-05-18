@@ -1,6 +1,6 @@
 <?php
 
-class Subdomain extends Domain
+class Subdomain
 {
     // Domain properties
     // protected $first; protected $last;
@@ -19,6 +19,11 @@ class Subdomain extends Domain
         $this->js   = 'js/'  . $subdomain_var . '.hub.js';
 
         $this->subdomain_name  = $subdomain_var;
+    }
+
+    public function activate_subdomain($post_this)
+    {
+        $_POST['active_sub'] = $post_this;
     }
 
 }

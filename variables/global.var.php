@@ -1,9 +1,12 @@
 <?php
 
 // html
-$br     = '<br>';
+$_b = ' ';
+$br = '<br>';
 
 // symbols
+$domain = 'hus.bm-it.ch';
+$slash  = '/';
 $dot    = '.';
 $comma  = ',';
 $copy   = '&#169';
