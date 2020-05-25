@@ -2,44 +2,59 @@
 
 class Space
 {
-    protected $my_firstname;
-    protected $my_lastname;
-    protected $author;
-    protected $Author;
-    protected $ajax;
+    private $my_firstname;
+    private $my_lastname;
+    private $my_fullname;
+    private $my_Fullname;
+    
+    private $lib_ajax;
 
-    protected $space_name;
-    protected $space_lang;
-    protected $space_css;
-    protected $space_js;
+    private $space_name;
+    private $space_css;
+    private $space_js;
 
-    function __construct($first_parameter, $second_parameter, $third_parameter, $forth_parameter)
+    function __construct($set_space_name)
     {
         global $_b;
 
         $this->my_firstname = 'stigie';
         $this->my_lastname = 'huber';
-        $this->author = $this->my_firstname . $_b . $this->my_lastname;
-        $this->Author = ucfirst($this->my_firstname) . $_b . ucfirst($this->my_lastname);
-        $this->ajax = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+        $this->my_fullname = $this->my_firstname . $_b . $this->my_lastname;
+        $this->my_Fullname = ucfirst($this->my_firstname) . $_b . ucfirst($this->my_lastname);
 
-        $this->space_name = $first_parameter;
-        $this->space_lang = $second_parameter;
-        $this->space_css = $third_parameter;
-        $this->space_js = $forth_parameter;
+        $this->lib_ajax = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+
+        $this->space_name = $set_space_name;
+        $this->space_css = 'css/' . $this->space_name . '.hub.css';
+        $this->space_js = 'js/' . $this->space_name . '.hub.css';
     }
 
-    public function post_parameters($space_to_post)
+    public function post_space_vars()
     {
-        $_POST['my_firstname'] = $space_to_post->$my_firstname;
-        $_POST['my_lastname'] = $space_to_post->$my_lastname;
-        $_POST['author'] = $space_to_post->$author;
-        $_POST['Author'] = $space_to_post->$Author;
-        $_POST['ajax'] = $space_to_post->$ajax;
+        $_POST['my_firstname'] = $this->my_firstname;
+        $_POST['my_lastname'] = $this->my_lastname;
+        $_POST['my_fullname'] = $this->my_fullname;
+        $_POST['my_Fullname'] = $this->my_Fullname;
 
-        $_POST['space_name'] = $space_to_post->$space_name;
-        $_POST['space_lang'] = $space_to_post->$space_lang;
-        $_POST['space_css'] = $space_to_post->$space_css;
-        $_POST['space_js'] = $space_to_post->$space_js;
+        $_POST['lib_ajax'] = $this->lib_ajax;
+
+        $_POST['space_name'] = $this->space_name;
+        $_POST['space_css'] = $this->space_css;
+        $_POST['space_js'] = $this->space_js;
     }
+
+    public function make_current_space()
+    {
+        $_POST['current_space'] = $this->space_name;
+    }
+
+    public function set($set_attribute, $to_this_value)
+    {
+        $this->$set_attribute = $to_this_value;
+    }
+    public function get($get_attribute)
+    {
+        return $this->$get_attribute;
+    }
+
 }

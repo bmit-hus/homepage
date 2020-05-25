@@ -14,6 +14,7 @@ function autoloader($class)
     {
         $path = 'classes/';
     }
+
     $ext = '.cls.php';
 
     $file_query = $path . $class . $ext;
