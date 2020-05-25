@@ -1,46 +1,31 @@
 <?php
 
-class Page extends Subdomain
+class Site
 {
-    protected $firstname;
-    protected $lastname;
-    protected $author;
-    protected $Author;
+    private $site_name;
+    private $site_title;
+    private $site_description;
+    private $site_keywords;
 
-    protected $file_name;
-    protected $page_title;
-    protected $subdomain_name;
-
-    protected $lang;
-    protected $description;
-    protected $keywords;
-
-    protected $css_file;
-    protected $js_file;
-    protected $ajax_lib;
-
-    function __construct($set_first, $set_second, $set_third, $set_forth)
+    function __construct($set_site_name, $set_site_descr)
     {
         global $blank;
         global $domain;
         $domain = $domain.$slash;
 
-        $this->firstname = 'stigie';
-        $this->lastname = 'huber';
-        $this->author = $this->firstname . $blank . $this->lastname;
-        $this->Author = ucfirst($this->first) . $blank . ucfirst($this->last);
+        $this->site_name = $set_site_name;
+        $this->site_title = ucfirst($this->site_name);
 
-        $this->file_name = $set_first;
-        $this->page_title = ucfirst($this->file_name);
-        $this->subdomain_name = $set_second;
+        $this->site_description = $set_site_descr;
+    }
 
-        $this->lang = $set_third;
-        $this->description = $set_forth;
-        $this->keywords = $this->author.$blank.$domain.$this->file_name.$blank.$this->description;
+    //
+    //
+    //
 
-        $this->css = 'css/'.$subdomain_name.'.hub.css';
-        $this->js = 'js/'.$subdomain_name.'.hub.js';
-        $this->ajax = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+    public function post_siteVariables()
+    {
+        $this->site_keywords = $this->author.$blank.$domain.$this->file_name.$blank.$this->description;
     }
 
     public function set($this_attribute, $to_this_value)
