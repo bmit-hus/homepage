@@ -8,7 +8,6 @@ include 'includes/lib-handler.inc.php';
 html_declare();
 html_abc();
 
-// body comes here
-
+state_where();
 
 html_xyz();

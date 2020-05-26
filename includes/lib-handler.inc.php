@@ -20,26 +20,26 @@ else
 
 if (!isset($_POST['current_space']))
 {
-    $current_space = $landing_space;
+    $current_space = $gateway;
     $current_space->post_space_vars();
     $current_space->make_current_space();
 }
 else
 {
-    $current_space = $$_POST['lang_name'];
+    $current_space = $$_POST['space_name'];
     $current_space->post_space_vars();
     $current_space->make_current_space();
 }
 
 if (!isset($_POST['current_site']))
 {
-    $current_site = $landing_site;
+    $current_site = $landing;
     $current_site->post_site_vars();
     $current_site->make_current_site();
 }
 else
 {
-    $current_site = $$_POST['lang_name'];
+    $current_site = $$_POST['site_name'];
     $current_site->post_site_vars();
     $current_site->make_current_site();
 }
