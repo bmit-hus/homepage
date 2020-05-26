@@ -13,25 +13,71 @@
 
 .gateway > p
 {
+    font-size: var(--larj);
     padding: var(--tiny) 0;
-}
-
-.gateway > em
-{
-    font-weight: bold;
-    color: var(--blue);
-    padding-bottom: var(--tiny);
 }
 
 .gateway > h3
 {
+    font-size: var(--huge);
     padding: var(--mini) 0 var(--smol);
+    color: var(--yllw);
 }
 
 .gw-container
 {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+@media only screen and (min-width:600px)
+{
+    .gw-container
+    {
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (min-width:900px)
+{
+    .gw-container
+    {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media only screen and (min-width:1200px)
+{
+    .gw-container
+    {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media only screen and (min-width:1500px)
+{
+    .gw-container
+    {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media only screen and (min-width:1800px)
+{
+    .gateway > p
+    {
+        font-size: var(--mega);
+    }
+    .gateway > h3
+    {
+        font-size: var(--giga);
+    }
+}
+@media only screen and (min-width:2100px)
+{
+    .gateway > p
+    {
+        font-size: var(--mega);
+    }
+    .gateway > h3
+    {
+        font-size: var(--giga);
+    }
 }
 
 .gw-option
@@ -41,7 +87,7 @@
     border-radius: var(--cyde);
     border-color: var(--blue); 
     padding: var(--smol);
-    /* max-width: 20rem; */
+    max-width: 24rem;
 }
 .gw-option:hover
 {

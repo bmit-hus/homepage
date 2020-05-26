@@ -5,8 +5,8 @@
     --mono: 'Cutive Mono', monospace;
 
     /* sizes */
-    --norm: 1.25;
-    --tall: 1.5;
+    --shrt: 1.25;
+    --tall: 1.75;
 
     --mini: 0.1rem;
     --tiny: 0.3rem;

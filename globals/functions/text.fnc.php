@@ -17,7 +17,7 @@ function title($ohsoimportant)
 function format($styling_choice, $words)
 {
     html_open($styling_choice);
-    state($words);
+    echo $words;
     html_close($styling_choice);
 }
 
