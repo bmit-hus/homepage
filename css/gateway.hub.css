@@ -1,10 +1,9 @@
 @charset "uft-8";
-@import 'reset.imp.css';
-@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap';
-
-@import 'root.css';
-@import 'html.css';
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap";
+@import "reset.imp.css";
+@import "root.css";
+@import "html.css";
 
 .gateway
 {
@@ -26,35 +25,41 @@
 
 .gw-container
 {
+    margin: var(--size);
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+    align-content: center;
 }
 @media only screen and (min-width:600px)
 {
     .gw-container
     {
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media only screen and (min-width:900px)
 {
     .gw-container
     {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media only screen and (min-width:1200px)
 {
     .gw-container
     {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 @media only screen and (min-width:1500px)
 {
-    .gw-container
+    .gateway > p
     {
-        grid-template-columns: auto auto auto auto;
+        font-size: var(--huge);
+    }
+    .gateway > h3
+    {
+        font-size: var(--mega);
     }
 }
 @media only screen and (min-width:1800px)
@@ -70,13 +75,9 @@
 }
 @media only screen and (min-width:2100px)
 {
-    .gateway > p
+    .gw-container
     {
-        font-size: var(--mega);
-    }
-    .gateway > h3
-    {
-        font-size: var(--giga);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -88,6 +89,11 @@
     border-color: var(--blue); 
     padding: var(--smol);
     max-width: 24rem;
+}
+.gw-option > p
+{
+    font-size: var(--size);
+    color: var(--half);
 }
 .gw-option:hover
 {

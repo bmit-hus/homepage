@@ -18,19 +18,6 @@
     --mega: 1.8rem;
     --giga: 2.0rem;
 
-/* 
-    --none: #07020d;
-    --base: #00072d;
-    --main: #bbb891;
-    --dark: #043565;
-    --blue: #2274a5;
-    --high: #009ffd;
-    --emph: #ffc800;
-    --bold: #c20114;
-    --gold: #ffd700;
-    --code: #14b5d0;
- */
-
     /* color scheme */
     --none: #002b36;
     --half: #839496;
@@ -49,3 +36,16 @@
     --cyan: #2aa198;
     --gryn: #859900;
 }
+
+/* 
+    --none: #07020d;
+    --base: #00072d;
+    --main: #bbb891;
+    --dark: #043565;
+    --blue: #2274a5;
+    --high: #009ffd;
+    --emph: #ffc800;
+    --bold: #c20114;
+    --gold: #ffd700;
+    --code: #14b5d0;
+*/

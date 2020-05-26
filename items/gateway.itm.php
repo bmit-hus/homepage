@@ -1,31 +1,31 @@
 <?php
 
-html_open_wClasses('main','gateway gw-main');
+html_open_wClasses('main','gateway gw-main centered');
 
 title('Greetings, Stranger.');
-state('May I show you around?');
+state('What is the nature of your inquiry?');
 // state('Choose where your journey will take you. Before I do.');
 
 html_open_wClasses('div','gateway gw-container');
 
     html_open_wClasses('div','gateway gw-option');
-        title('Home Page');
-        state('Learn more about me as a human, man and citizen.');
+        state('You want to learn more about me personally.');
+        title('"I was nearby and thought I\'d drop in."');
     html_close('div');
 
     html_open_wClasses('div','gateway gw-option');
-        title('Business Page');
-        state('Learn more about my Business achievements and failures.');
+        state('You wish to learn about my professional skillset, or build business relations.');
+        title('"It\'s about Business."');
     html_close('div');
 
     html_open_wClasses('div','gateway gw-option');
-        title('Personal Blog');
-        state('Read about my thoughts on a wide range of topics.');
+        state('You\'re interested in reading my articles.');
+        title('"I\'d like to enter the Library."');
     html_close('div');
 
     html_open_wClasses('div','gateway gw-option');
-        title('Contact Page');
-        state('If you got any kind of inquiry, get in touch with me through here.');
+        state('You wish to contact me.');
+        title('"I wish to talk to \'him\'."');
     html_close('div');
 
 html_close('div');

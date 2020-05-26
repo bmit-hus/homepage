@@ -1,29 +1,18 @@
 html
 {
     margin: var(--cyde) var(--size);
-    /* border: var(--tiny) groove; */
-    /* border-radius: var(--cyde); */
-    /* border-color: var(--blue); */
     padding: var(--smol) var(--cyde);
-
+}
+body
+{
     background: var(--dark);
     color: var(--solr);
     font-family: var(--sans);
     font-size: var(--size);
-    line-height: var(--norm);
+    line-height: var(--shrt);
 }
 
-/* 
-html {
-    background: var(--none);
-    margin: var(--mini);
-
-    font-family: var(--sans);
-    font-size: var(--size);
-    line-height: var(--tall);
-    color: var(--main);
-}
-
+/*
 h1 { 
     background: var(--high);
     border-radius: var(--size);
