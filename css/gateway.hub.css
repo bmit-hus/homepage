@@ -1,0 +1,51 @@
+@charset "uft-8";
+@import 'reset.imp.css';
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap';
+
+@import 'root.css';
+@import 'html.css';
+
+.gateway
+{
+    text-align: center;
+}
+
+.gateway > p
+{
+    padding: var(--tiny) 0;
+}
+
+.gateway > em
+{
+    font-weight: bold;
+    color: var(--blue);
+    padding-bottom: var(--tiny);
+}
+
+.gateway > h3
+{
+    padding: var(--mini) 0 var(--smol);
+}
+
+.gw-container
+{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.gw-option
+{
+    margin: var(--smol);
+    border: var(--tiny) solid;
+    border-radius: var(--cyde);
+    border-color: var(--blue); 
+    padding: var(--smol);
+    /* max-width: 20rem; */
+}
+.gw-option:hover
+{
+    background-color: var(--solr);
+    border-color: var(--ornj);
+    color: var(--dark);
+}

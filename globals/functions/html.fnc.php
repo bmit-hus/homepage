@@ -70,12 +70,3 @@ function html_xyz()
 {
     html_close('body', 'html');
 }
-
-function strong($input)
-{
-    $make = 'strong';
-
-    html_open($make);
-        echo $input;
-    html_close($make);
-}

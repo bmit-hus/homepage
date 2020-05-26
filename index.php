@@ -8,6 +8,7 @@ include 'includes/lib-handler.inc.php';
 html_declare();
 html_abc();
 
-state_where();
+include 'items/gateway.itm.php';
+// state_where();
 
 html_xyz();

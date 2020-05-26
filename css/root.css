@@ -1,0 +1,51 @@
+:root {
+    /* fonts */
+    --font: 'Cutive', serif;
+    --sans: 'Roboto', sans-serif;
+    --mono: 'Cutive Mono', monospace;
+
+    /* sizes */
+    --norm: 1.25;
+    --tall: 1.5;
+
+    --mini: 0.1rem;
+    --tiny: 0.3rem;
+    --smol: 0.6rem;
+    --cyde: 0.8rem;
+    --size: 1.0rem;
+    --larj: 1.2rem;
+    --huge: 1.4rem;
+    --mega: 1.8rem;
+    --giga: 2.0rem;
+
+/* 
+    --none: #07020d;
+    --base: #00072d;
+    --main: #bbb891;
+    --dark: #043565;
+    --blue: #2274a5;
+    --high: #009ffd;
+    --emph: #ffc800;
+    --bold: #c20114;
+    --gold: #ffd700;
+    --code: #14b5d0;
+ */
+
+    /* color scheme */
+    --none: #002b36;
+    --half: #839496;
+    --main: #bbb891;
+    --full: #fdf6e3;
+
+    --dark: #073642;
+    --solr: #eee8d5;
+
+    --yllw: #b58900;
+    --ornj: #cb4b16;
+    --read: #dc322f;
+    --mgen: #d33682;
+    --vlet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --gryn: #859900;
+}
