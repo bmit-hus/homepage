@@ -42,7 +42,7 @@ class Site
 
     public function make_current_site()
     {
-        post_site_vars();
+        $this->post_site_vars();
         $_POST['current_site'] = $this->site_name;
     }
     

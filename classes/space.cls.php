@@ -45,7 +45,7 @@ class Space
 
     public function make_current_space()
     {
-        post_space_vars();
+        $this->post_space_vars();
         $_POST['current_space'] = $this->space_name;
     }
 

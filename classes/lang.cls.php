@@ -29,7 +29,7 @@ class Lang
 
     public function make_current_lang()
     {
-        post_lang_vars();
+        $this->post_lang_vars();
         $_POST['current_lang'] = $this->lang_name;
     }
 
