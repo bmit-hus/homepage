@@ -8,24 +8,24 @@ state('What is the nature of your inquiry?');
 
 html_open_wClasses('div','gateway gw-container');
 
-    html_open_wClasses('div','gateway gw-option');
+    html_open_wClasses('div','gateway gw-option inactive');
         state('You want to learn more about me personally.');
-        title('"I was nearby and thought I\'d drop in."');
+        title('I was nearby and thought I\'d drop in.');
     html_close('div');
 
-    html_open_wClasses('div','gateway gw-option');
+    html_open_wClasses('div','gateway gw-option inactive');
         state('You wish to learn about my professional skillset, or build business relations.');
-        title('"It\'s about Business."');
+        title('Business.');
     html_close('div');
 
-    html_open_wClasses('div','gateway gw-option');
+    html_open_wClasses('div','gateway gw-option inactive');
         state('You\'re interested in reading my articles.');
-        title('"I\'d like to enter the Library."');
+        title('Where is the library?');
     html_close('div');
 
-    html_open_wClasses('div','gateway gw-option');
+    html_open_wClasses('div','gateway gw-option inactive');
         state('You wish to contact me.');
-        title('"I wish to talk to \'him\'."');
+        title('Tell him: "We need to talk...');
     html_close('div');
 
 html_close('div');

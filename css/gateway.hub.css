@@ -101,3 +101,22 @@
     border-color: var(--ornj);
     color: var(--dark);
 }
+
+.inactive
+{
+    background-color: var(--dark);
+    border-color: var(--none);
+}
+.inactive > p, .inactive > h3
+{
+    color: var(--none);
+}
+.inactive:hover
+{
+    background-color: var(--none);
+    border-color: var(--dark);
+}
+.inactive:hover > p, .inactive:hover > h3
+{
+    color: var(--dark);
+}

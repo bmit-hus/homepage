@@ -1,7 +1,7 @@
 html
 {
-    margin: var(--cyde) var(--size);
-    padding: var(--smol) var(--cyde);
+    margin: var(--size);
+    padding: var(--cyde);
 }
 body
 {
