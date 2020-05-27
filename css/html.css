@@ -1,11 +1,12 @@
 html
 {
-    margin: var(--size);
-    padding: var(--cyde);
+    background: var(--none);
 }
 body
 {
+    padding: var(--mega);
     background: var(--dark);
+
     color: var(--solr);
     font-family: var(--sans);
     font-size: var(--size);

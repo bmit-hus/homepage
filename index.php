@@ -9,6 +9,6 @@ html_declare();
 html_abc();
 
 include 'items/gateway.itm.php';
-// state_where();
+include 'items/footer.itm.php';
 
 html_xyz();

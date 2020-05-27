@@ -12,11 +12,18 @@
     --tiny: 0.3rem;
     --smol: 0.6rem;
     --cyde: 0.8rem;
+    
     --size: 1.0rem;
+
     --larj: 1.2rem;
     --huge: 1.4rem;
     --mega: 1.8rem;
     --giga: 2.0rem;
+    
+    --LARJ: 4.0rem;
+    --HUGE: 6.0rem;
+    --MEGA: 7.5rem;
+    --GIGA: 9.0rem;
 
     /* color scheme */
     --none: #002b36;

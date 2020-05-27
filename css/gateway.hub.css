@@ -4,6 +4,7 @@
 @import "reset.imp.css";
 @import "root.css";
 @import "html.css";
+@import "footer.css";
 
 .gateway
 {
@@ -12,13 +13,13 @@
 
 .gateway > p
 {
-    font-size: var(--larj);
+    font-size: var(--size);
     padding: var(--tiny) 0;
 }
 
 .gateway > h3
 {
-    font-size: var(--huge);
+    font-size: var(--larj);
     padding: var(--mini) 0 var(--smol);
     color: var(--yllw);
 }
@@ -28,30 +29,41 @@
     margin: var(--size);
     display: grid;
     grid-template-columns: 1fr;
-    align-content: center;
+    align-content: space-around;
 }
-@media only screen and (min-width:600px)
+@media only screen and (min-width:800px)
 {
     .gw-container
     {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media only screen and (min-width:900px)
+@media only screen and (min-width:1200px)
 {
     .gw-container
     {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-@media only screen and (min-width:1200px)
+@media only screen and (min-width:1600px)
 {
     .gw-container
     {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-@media only screen and (min-width:1500px)
+@media only screen and (min-width:2000px)
+{
+    .gateway > p
+    {
+        font-size: var(--larj);
+    }
+    .gateway > h3
+    {
+        font-size: var(--huge);
+    }
+}
+@media only screen and (min-width:2400px)
 {
     .gateway > p
     {
@@ -62,18 +74,8 @@
         font-size: var(--mega);
     }
 }
-@media only screen and (min-width:1800px)
-{
-    .gateway > p
-    {
-        font-size: var(--mega);
-    }
-    .gateway > h3
-    {
-        font-size: var(--giga);
-    }
-}
-@media only screen and (min-width:2100px)
+
+@media only screen and (min-width:3000px)
 {
     .gw-container
     {
@@ -88,7 +90,10 @@
     border-radius: var(--cyde);
     border-color: var(--blue); 
     padding: var(--smol);
-    max-width: 24rem;
+
+    background-color: var(--solr);
+    min-height: 9rem;
+    text-align: center;
 }
 .gw-option > p
 {
@@ -97,7 +102,7 @@
 }
 .gw-option:hover
 {
-    background-color: var(--solr);
+    background-color: var(--full);
     border-color: var(--ornj);
     color: var(--dark);
 }
