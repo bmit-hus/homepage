@@ -1,5 +1,5 @@
 <?php // look up "Font Awesome" for icons:
-header('Location: https://hus.bm-it.ch/');
+// header('Location: https://hus.bm-it.ch/');
 
 // include_once "meta/db-handler.php";
 include "imported/parsedown.php";

@@ -6,11 +6,11 @@ openw('nav', 'navbar element');
 
 makeNavLink('home');
 makeNavLink('skills');
-// makeNavLink('story');
-// makeNavLink('blog');
+makeNavLink('story');
+makeNavLink('blog');
 
 // shut('ul');
 
-// open('ul'); makeNavLink('empty'); makeNavLink('test'); shut('ul');
+open('ul'); makeNavLink('empty'); makeNavLink('test'); shut('ul');
 
 shut('nav');
