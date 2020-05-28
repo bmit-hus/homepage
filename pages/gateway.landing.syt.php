@@ -1,7 +1,5 @@
 <?php
 
-
-
 html_open_wClasses('main','gateway gw-main centered');
 
 title('Greetings, Stranger.');
