@@ -8,7 +8,6 @@ include 'includes/lib-handler.inc.php';
 html_declare();
 html_abc();
 
-include 'items/gateway.itm.php';
-include 'items/footer.itm.php';
+include "pages/$active_space.$active_site.pg.php";
 
 html_xyz();

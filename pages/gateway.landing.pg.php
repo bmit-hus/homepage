@@ -1,5 +1,7 @@
 <?php
 
+
+
 html_open_wClasses('main','gateway gw-main centered');
 
 title('Greetings, Stranger.');
@@ -30,3 +32,5 @@ html_open_wClasses('div','gateway gw-container');
 html_close('div');
 
 html_close('main');
+
+include 'items/footer.itm.php';
