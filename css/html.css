@@ -7,11 +7,25 @@ body
     padding: var(--mega);
     background: var(--dark);
 
-    color: var(--solr);
+    color: var(--main);
     font-family: var(--sans);
     font-size: var(--size);
     line-height: var(--shrt);
 }
+
+h1
+{
+    color: var(--read);
+}
+h2
+{
+    color: var(--ornj);
+}
+h3
+{
+    color: var(--yllw);
+}
+
 
 /*
 h1 { 
