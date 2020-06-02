@@ -1,7 +1,7 @@
 @charset "uft-8";
 @import "global.arc.css";
 
-/* @import "gateway.rsp.css"; */
+@import "gateway.rsp.css";
 .gw-header > h1
 {
     color: var(--gold);
@@ -25,30 +25,20 @@ footer
     border: var(--mini) solid;
     border-radius: var(--huge);
     border-color: var(--yllw); 
-    padding: var(--smol);
-
     background-color: var(--dark);
-    min-height: 8rem;
-    min-width: 24rem;
+    padding: var(--smol);
 }
 .gateway > h2
 {
     padding: var(--mini) 0 var(--tiny);
-    font-size: var(--giga);
     color: var(--yllw);
 }
+
 
 .ornj:hover, .ornj:hover > h2 { color: var(--ornj); border-color: var(--ornj); }
 .blue:hover, .blue:hover > h2 { color: var(--blue); border-color: var(--blue); }
 .vlet:hover, .vlet:hover > h2 { color: var(--vlet); border-color: var(--vlet); }
 .gryn:hover, .gryn:hover > h2 { color: var(--gryn); border-color: var(--gryn); }
-
-/*
-.ornj:hover, .ornj:hover > h2 { background: var(--ornj); }
-.blue:hover, .blue:hover > h2 { background: var(--blue); }
-.vlet:hover, .vlet:hover > h2 { background: var(--vlet); }
-.gryn:hover, .gryn:hover > h2 { background: var(--gryn); }
-*/
 
 .inactive, .inactive > h2
 {
