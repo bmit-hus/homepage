@@ -13,79 +13,18 @@ body
     line-height: var(--shrt);
 }
 
-header
-{
-    padding: 0 var(--larj) var(--LARJ);
-}
-
-footer
-{
-    margin: 0 -1.8rem -4rem;
-    padding: var(--huge) var(--LARJ) var(--LARJ);
-    background-color: var(--none);
-}
-
-
 h1
 {
-    font-size: var(--giga);
     color: var(--read);
 }
 h2
 {
-    font-size: var(--mega);
     color: var(--ornj);
 }
 h3
 {
-    font-size: var(--huge);
     color: var(--yllw);
 }
-h4
-{
-    font-size: var(--huge);
-    color: var(--yllw);
-}
-
-p
-{
-    padding-bottom: var(--size);
-}
-
-strong
-{
-    color: var(--cyan);
-}
-
-.left
-{
-    text-align: left;
-}
-
-.right
-{
-    text-align: right;
-}
-
-.centered
-{
-    text-align: center;
-}
-
-.locale
-{
-    margin: 0 -4rem;
-    padding: var(--size) -2rem;
-    text-align: center;
-}
-
-.c-statement
-{
-    padding: var(--LARJ) 0 0;
-    text-align: end;
-}
-
-
 
 
 /*
