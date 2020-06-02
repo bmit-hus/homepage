@@ -7,6 +7,6 @@ include 'includes/lib-handler.inc.php';
 
 html_abc();
 
-include "pages/$active_space.$active_site.syt.php";
+include "pages/$active_space.spc.php";
 
 html_xyz();

@@ -1,28 +1,26 @@
 html
 {
     background: var(--none);
+    margin: var(--size);
 }
 body
 {
-    padding: var(--mega);
-    background: var(--dark);
-
-    color: var(--main);
     font-family: var(--sans);
     font-size: var(--size);
     line-height: var(--shrt);
+    color: var(--main);
 }
-
 header
 {
-    padding: 0 var(--larj) var(--LARJ);
+    padding: 0 0 var(--size);
 }
 
 footer
 {
-    margin: 0 -1.8rem -4rem;
-    padding: var(--huge) var(--LARJ) var(--LARJ);
-    background-color: var(--none);
+    margin: var(--size);
+    border-top: var(--dark) solid;
+    border-width: var(--mini);
+    padding:  var(--cyde) 0 var(--giga);
 }
 
 
@@ -55,34 +53,6 @@ p
 strong
 {
     color: var(--cyan);
-}
-
-.left
-{
-    text-align: left;
-}
-
-.right
-{
-    text-align: right;
-}
-
-.centered
-{
-    text-align: center;
-}
-
-.locale
-{
-    margin: 0 -4rem;
-    padding: var(--size) -2rem;
-    text-align: center;
-}
-
-.c-statement
-{
-    padding: var(--LARJ) 0 0;
-    text-align: end;
 }
 
 

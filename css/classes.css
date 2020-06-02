@@ -1,3 +1,21 @@
+
+
+
+.left
+{
+    text-align: left;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.centered
+{
+    text-align: center;
+}
+
 .inactive
 {
     margin: var(--smol);

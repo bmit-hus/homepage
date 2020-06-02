@@ -8,8 +8,9 @@
     --shrt: 1.25;
     --tall: 1.75;
 
-    --mini: 0.1rem;
-    --tiny: 0.3rem;
+    --nano: 0.1rem;
+    --mini: 0.2rem;
+    --tiny: 0.4rem;
     --smol: 0.6rem;
     --cyde: 0.8rem;
     
@@ -20,6 +21,7 @@
     --mega: 1.8rem;
     --giga: 2.0rem;
     
+    --SIZE: 3.0rem;
     --LARJ: 4.0rem;
     --HUGE: 6.0rem;
     --MEGA: 7.5rem;

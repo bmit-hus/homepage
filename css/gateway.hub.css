@@ -3,6 +3,19 @@
 
 /* @import "gateway.rsp.css"; */
 
+.gateway
+{
+    margin: var(--smol);
+    border: var(--tiny) solid;
+    border-radius: var(--cyde);
+    border-color: var(--none); 
+    padding: var(--smol);
+
+    background-color: var(--dark);
+    min-height: 8rem;
+    min-width: 24rem;
+}
+
 .gateway > p
 {
     padding: var(--tiny) 0;
@@ -13,34 +26,11 @@
 .gateway > h2
 {
     padding: var(--mini) 0 var(--tiny);
-    font-size: var(--huge);
+    font-size: var(--giga);
     color: var(--main);
 }
 
-
-.gw-option
-{
-    margin: var(--smol);
-    border: var(--tiny) solid;
-    border-radius: var(--cyde);
-    border-color: var(--none); 
-    padding: var(--smol);
-
-    background-color: var(--dark);
-    min-height: 9rem;
-    text-align: center;
-}
-.gw-option > p
-{
-    font-size: var(--size);
-    color: var(--half);
-}
-.gw-option:hover
-{
-    border-color: var(--ornj);
-}
-
-.inactive, .inactive > p, .inactive > h2
-{
-    color: var(--none);
-}
+.ornj:hover { border-color: var(--ornj); }
+.blue:hover { border-color: var(--blue); }
+.vlet:hover { border-color: var(--vlet); }
+.gryn:hover { border-color: var(--gryn); }

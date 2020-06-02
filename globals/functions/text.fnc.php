@@ -3,14 +3,14 @@
 function title($such_important)
 {
     html_open('h1');
-    echo $such_important;
+    echo ucwords($such_important);
     html_close('h1');
 }
 
 function section($such_important)
 {
     html_open('h2');
-    echo $such_important;
+    echo ucwords($such_important);
     html_close('h2');
 }
 

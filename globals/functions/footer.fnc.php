@@ -1,6 +1,6 @@
 <?php
 
-function state_where()
+function state_path()
 {
     global $br;
     global $dot;
@@ -13,7 +13,7 @@ function state_where()
     switch ($active_lang)
     {
         case 'english':
-            echo "You are currently looking at: ";
+            echo "Current location: ";
             echo strong("hus.bm-it.ch/$active_space/$active_site").$dot;
 
         break;
@@ -21,11 +21,17 @@ function state_where()
         case 'deutsch':
             echo "Sie besuchen gerade die Seite <strong>hus.bm-it.ch/$active_space/$active_site</strong> auf <strong>$active_lang</strong>.";
         break;
-
-        default:
-
-        break;
+        
 
     }
     html_close('p');
+}
+
+function declare_copyright()
+{
+    global $copy;
+    $copyright = "$copy Copyright";
+    $me = $_POST['my_Fullname'];
+    
+    echo "<p class=\"right\">$copyright $me.</p>";
 }
