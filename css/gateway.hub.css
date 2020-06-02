@@ -8,11 +8,13 @@
 }
 .gw-header
 {
+    margin-bottom: var(--SIZE);
     border-bottom: var(--mini) solid;
     border-color: var(--yllw);
 }
 footer
 {
+    margin-top: var(--SIZE);
     color: var(--yllw);
     border-color: var(--yllw);
 }
@@ -20,9 +22,9 @@ footer
 .gateway
 {
     margin: var(--smol);
-    border: var(--tiny) solid;
+    border: var(--mini) solid;
     border-radius: var(--huge);
-    border-color: var(--none); 
+    border-color: var(--yllw); 
     padding: var(--smol);
 
     background-color: var(--dark);
@@ -33,7 +35,7 @@ footer
 {
     padding: var(--mini) 0 var(--tiny);
     font-size: var(--giga);
-    color: var(--main);
+    color: var(--yllw);
 }
 
 .ornj:hover, .ornj:hover > h2 { color: var(--ornj); border-color: var(--ornj); }
@@ -48,12 +50,13 @@ footer
 .gryn:hover, .gryn:hover > h2 { background: var(--gryn); }
 */
 
-.inactive > h2
+.inactive, .inactive > h2
 {
     color: var(--none) !important;
+    border-color: var(--dark) !important;
 }
 .inactive:hover, .inactive:hover > h2
 {
-    color: var(--half) !important;
-    border-color: var(--half) !important;
+    color: var(--grey) !important;
+    border-color: var(--grey) !important;
 }

@@ -32,12 +32,15 @@
 
     /* color scheme */
     --none: #002b36;
+    --dark: #073642;
+    --grey: #586e75;
+    --base: #657b83;
+    --step: #839496;
     --half: #839496;
-    --main: #bbb891;
+    --solr: #eee8d5;
     --high: #fdf6e3;
 
-    --dark: #073642;
-    --solr: #eee8d5;
+    --main: #bbb891;
 
     --gold: #ffd700;
     --yllw: #b58900;
