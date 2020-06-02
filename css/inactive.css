@@ -1,0 +1,23 @@
+.inactive
+{
+    margin: var(--smol);
+    border: var(--tiny) solid;
+    border-radius: var(--cyde);
+    border-color: var(--blue); 
+    padding: var(--smol);
+
+    background-color: var(--solr);
+    min-height: 9rem;
+    text-align: center;
+}
+.inactive > p
+{
+    font-size: var(--size);
+    color: var(--half);
+}
+.inactive:hover
+{
+    background-color: var(--full);
+    border-color: var(--ornj);
+    color: var(--dark);
+}

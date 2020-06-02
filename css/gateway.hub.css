@@ -1,97 +1,32 @@
 @charset "uft-8";
-@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap";
-@import "reset.imp.css";
-@import "root.css";
-@import "html.css";
-@import "footer.css";
+@import "global.arc.css";
 
-.gateway
-{
-    text-align: center;
-}
+/* @import "gateway.rsp.css"; */
 
 .gateway > p
 {
-    font-size: var(--size);
     padding: var(--tiny) 0;
-}
-
-.gateway > h3
-{
     font-size: var(--larj);
-    padding: var(--mini) 0 var(--smol);
-    color: var(--yllw);
+    color: var(--none);
 }
 
-.gw-container
+.gateway > h2
 {
-    margin: var(--size);
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: space-around;
-}
-@media only screen and (min-width:800px)
-{
-    .gw-container
-    {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media only screen and (min-width:1200px)
-{
-    .gw-container
-    {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-@media only screen and (min-width:1600px)
-{
-    .gw-container
-    {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-@media only screen and (min-width:2000px)
-{
-    .gateway > p
-    {
-        font-size: var(--larj);
-    }
-    .gateway > h3
-    {
-        font-size: var(--huge);
-    }
-}
-@media only screen and (min-width:2400px)
-{
-    .gateway > p
-    {
-        font-size: var(--huge);
-    }
-    .gateway > h3
-    {
-        font-size: var(--mega);
-    }
+    padding: var(--mini) 0 var(--tiny);
+    font-size: var(--huge);
+    color: var(--main);
 }
 
-@media only screen and (min-width:3000px)
-{
-    .gw-container
-    {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-}
 
 .gw-option
 {
     margin: var(--smol);
     border: var(--tiny) solid;
     border-radius: var(--cyde);
-    border-color: var(--blue); 
+    border-color: var(--none); 
     padding: var(--smol);
 
-    background-color: var(--solr);
+    background-color: var(--dark);
     min-height: 9rem;
     text-align: center;
 }
@@ -102,26 +37,10 @@
 }
 .gw-option:hover
 {
-    background-color: var(--full);
     border-color: var(--ornj);
-    color: var(--dark);
 }
 
-.inactive
-{
-    background-color: var(--dark);
-    border-color: var(--none);
-}
-.inactive > p, .inactive > h3
+.inactive, .inactive > p, .inactive > h2
 {
     color: var(--none);
-}
-.inactive:hover
-{
-    background-color: var(--none);
-    border-color: var(--dark);
-}
-.inactive:hover > p, .inactive:hover > h3
-{
-    color: var(--dark);
 }
