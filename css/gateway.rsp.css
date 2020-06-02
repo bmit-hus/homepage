@@ -6,7 +6,7 @@
     }
     .gateway > h2
     {
-        font-size: var(--huge);
+        font-size: var(--mega);
     }
 
 @media only screen and (min-width: 800px)
@@ -18,7 +18,7 @@
     }
     .gateway > h2
     {
-        font-size: var(--mega);
+        font-size: var(--giga);
     }
 }
 
@@ -31,6 +31,6 @@
     }
     .gateway > h2
     {
-        font-size: var(--giga);
+        font-size: var(--SIZE);
     }
 }
