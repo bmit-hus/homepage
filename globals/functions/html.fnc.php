@@ -63,7 +63,7 @@ function html_abc()
     html_declare();
     html_open('head');
     html_metainfo();
-    html_peekaboo('head','body');
+    html_close('head');
 }
 
 function html_xyz()

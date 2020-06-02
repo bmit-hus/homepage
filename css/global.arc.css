@@ -1,5 +1,7 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap";
+/* everything but monospace font, from the noto family */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif&family=Noto+Serif+JP&family=Noto+Serif+KR&family=Noto+Serif+SC&display=swap');
+/* monospace font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 @import "reset.imp.css";
 @import "root.css";

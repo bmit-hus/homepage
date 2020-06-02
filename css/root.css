@@ -1,8 +1,11 @@
 :root {
     /* fonts */
-    --font: 'Cutive', serif;
-    --sans: 'Roboto', sans-serif;
-    --mono: 'Cutive Mono', monospace;
+    --mono: 'Space Mono', monospace;
+    --sans: 'Noto Sans', sans-serif;
+    --serf: 'Noto Serif', serif;
+    --sfjp: 'Noto Serif JP', serif;
+    --sfkr: 'Noto Serif KR', serif;
+    --sfsc: 'Noto Serif SC', serif;
 
     /* sizes */
     --shrt: 1.25;
@@ -36,17 +39,17 @@
     --dark: #073642;
     --solr: #eee8d5;
 
+    --gold: #ffd700;
     --yllw: #b58900;
     --ornj: #cb4b16;
-    --read: #dc322f;
+    --redx: #dc322f;
     --mgen: #d33682;
     --vlet: #6c71c4;
     --blue: #268bd2;
     --cyan: #2aa198;
     --gryn: #859900;
-}
 
-/* 
+/*
     --none: #07020d;
     --base: #00072d;
     --main: #bbb891;
@@ -58,3 +61,5 @@
     --gold: #ffd700;
     --code: #14b5d0;
 */
+
+}

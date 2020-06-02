@@ -2,12 +2,26 @@
 @import "global.arc.css";
 
 /* @import "gateway.rsp.css"; */
+.gw-header > h1
+{
+    color: var(--gold);
+}
+.gw-header
+{
+    border-bottom: var(--mini) solid;
+    border-color: var(--yllw);
+}
+footer
+{
+    color: var(--yllw);
+    border-color: var(--yllw);
+}
 
 .gateway
 {
     margin: var(--smol);
     border: var(--tiny) solid;
-    border-radius: var(--cyde);
+    border-radius: var(--huge);
     border-color: var(--none); 
     padding: var(--smol);
 
@@ -15,14 +29,6 @@
     min-height: 8rem;
     min-width: 24rem;
 }
-
-.gateway > p
-{
-    padding: var(--tiny) 0;
-    font-size: var(--larj);
-    color: var(--none);
-}
-
 .gateway > h2
 {
     padding: var(--mini) 0 var(--tiny);
@@ -30,7 +36,24 @@
     color: var(--main);
 }
 
-.ornj:hover { border-color: var(--ornj); }
-.blue:hover { border-color: var(--blue); }
-.vlet:hover { border-color: var(--vlet); }
-.gryn:hover { border-color: var(--gryn); }
+.ornj:hover, .ornj:hover > h2 { color: var(--ornj); border-color: var(--ornj); }
+.blue:hover, .blue:hover > h2 { color: var(--blue); border-color: var(--blue); }
+.vlet:hover, .vlet:hover > h2 { color: var(--vlet); border-color: var(--vlet); }
+.gryn:hover, .gryn:hover > h2 { color: var(--gryn); border-color: var(--gryn); }
+
+/*
+.ornj:hover, .ornj:hover > h2 { background: var(--ornj); }
+.blue:hover, .blue:hover > h2 { background: var(--blue); }
+.vlet:hover, .vlet:hover > h2 { background: var(--vlet); }
+.gryn:hover, .gryn:hover > h2 { background: var(--gryn); }
+*/
+
+.inactive > h2
+{
+    color: var(--none) !important;
+}
+.inactive:hover, .inactive:hover > h2
+{
+    color: var(--half) !important;
+    border-color: var(--half) !important;
+}

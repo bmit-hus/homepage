@@ -2,10 +2,11 @@ html
 {
     background: var(--none);
     margin: var(--size);
+
+    font-family: var(--sans);
 }
 body
 {
-    font-family: var(--sans);
     font-size: var(--size);
     line-height: var(--shrt);
     color: var(--main);
@@ -41,7 +42,7 @@ h3
 }
 h4
 {
-    font-size: var(--huge);
+    font-size: var(--larj);
     color: var(--yllw);
 }
 
@@ -49,11 +50,20 @@ p
 {
     padding-bottom: var(--size);
 }
-
+q
+{
+    padding-bottom: var(--size);
+}
+em
+{
+    font-style: normal;
+    color: var(--blue);
+}
 strong
 {
     color: var(--cyan);
 }
+
 
 
 
