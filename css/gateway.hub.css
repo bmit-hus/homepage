@@ -2,19 +2,16 @@
 @import "global.arc.css";
 
 @import "gateway.rsp.css";
-.gw-header > h1
+header > h1
 {
     color: var(--gold);
 }
-.gw-header
+header
 {
-    margin-bottom: var(--SIZE);
-    border-bottom: var(--mini) solid;
     border-color: var(--yllw);
 }
 footer
 {
-    margin-top: var(--SIZE);
     color: var(--yllw);
     border-color: var(--yllw);
 }

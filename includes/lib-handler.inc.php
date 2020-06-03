@@ -32,6 +32,8 @@ else
     $current_site = $$_POST['current_site'];
 }
 
+    $current_space = $homepage;
+
 $current_lang->make_current_lang();
 $current_space->make_current_space();
 $current_site->make_current_site();

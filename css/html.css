@@ -13,14 +13,14 @@ body
 }
 header
 {
-    padding: 0 0 var(--size);
+    margin-bottom: var(--SIZE);
+    border-bottom: var(--mini) solid;
+    padding: 0 0 var(--tiny);
 }
-
 footer
 {
-    margin: var(--size);
-    border-top: var(--dark) solid;
-    border-width: var(--mini);
+    margin-top: var(--SIZE);
+    border-top: var(--nano) solid;
     padding:  var(--cyde) 0 var(--giga);
 }
 
