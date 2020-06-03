@@ -3,9 +3,9 @@
     --mono: 'Space Mono', monospace;
     --sans: 'Noto Sans', sans-serif;
     --serf: 'Noto Serif', serif;
-    --sfjp: 'Noto Serif JP', serif;
-    --sfkr: 'Noto Serif KR', serif;
-    --sfsc: 'Noto Serif SC', serif;
+    --sfJP: 'Noto Serif JP', serif;
+    --sfKR: 'Noto Serif KR', serif;
+    --sfSC: 'Noto Serif SC', serif;
 
     /* sizes */
     --shrt: 1.25;
