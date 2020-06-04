@@ -1,41 +1,10 @@
 @charset "uft-8";
 @import "global.arc.css";
 
-@import "gateway.rsp.css";
-header > h1
+:root
 {
-    color: var(--ornj);
+    --site-color: var(--cyan);
 }
-header
-{
-    border-color: var(--ornj);
-}
-footer
-{
-    color: var(--ornj);
-    border-color: var(--ornj);
-}
-
-.gateway
-{
-    margin: var(--smol);
-    border: var(--mini) solid;
-    border-radius: var(--huge);
-    border-color: var(--yllw); 
-    background-color: var(--dark);
-    padding: var(--smol);
-}
-.gateway > h2
-{
-    padding: var(--mini) 0 var(--tiny);
-    color: var(--yllw);
-}
-
-
-.ornj:hover, .ornj:hover > h2 { color: var(--ornj); border-color: var(--ornj); }
-.blue:hover, .blue:hover > h2 { color: var(--blue); border-color: var(--blue); }
-.vlet:hover, .vlet:hover > h2 { color: var(--vlet); border-color: var(--vlet); }
-.gryn:hover, .gryn:hover > h2 { color: var(--gryn); border-color: var(--gryn); }
 
 .inactive, .inactive > h2
 {

@@ -16,12 +16,21 @@ header
     margin-bottom: var(--SIZE);
     border-bottom: var(--mini) solid;
     padding: 0 0 var(--tiny);
+
+    border-color: var(--site-color);
+}
+header > h1
+{
+    color: var(--site-color);
 }
 footer
 {
     margin-top: var(--SIZE);
     border-top: var(--nano) solid;
     padding:  var(--smol) 0 var(--GIGA);
+
+    color: var(--site-color);
+    border-color: var(--site-color);
 }
 
 

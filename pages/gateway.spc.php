@@ -11,19 +11,19 @@ html_close( 'header' );
 
 html_open_wClasses( 'main', 'grid-container' );
 
-    html_open_wClasses( 'button', 'gateway ornj ' );
+    html_open_wClasses( 'button', 'gateway homepage ' );
         section( 'homepage' );
     html_close( 'button' );
 
-    html_open_wClasses( 'button', 'gateway blue ' );
+    html_open_wClasses( 'button', 'gateway business ' );
         section( 'business' );
     html_close( 'button' );
 
-    html_open_wClasses( 'button', 'gateway vlet ' );
+    html_open_wClasses( 'button', 'gateway blog ' );
         section( 'blog' );
     html_close( 'button' );
 
-    html_open_wClasses( 'button' , 'gateway gryn ' );
+    html_open_wClasses( 'button' , 'gateway contact ' );
         section( 'contact' );
     html_close( 'button' );
 

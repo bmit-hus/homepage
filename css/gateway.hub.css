@@ -1,19 +1,14 @@
 @charset "uft-8";
 @import "global.arc.css";
-
 @import "gateway.rsp.css";
-header > h1
+
+:root
 {
-    color: var(--gold);
-}
-header
-{
-    border-color: var(--yllw);
-}
-footer
-{
-    color: var(--yllw);
-    border-color: var(--yllw);
+    --site-color: var(--yllw);
+    --homepage-color: var(--cyan);
+    --business-color: var(--blue);
+    --blog-color: var(--vlet);
+    --contact-color: var(--gryn);
 }
 
 .gateway
@@ -21,7 +16,7 @@ footer
     margin: var(--smol);
     border: var(--mini) solid;
     border-radius: var(--huge);
-    border-color: var(--yllw); 
+    border-color: var(--site-color); 
     background-color: var(--dark);
     padding: var(--smol);
 }
@@ -32,10 +27,26 @@ footer
 }
 
 
-.ornj:hover, .ornj:hover > h2 { color: var(--ornj); border-color: var(--ornj); }
-.blue:hover, .blue:hover > h2 { color: var(--blue); border-color: var(--blue); }
-.vlet:hover, .vlet:hover > h2 { color: var(--vlet); border-color: var(--vlet); }
-.gryn:hover, .gryn:hover > h2 { color: var(--gryn); border-color: var(--gryn); }
+.homepage:hover, .homepage:hover > h2 
+{
+    color: var(--homepage-color); 
+    border-color: var(--homepage-color);
+}
+.business:hover, .business:hover > h2
+{
+    color: var(--business-color); 
+    border-color: var(--business-color);
+}
+.blog:hover, .blog:hover > h2 
+{ 
+    color: var(--blog-color); 
+    border-color: var(--blog-color); 
+}
+.contact:hover, .contact:hover > h2 
+{ 
+    color: var(--contact-color); 
+    border-color: var(--contact-color); 
+}
 
 .inactive, .inactive > h2
 {
