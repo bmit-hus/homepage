@@ -3,6 +3,7 @@
 include 'libraries/lang.lib.php';
 include 'libraries/space.lib.php';
 include 'libraries/site.lib.php';
+include 'libraries/global.lib.php';
 
 
 if (!isset($_POST['current_lang']))
@@ -32,7 +33,7 @@ else
     $current_site = $$_POST['current_site'];
 }
 
-    $current_space = $homepage;
+    // $current_space = $homepage;
 
 $current_lang->make_current_lang();
 $current_space->make_current_space();

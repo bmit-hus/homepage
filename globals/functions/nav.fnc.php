@@ -1,19 +1,29 @@
 <?php
 
-function page_reload()
+function new_nav_button()
 {
-    $_SERVER['REQUEST_URI'];
+    echo <<<EOT
+
+EOT;
 }
 
 
-function nav_button_open($event_name, $target_space, $target_site, $classees)
-{
-    echo "<button onClick=\"$event_name()\" class=\"$classes\">";
-}
-function nav_button_close()
-{
-    echo "</button>";
-}
+
+
+// function page_reload()
+// {
+//     $_SERVER['REQUEST_URI'];
+// }
+
+
+// function nav_button_open($event_name, $target_space, $target_site, $classees)
+// {
+//     echo "<button onClick=\"$event_name()\" class=\"$classes\">";
+// }
+// function nav_button_close()
+// {
+//     echo "</button>";
+// }
 
 
 // function reload()
