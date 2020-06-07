@@ -3,7 +3,7 @@
 /* monospace font */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-@import "reset.imp.css";
+@import "reset.css";
 @import "root.css";
 @import "html.css";
 @import "classes.css";

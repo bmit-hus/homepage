@@ -1,8 +1,8 @@
 <?php
 
-spl_autoload_register('autoloader');
+spl_autoload_register('class_autoloader');
 
-function autoloader($class)
+function class_autoloader($class)
 {
     $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
@@ -24,3 +24,26 @@ function autoloader($class)
     }
     require_once $file_query;
 }
+
+// function includes_autoloader($class)
+// {
+//     $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+//     if (strpos($url, 'includes') !== false)
+//     {
+//         $path = '../classes/';
+//     }
+//     else
+//     {
+//         $path = 'classes/';
+//     }
+
+//     $ext = '.cls.php';
+
+//     $file_query = $path . $class . $ext;
+//     if (!file_exists($file_query))
+//     {
+//         return false;
+//     }
+//     require_once $file_query;
+// }

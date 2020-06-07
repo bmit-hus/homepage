@@ -1,9 +1,11 @@
 @charset "uft-8";
 @import "global.arc.css";
 @import "gateway.rsp.css";
+@import "important.css";
 
 :root
 {
+    --bgcolor: var(--none);
     --site-color: var(--yllw);
     --homepage-color: var(--cyan);
     --business-color: var(--blue);
@@ -46,15 +48,4 @@
 { 
     color: var(--contact-color); 
     border-color: var(--contact-color); 
-}
-
-.inactive, .inactive > h2
-{
-    color: var(--none) !important;
-    border-color: var(--dark) !important;
-}
-.inactive:hover, .inactive:hover > h2
-{
-    color: var(--grey) !important;
-    border-color: var(--grey) !important;
 }

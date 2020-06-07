@@ -3,6 +3,7 @@
 
 :root
 {
+    --bgcolor: var(--none);
     --site-color: var(--cyan);
 }
 

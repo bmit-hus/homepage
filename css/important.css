@@ -1,0 +1,32 @@
+.sans
+{
+    font-family: var(--sans) !important;
+}
+.serif
+{
+    font-family: var(--serf) !important;
+}
+.mono
+{
+    font-family: var(--mono) !important;
+}
+
+.upper
+{
+    text-transform: uppercase !important;
+}
+.lower
+{
+    text-transform: lowercase !important;
+}
+
+.inactive, .inactive > h2
+{
+    color: var(--none) !important;
+    border-color: var(--dark) !important;
+}
+.inactive:hover, .inactive:hover > h2
+{
+    color: var(--grey) !important;
+    border-color: var(--grey) !important;
+}

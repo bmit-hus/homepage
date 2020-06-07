@@ -1,6 +1,6 @@
 html
 {
-    background: var(--none);
+    background: var(--bgcolor);
     margin: var(--size);
 
     font-family: var(--sans);
@@ -14,16 +14,16 @@ body
 header
 {
     margin-bottom: var(--SIZE);
-    border-bottom: var(--mini) solid;
-    padding: 0 0 var(--tiny);
+    background-color: var(--site-color);
 
+    border-radius: var(--size);
+    border-bottom: var(--mini) solid;
     border-color: var(--site-color);
+
+    padding: var(--tiny) var(--smol);
 }
-header > h1
-{
-    color: var(--site-color);
-}
-header > h1:hover
+header h1 { color: var(--bgcolor); }
+header h1:hover
 {
     color: var(--gold);
 }
@@ -41,22 +41,25 @@ footer
 h1
 {
     font-size: var(--giga);
-    color: var(--read);
+    text-transform: capitalize;
+    color: var(--site-color);
 }
 h2
 {
     font-size: var(--mega);
-    color: var(--ornj);
+    text-transform: capitalize;
+    color: var(--site-color);
 }
 h3
 {
     font-size: var(--huge);
-    color: var(--yllw);
+    text-transform: capitalize;
+    color: var(--site-color);
 }
 h4
 {
     font-size: var(--larj);
-    color: var(--yllw);
+    color: var(--site-color);
 }
 
 p
@@ -69,12 +72,13 @@ q
 }
 em
 {
-    font-style: normal;
-    color: var(--blue);
+    font-style: italic;
+    color: var(--site-color);
 }
 strong
 {
-    color: var(--cyan);
+    font-weight: bold;
+    color: var(--site-color);
 }
 
 

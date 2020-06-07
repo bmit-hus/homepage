@@ -1,186 +1,163 @@
-<?php 
-
-// date formats
-$date_year      = date("Y");
-$date_short_en  = date("M, Y");
-$date_long_en   = date("M jS, Y");
+<?php
 
 class HTML
 {
-    public $blank  = ' ';
-    public $break  = '</br>';
-    
-    public $domain = 'hus.bm-it.ch';
-    public $slash  = '/';
-    public $dot    = '.';
-    public $comma  = ',';
-    public $copy   = '&#169';
-    public $reg    = '&#174';
-    public $trade  = '&#8482';
-    
-// ////////////////////////////////////////////////////////////////////////////////////////////////
-// ////////////////////////////////////////////////////////////////////////////////////////////////
-// ////////////////////////////////////////////////////////////////////////////////////////////////
 
-public function open($tag)
-{
-    echo "<$tag>";
-}
-public function openw($tag,$class,$id)
-{
-    echo "<$tag class=\"$class\" id=\"$id\">";
-}
-public function shut($tag)
-{
-    $foos = [$tag];
-    foreach ($foos as $foo)
+    public function open($tag)
     {
-        echo "</$foo>";
+        echo "<$tag>";
     }
-}
-public function next($shut,$open,$wclass,$wid)
-{
-    echo <<<FOO
-    </$shut> <$open class="$wclass" id="$wid">
+    public function openw($tag,$class,$id)
+    {
+        echo "<$tag class=\"$class\" id=\"$id\">";
+    }
+    public function shut($tag)
+    {
+        $foos = [$tag];
+        foreach ($foos as $foo)
+        {
+            echo "</$foo>";
+        }
+    }
+    public function next($shut,$open,$wclass,$wid)
+    {
+        echo <<<FOO
+        </$shut> <$open class="$wclass" id="$wid">
 FOO;
-}
+    }
 
-// ////////////////////////////////////////////////////////////////////////////////////////////////
-// ////////////////////////////////////////////////////////////////////////////////////////////////
-// ////////////////////////////////////////////////////////////////////////////////////////////////
+    // ////////////////////////////////////////////////////////////////////////////////////////////////
 
-public function title($foo)
-{
-    $tag = 'h1';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function section($foo)
-{
-    $tag = 'h2';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function subsection($foo)
-{
-    $tag = 'h3';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function subsubsection($foo)
-{
-    $tag = 'h4';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
+    public function title($foo)
+    {
+        $tag = 'h1';
+        echo "<$tag>" . ucwords($foo) . "</$tag>";
+    }
+    public function section($foo)
+    {
+        $tag = 'h2';
+        echo "<$tag>" . ucwords($foo) . "</$tag>";
+    }
+    public function subsection($foo)
+    {
+        $tag = 'h3';
+        echo "<$tag>" . ucwords($foo) . "</$tag>";
+    }
+    public function subsubsection($foo)
+    {
+        $tag = 'h4';
+        echo "<$tag>" . ucwords($foo) . "</$tag>";
+    }
 
-public $start = '<p>';
-public $next = '</p>';
-public $quote = '<q>';
-public $endquote = '</q>';
-public $blockquote = '<blockquote>';
-public $endblockquote = '</blockquote>';
+    public $start = '<p>';
+    public $next = '</p>';
+    public $quote = '<q>';
+    public $endquote = '</q>';
+    public $blockquote = '<blockquote>';
+    public $endblockquote = '</blockquote>';
+    public function cite($foo)
+    {
+        $tag = 'cite';
+        echo "<$tag>" . ucwords($foo) . "</$tag>";
+    }
+    public function by($foo)
+    {
+        echo "</br> by " . ucwords($foo);
+    }
 
-public function cite($foo)
-{
-    $tag = 'cite';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function by($foo)
-{
-    echo "</br> by ucwords($foo).";
-}
+    public function emphasize($foo)
+    {
+        $tag = 'em';
+        echo "<$tag>$foo</$tag>";
+    }
+    public function strong($foo)
+    {
+        $tag = 'strong';
+        echo "<$tag>$foo</$tag>";
+    }
+    public function small($foo)
+    {
+        $tag = 'small';
+        echo "<$tag>$foo</$tag>";
+    }
+    public function mark($foo)
+    {
+        $tag = 'mark';
+        echo "<$tag>$foo</$tag>";
+    }
+    public function delete($foo)
+    {
+        $tag = 'del';
+        echo "<$tag>$foo</$tag>";
+    }
+    public function insert($foo)
+    {
+        $tag = 'ins';
+        echo "<$tag>$foo</$tag>";
+    }
+    public function subscribe($foo)
+    {
+        $tag = 'sub';
+        echo "<$tag>$foo</$tag>";
+    }
+    public function supscribe($foo)
+    {
+        $tag = 'sup';
+        echo "<$tag>$foo</$tag>";
+    }
+    // public function abbreviate($foo)
+    // 
+    //     $tag = 'abbr';
+    //     echo "<$tag> ucwords($foo) </$tag>";
+    // }
+    public function image($foo)
+    {
+        $tag = 'img';
+        echo "<$tag src=\"$foo\">";
+    }
 
-public function emphatize($foo)
-{
-    $tag = 'em';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function strong($foo)
-{
-    $tag = 'strong';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
+    // ////////////////////////////////////////////////////////////////////////////////////////////////
+    // ////////////////////////////////////////////////////////////////////////////////////////////////
+    // ////////////////////////////////////////////////////////////////////////////////////////////////
 
-public function small($foo)
-{
-    $tag = 'small';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function mark($foo)
-{
-    $tag = 'mark';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function delete($foo)
-{
-    $tag = 'del';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function insert($foo)
-{
-    $tag = 'ins';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function subscribe($foo)
-{
-    $tag = 'sub';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-public function supscribe($foo)
-{
-    $tag = 'sup';
-    echo "<$tag> ucwords($foo) </$tag>";
-}
-// public function abbreviate($foo)
-// 
-//     $tag = 'abbr';
-//     echo "<$tag> ucwords($foo) </$tag>";
-// }
-public function image($foo)
-{
-    $tag = 'img';
-    echo "<$tag src=\"$foo\">";
-}
+    public function abc()
+    {
+        $lang = $_POST['display_lang'];
+        $author = $_POST['my_fullname'];
+        $title = $_POST['site_title'];
+        $descr = $_POST['site_description'];
+        $keywords = $_POST['site_keywords'];
+        $css = $_POST['space_css'];
+        $ajax = $_POST['lib_ajax'];
+        $js = $_POST['space_js'];
 
-// ////////////////////////////////////////////////////////////////////////////////////////////////
-// ////////////////////////////////////////////////////////////////////////////////////////////////
-// ////////////////////////////////////////////////////////////////////////////////////////////////
+    echo <<<DECLARE
 
-public function abc()
-{
-    $lang = $_POST['display_lang'];
-    $author = $_POST['my_fullname'];
-    $title = $_POST['site_title'];
-    $descr = $_POST['site_description'];
-    $keywords = $_POST['site_keywords'];
-    $css = $_POST['space_css'];
-    $ajax = $_POST['lib_ajax'];
-    $js = $_POST['space_js'];
+    <!doctype html>
 
-echo <<<DECLARE
+    <html lang="$lang">
 
-<!doctype html>
+    <head>
 
-<html lang="$lang">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
+    <meta name="author" content="$author">
+    <title>$title</title>
+    <meta name="description" content="$descr">
+    <meta name="keywords" content="$keywords">
+    <link href="$css" type="text/css" rel="stylesheet">
+    <script defer src="$ajax"></script>
+    <script defer src="$js"></script>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="author" content="$author">
-<title>$title</title>
-<meta name="description" content="$descr">
-<meta name="keywords" content="$keywords">
-<link href="$css" type="text/css" rel="stylesheet">
-<script defer src="$ajax"></script>
-<script defer src="$js"></script>
-
-</head>
+    </head>
 
 DECLARE;
-}
+    }
 
-public function xyz()
-{
-    shut('body','html');
-}
+    public function xyz()
+    {
+        $this->shut('body','html');
+    }
 
 }
