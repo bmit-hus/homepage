@@ -22,7 +22,6 @@ header
 
     padding: var(--tiny) var(--smol);
 }
-header h1 { color: var(--bgcolor); }
 header h1:hover
 {
     color: var(--gold);
@@ -40,25 +39,29 @@ footer
 
 h1
 {
-    font-size: var(--giga);
+    font-size: var(--SIZE);
     text-transform: capitalize;
-    color: var(--site-color);
+    color: var(--bgcolor);
 }
 h2
 {
-    font-size: var(--mega);
+    margin: 0 0 var(--size);
+    font-size: var(--giga);
     text-transform: capitalize;
     color: var(--site-color);
 }
 h3
 {
-    font-size: var(--huge);
+    margin: var(--huge) 0 var(--size);
+    font-size: var(--mega);
     text-transform: capitalize;
     color: var(--site-color);
 }
 h4
 {
-    font-size: var(--larj);
+    margin: var(--huge) 0 var(--size);
+    font-size: var(--huge);
+    text-transform: capitalize;
     color: var(--site-color);
 }
 
@@ -79,6 +82,10 @@ strong
 {
     font-weight: bold;
     color: var(--site-color);
+}
+a
+{
+    color: var(--mgen);
 }
 
 

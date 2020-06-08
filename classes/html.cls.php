@@ -33,17 +33,17 @@ FOO;
         $tag = 'h1';
         echo "<$tag>" . ucwords($foo) . "</$tag>";
     }
-    public function section($foo)
+    public function pagetitle($foo)
     {
         $tag = 'h2';
         echo "<$tag>" . ucwords($foo) . "</$tag>";
     }
-    public function subsection($foo)
+    public function section($foo)
     {
         $tag = 'h3';
         echo "<$tag>" . ucwords($foo) . "</$tag>";
     }
-    public function subsubsection($foo)
+    public function subsection($foo)
     {
         $tag = 'h4';
         echo "<$tag>" . ucwords($foo) . "</$tag>";

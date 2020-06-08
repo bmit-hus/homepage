@@ -3,6 +3,13 @@
 class ADD
 {
 
+    public function mdcontent()
+    {
+        global $parsedown;
+        $site = $_POST['current_site'];
+        echo $parsedown->text(file_get_contents("markdown/$site.md"));
+    }
+
     public function path() // make clickable later
     {
         global $domain;
@@ -51,18 +58,16 @@ GER;
 
     public function inactive_button($button_name)
     {
-        $Button_Name = ucwords($button_name);
         echo <<<BUTTON
         <button class="gateway $button_name mono inactive" onClick="teleport_to_target_space()">
-        <h2>$Button_Name</h2></button>
+        <h2>$button_name</h2></button>
 BUTTON;
     }
     public function gateway_button($button_name)
     {
-        $Button_Name = ucwords($button_name);
         echo <<<BUTTON
-        <button class="gateway $button_name" onClick="teleport_to_target_space()">
-        <h2>$Button_Name</h2></button>
+        <button class="gateway $button_name" id="$button_name" onClick="teleport_to_target_space()">
+        <h2>$button_name</h2></button>
 BUTTON;
     }
 

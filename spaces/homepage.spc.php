@@ -10,8 +10,9 @@ $html->openw($header, 'left', '');
     $html->title('homepage');
 $html->shut($header);
 
-$html->openw($main, 'grid-container', '');
+$html->openw($main, 'grid-container left', '');
     // homepage content
+    $add->mdcontent();
 $html->shut($main);
 
 $html->openw($footer, 'right', '');
