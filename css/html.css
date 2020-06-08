@@ -9,7 +9,7 @@ body
 {
     font-size: var(--size);
     line-height: var(--shrt);
-    color: var(--main);
+    color: var(--base);
 }
 header
 {
@@ -84,6 +84,10 @@ strong
     color: var(--site-color);
 }
 a
+{
+    color: var(--half);
+}
+a:hover
 {
     color: var(--mgen);
 }
