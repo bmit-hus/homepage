@@ -1,8 +1,7 @@
 <?php
 
-class ADD
+class ADD extends Navigate
 {
-
     public function mdcontent()
     {
         global $parsedown;
@@ -32,29 +31,26 @@ GER;
             break;
         }
     }
-    public function path_statement() // make clickable later
+
+    public function copyright_declaration()
     {
-        global $domain;
-
-        $lang = $_POST['current_lang'];
-        $space = $_POST['current_space'];
-        $site = $_POST['current_site'];
-
-        switch($lang)
-        {
-            case 'english':
-                echo <<<ENG
-                Current location: <strong>$domain/$space/$site</strong>.
-ENG;
-            break;
-            case 'deutsch':
-                echo <<<GER
-                Aktuelle Seite: <strong>$domain/$space/$site</strong>.
-GER;
-            break;
-        }
+        global $copy;
+        echo "$copy Copyright " . $_POST['my_Fullname'];
     }
 
+    // 
+    // 
+    // 
+    // 
+    // 
+
+    public function nav_button($target)
+    {
+        echo <<<NAV
+            <input type="submit" class="navbutton" name="$target" value="$target" />
+NAV;
+    }
+    // https://stackoverflow.com/questions/20738329/how-to-call-a-php-function-on-the-click-of-a-button
 
     public function inactive_button($button_name)
     {
@@ -70,12 +66,4 @@ BUTTON;
         <h2>$button_name</h2></button>
 BUTTON;
     }
-
-
-    public function copyright_declaration()
-    {
-        global $copy;
-        echo "$copy Copyright " . $_POST['my_Fullname'];
-    }
-
 }

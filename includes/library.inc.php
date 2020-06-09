@@ -4,6 +4,7 @@
 $parsedown = new Parsedown();
 $html = new HTML();
 $add = new ADD();
+$navigate = new Navigate();
 
 // languages
 $english = new Lang('english');
@@ -18,6 +19,8 @@ $gateway = new Space('gateway');
 
 $homepage = new Space('homepage');
     $home = new Site('home');
+    $story = new Site('story');
+    $test = new Site('test');
 
 $business = new Space('business');
 
