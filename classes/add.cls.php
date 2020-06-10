@@ -66,4 +66,29 @@ BUTTON;
         <h2>$button_name</h2></button>
 BUTTON;
     }
+
+    public function newform()
+    {
+        // echo "<form action=";
+        // $_SERVER['PHP_SELF'];
+        // echo " method="post">";
+        $self = $_SERVER['PHP_SELF'];
+        echo <<<FORM
+            <form action="" method="post">
+FORM;
+    }
+    public function endform()
+    {
+        echo '</form>';
+    }
+    public function testbtn($target)
+    {
+        $_POST['current_space'] = $target;
+        $post = $_POST['current_space'];
+        $name = "$target";
+        echo <<<BTN
+            <input type="submit" class="gateway navbutton" name="$post" value="$name" />
+BTN;
+    }
+
 }

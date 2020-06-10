@@ -1,8 +1,11 @@
 My Blog
-=======
+-------------------------------------------------------------------------------
 
-> <q>There is much talk and I have listened - through rock and metal and time. Now, I shall talk and
-> you shall listen.</q> - Gravemind from Halo 2.
+> <q>
+> There is much talk and I have listened - through rock and metal and time. Now, I shall talk and
+> you shall listen.
+> </q> 
+> -- Gravemind from Halo 2.
 
 With these words was the Gravemind in Halo 2 introduced to the player the first time within the 
 franchise. To watch the scene follow [this link][1]. I love this introduction, and I can - somewhat

@@ -1,5 +1,5 @@
 Welcome Stranger
-----------------
+-------------------------------------------------------------------------------
 
 Currently, you are looking at my creators, **Stigie Huber**'s Website. The site 
 is mostly handwritten, and still far from complete. But for now, it does its purpose

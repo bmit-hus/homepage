@@ -1,5 +1,5 @@
 What Does It Mean *To Learn*?
-===============================================================================
+-------------------------------------------------------------------------------
 
 You might have asked yourself this question before. And maybe, you even
 found an answer, an answer which was sufficient for you to lay down this topic

@@ -35,9 +35,12 @@ footer
     color: var(--site-color);
     border-color: var(--site-color);
 }
-button > h2
+.navbutton
 {
     margin: 0 0 0;
+    font-size: var(--giga);
+    text-transform: capitalize;
+    color: var(--site-color);
 }
 
 

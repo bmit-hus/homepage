@@ -20,11 +20,8 @@ class Space
         $this->my_fullname = $this->my_firstname . ' ' . $this->my_lastname;
         $this->my_Fullname = ucwords($this->my_firstname . ' ' . $this->my_lastname . '.');
 
-        $this->lib_ajax = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
-
         $this->space_name = $set_space_name;
         $this->space_css = 'css/' . $this->space_name . '.hub.css';
-        $this->space_js = 'js/' . $this->space_name . '.hub.css';
     }
 
     public function post_space_vars()

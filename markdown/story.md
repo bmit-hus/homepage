@@ -1,5 +1,5 @@
 Background
-===============================================================================
+-------------------------------------------------------------------------------
 
 I have long been looking for my place where I am to contribute to the makings of 
 the world. In search of this path, I have looked my way around several different 

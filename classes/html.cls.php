@@ -128,8 +128,6 @@ FOO;
         $descr = $_POST['site_description'];
         $keywords = $_POST['site_keywords'];
         $css = $_POST['space_css'];
-        $ajax = $_POST['lib_ajax'];
-        $js = $_POST['space_js'];
 
     echo <<<DECLARE
 
@@ -147,8 +145,8 @@ FOO;
     <meta name="description" content="$descr">
     <meta name="keywords" content="$keywords">
     <link href="$css" type="text/css" rel="stylesheet">
-    <script defer src="$ajax"></script>
-    <script defer src="$js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="js/allinone.js"></script>
 
     </head>
 

@@ -7,10 +7,13 @@ $html->openw($header, 'left', '');
 $html->shut($header);
 
 $html->openw($main, 'grid-container', '');
-    $add->gateway_button('homepage');
-    $add->gateway_button('business');
-    $add->inactive_button('blog');
-    $add->gateway_button('contact');
+    $add->newform();
+        // $add->gateway_button('homepage');
+        // $add->gateway_button('business');
+        // $add->inactive_button('blog');
+        // $add->gateway_button('contact');
+        $add->testbtn('homepage');
+    $add->endform();
 $html->shut($main);
 
 $html->openw($footer, 'right', '');
