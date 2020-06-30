@@ -1,0 +1,56 @@
+/* TEXT ALIGN */
+.left
+{
+    text-align: left;
+}
+.right
+{
+    text-align: right;
+}
+.centered
+{
+    text-align: center;
+}
+
+/* NAVBUTTON */
+.navbutton
+{
+    margin: 0 0 0;
+    font-size: var(--giga);
+    text-transform: capitalize;
+    color: var(--site-color);
+}
+
+/* IMPORTANT CLASSES */
+.sans
+{
+    font-family: var(--sans) !important;
+}
+.serif
+{
+    font-family: var(--serf) !important;
+}
+.mono
+{
+    font-family: var(--mono) !important;
+}
+
+.upper
+{
+    text-transform: uppercase !important;
+}
+.lower
+{
+    text-transform: lowercase !important;
+}
+
+.inactive, .inactive > h2
+{
+    color: var(--none) !important;
+    border-color: var(--dark) !important;
+}
+.inactive:hover, .inactive:hover > h2
+{
+    color: var(--grey) !important;
+    border-color: var(--grey) !important;
+}

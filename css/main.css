@@ -1,0 +1,10 @@
+@charset "uft-8";
+/* everything but monospace font, from the noto family */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif&family=Noto+Serif+JP&family=Noto+Serif+KR&family=Noto+Serif+SC&display=swap');
+/* monospace font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+@import 'reset.css';
+@import 'root.css';
+@import 'html.css';
+@import 'classes.css';

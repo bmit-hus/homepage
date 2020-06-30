@@ -1,0 +1,5 @@
+<?php
+
+// more code
+
+// EOF
