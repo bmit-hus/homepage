@@ -1,7 +1,7 @@
 <?php
 
-include 'includes/class-autoload.inc.php';
-include 'includes/library.inc.php';
+include_once 'includes/class-autoload.inc.php';
+include_once 'includes/library.inc.php';
 
 if (!isset($_POST['current_lang']))
 {

@@ -1,10 +1,10 @@
 <?php
 
-include 'includes/lib-handler.inc.php';
-include 'includes/variables.inc.php';
+include_once 'includes/lib-handler.inc.php';
+include_once 'includes/variables.inc.php';
 
 $html->abc();
 
-include "spaces/$active_space.spc.php";
+include_once "spaces/$active_space.spc.php";
 
 $html->xyz();
