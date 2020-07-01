@@ -1,6 +1,6 @@
 <?php
 
-$arch = new Arch();
+$page = new Page('test','en','testpage');
 
 // more code
 
