@@ -5,22 +5,28 @@ html{
   font-family: var(--sans);
 }
 body{
+  margin: auto;
+  max-width: 75rem;
+
   font-size: var(--size);
   line-height: var(--shrt);
   color: var(--base);
 }
 header{
-  border-radius: var(--smol);
+  border-radius: var(--r);
+  border: var(--mini) solid;
   padding: var(--smol);
 
-  background-color: var(--site-color);
+  background-color: var(--dark);
+  color: var(--site-color);
+  /* border-color: var(--site-color); */
 }
 header h1:hover{
   color: var(--gold);
 }
 main{
   margin: var(--smol) 0;
-  border-radius: var(--smol);
+  border-radius: var(--r);
   padding: var(--smol);
 
   background-color: var(--dark);
@@ -34,9 +40,9 @@ footer{
 }
 
 h1{
-  font-size: var(--SIZE);
+  font-size: var(--giga);
   text-transform: capitalize;
-  color: var(--bgcolor);
+  /* color: var(--bgcolor); */
 }
 h2{
   margin: 0 0 var(--size);

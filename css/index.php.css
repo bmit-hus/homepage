@@ -14,15 +14,18 @@
 :root{
   --bgcolor: var(--none);
   --site-color: var(--yllw);
+
   --homepage-color: var(--cyan);
   --business-color: var(--blue);
   --blog-color: var(--vlet);
   --contact-color: var(--gryn);
+
+  --r: var(--cyde);
 }
 
 /**
  * LOCAL CSS
- */
+**/
 
 .gateway
 {
@@ -62,7 +65,7 @@
 
 /**
  * RESPONSIVE DESIGN: mobile first approach!
- */
+**/
 
 .gateway
 {

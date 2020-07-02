@@ -8,8 +8,7 @@ include_once 'includes/library.inc.php';
 
 $add->openw('header', 'left', '');
 
-  // $add->title( 'the title' );
-  // $add->title('landing space');
+  $add->title( 'landing page' );
 
 $add->shut('header');
 
@@ -28,8 +27,7 @@ $add->shut('main');
 
 $add->openw('footer', 'right', '');
 
-  $add->nonesense();
-  // $add->copyright_declaration();
+  $add->declare_c();
 
 $add->shut('footer');
 
