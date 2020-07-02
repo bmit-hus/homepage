@@ -1,93 +1,79 @@
-html
-{
-    background: var(--bgcolor);
-    margin: var(--size);
+html{
+  background: var(--bgcolor);
+  margin: var(--size);
 
-    font-family: var(--sans);
+  font-family: var(--sans);
 }
-body
-{
-    font-size: var(--size);
-    line-height: var(--shrt);
-    color: var(--base);
+body{
+  font-size: var(--size);
+  line-height: var(--shrt);
+  color: var(--base);
 }
-header
-{
-    margin-bottom: var(--SIZE);
-    background-color: var(--site-color);
+header{
+  border-radius: var(--smol);
+  padding: var(--smol);
 
-    border-radius: var(--size);
-    border-bottom: var(--mini) solid;
-    border-color: var(--site-color);
-
-    padding: var(--tiny) var(--smol);
+  background-color: var(--site-color);
 }
-header h1:hover
-{
-    color: var(--gold);
+header h1:hover{
+  color: var(--gold);
 }
-footer
-{
-    margin-top: var(--SIZE);
-    border-top: var(--nano) solid;
-    padding:  var(--smol) 0 var(--GIGA);
+main{
+  margin: var(--smol) 0;
+  border-radius: var(--smol);
+  padding: var(--smol);
 
-    color: var(--site-color);
-    border-color: var(--site-color);
+  background-color: var(--dark);
+}
+footer{
+  border-top: var(--mini) solid;
+  padding:  var(--smol) var(--smol) var(--GIGA);
+
+  color: var(--site-color);
+  border-color: var(--site-color);
 }
 
-
-h1
-{
-    font-size: var(--SIZE);
-    text-transform: capitalize;
-    color: var(--bgcolor);
+h1{
+  font-size: var(--SIZE);
+  text-transform: capitalize;
+  color: var(--bgcolor);
 }
-h2
-{
-    margin: 0 0 var(--size);
-    font-size: var(--giga);
-    text-transform: capitalize;
-    color: var(--site-color);
+h2{
+  margin: 0 0 var(--size);
+  font-size: var(--giga);
+  text-transform: capitalize;
+  color: var(--site-color);
 }
-h3
-{
-    margin: var(--huge) 0 var(--size);
-    font-size: var(--mega);
-    text-transform: capitalize;
-    color: var(--site-color);
+h3{
+  margin: var(--huge) 0 var(--size);
+  font-size: var(--mega);
+  text-transform: capitalize;
+  color: var(--site-color);
 }
-h4
-{
-    margin: var(--huge) 0 var(--size);
-    font-size: var(--huge);
-    text-transform: capitalize;
-    color: var(--site-color);
+h4{
+  margin: var(--huge) 0 var(--size);
+  font-size: var(--huge);
+  text-transform: capitalize;
+  color: var(--site-color);
 }
 
-p
-{
-    padding-bottom: var(--size);
+p{
+  padding-bottom: var(--size);
 }
-q
-{
-    padding-bottom: var(--size);
+q{
+  padding-bottom: var(--size);
 }
-em
-{
-    font-style: italic;
-    color: var(--site-color);
+em{
+  font-style: italic;
+  color: var(--site-color);
 }
-strong
-{
-    font-weight: bold;
-    color: var(--site-color);
+strong{
+  font-weight: bold;
+  color: var(--site-color);
 }
-a
-{
-    color: var(--half);
+a{
+  color: var(--half);
 }
-a:hover
-{
-    color: var(--mgen);
+a:hover{
+  color: var(--mgen);
 }

@@ -1,5 +1,4 @@
-:root {
-
+:root{
   /* fonts */
   --mono: 'Space Mono', monospace;
   --sans: 'Noto Sans', sans-serif;
@@ -52,12 +51,4 @@
   --blue: #268bd2;
   --cyan: #2aa198;
   --gryn: #859900;
-
-  --bgcolor: var(--none);
-
-  --portal-color: var(--yllw);
-  --homepage-color: var(--cyan);
-  --business-color: var(--blue);
-  --blog-color: var(--vlet);
-  --contact-color: var(--gryn);
 }
