@@ -7,6 +7,14 @@
   --sfKR: 'Noto Serif KR', serif;
   --sfSC: 'Noto Serif SC', serif;
 
+  /* page color variables */
+  --portal-color: var(--yllw);
+  --homepage-color: var(--cyan);
+  --business-color: var(--blue);
+  --blog-color: var(--vlet);
+  --contact-color: var(--gryn);
+  --test-color: var(--mgen);
+
   /* sizes */
   --shrt: 1.5;
   --tall: 1.75;
@@ -51,4 +59,7 @@
   --blue: #268bd2;
   --cyan: #2aa198;
   --gryn: #859900;
+
+  /* miscellanious */
+  --r: var(--cyde);
 }

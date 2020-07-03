@@ -1,5 +1,8 @@
 <?php
 
+// for testing purposes
+  echo $_SERVER['REQUEST_URI'];
+
 // load meta info
   $arch = new Arch();
 // load PageElement builder

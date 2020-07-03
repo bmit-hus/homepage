@@ -1,0 +1,40 @@
+/**
+ * RESPONSIVE DESIGN: mobile first approach!
+**/
+
+/*
+.gateway
+{
+  min-height: var(--HUGE);
+  min-width: calc( 3 * var(--HUGE) );
+}
+.gateway > h2
+{
+  font-size: var(--mega);
+}
+
+@media only screen and (min-width: 800px)
+{
+  .gateway
+  {
+    min-height: var(--MEGA);
+    min-width: calc( 3 * var(--MEGA) );
+  }
+  .gateway > h2
+  {
+    font-size: var(--giga);
+  }
+}
+
+@media only screen and (min-width: 1000px)
+{
+  .gateway
+  {
+    min-height: var(--GIGA);
+    min-width: calc( 3 * var(--GIGA) );
+  }
+  .gateway > h2
+  {
+    font-size: var(--SIZE);
+  }
+}

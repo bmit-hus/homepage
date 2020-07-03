@@ -1,3 +1,7 @@
+/**
+ * HTML & BODY
+**/
+
 html{
   background: var(--bgcolor);
   margin: var(--size);
@@ -12,6 +16,11 @@ body{
   line-height: var(--shrt);
   color: var(--base);
 }
+
+/**
+ * HEADER
+**/
+
 header{
   border-radius: var(--r);
   border: var(--mini) solid;
@@ -24,6 +33,53 @@ header{
 header h1:hover{
   color: var(--gold);
 }
+
+/**
+ * NAVIGATION
+**/
+
+nav{
+  text-align: center;
+  margin: var(--tiny);
+}
+nav a{
+  margin: var(--smol);
+  border-radius: var(--r);
+  padding: var(--tiny);
+
+  text-decoration: none;
+
+  background-color: var(--dark);
+}
+nav a.index:hover{
+  color: var(--solr);
+  background-color: var(--portal-color);
+}
+nav a.homepage:hover{
+  color: var(--solr);
+  background-color: var(--homepage-color);
+}
+nav a.business:hover{
+  color: var(--solr);
+  background-color: var(--business-color);
+}
+nav a.blog:hover{
+  color: var(--solr);
+  background-color: var(--blog-color);
+}
+nav a.contact:hover{
+  color: var(--solr);
+  background-color: var(--contact-color);
+}
+nav a.test:hover{
+  color: var(--solr);
+  background-color: var(--test-color);
+}
+
+/**
+ * MAIN
+**/
+
 main{
   margin: var(--smol) 0;
   border-radius: var(--r);
@@ -31,6 +87,11 @@ main{
 
   background-color: var(--dark);
 }
+
+/**
+ * FOOTER
+**/
+
 footer{
   border-top: var(--mini) solid;
   padding:  var(--smol) var(--smol) var(--GIGA);
@@ -38,6 +99,10 @@ footer{
   color: var(--site-color);
   border-color: var(--site-color);
 }
+
+/**
+ * TEXT
+**/
 
 h1{
   font-size: var(--giga);

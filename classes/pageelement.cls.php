@@ -36,6 +36,70 @@ class PageElement
       echo "</ $foo >";
     }
   }
+  
+  /**
+   * NAVIGATION methods
+  **/
+
+  public function target( $target )
+  {
+    $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+    // adjust path depending on file location
+      if ( strpos( $url, 'pages' ) !== false )
+      {
+        $path = '';
+      }
+      else
+      {
+        $path = './pages/';
+      }
+
+    $ext = '.php';
+
+    $target_file = $path . $target . $ext;
+
+    // if target 'index' set $target_name to 'home' 
+    if ( $target == 'index')
+    {
+      $target_name = 'Portal';
+    }
+    else
+    {
+      $target_name = ucwords($target);
+    }
+
+    // check if target exists
+    // if ( !file_exists( $target_file ) )
+    // {
+    //   return false;
+    // }
+
+    // check if target is self
+    if ( $_SERVER['REQUEST_URI'] == $target_file)
+    {
+      return false;
+    }
+
+    // output
+    echo <<<TARGET
+      <a class="navbtn $target" href="$target_file"> $target_name </a>
+TARGET;
+  }
+
+  public function navbar()
+  {
+    echo "<nav>";
+      $this->target( 'index');
+      $this->target( 'homepage');
+      $this->target( 'portfolio');
+      // $this->target( 'business');
+      $this->target( 'blog');
+      $this->target( 'contact');
+
+      $this->target('test');
+    echo "</nav>";
+  }
 
   /**
    * Header methods
@@ -45,7 +109,7 @@ class PageElement
   {
     $Title = ucwords( $title );
     echo <<<TITLE
-    <h1> $Title </h1>
+      <h1> $Title </h1>
 TITLE;
   }
 

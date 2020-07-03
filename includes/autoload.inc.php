@@ -4,7 +4,7 @@ spl_autoload_register('class_autoload');
   function class_autoload( $class )
   {
     $url = $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-    if ( strpos( $url, 'includes' ) !== false )
+    if ( strpos( $url, 'pages' ) !== false )
     {
       $path = '../classes/';
     }

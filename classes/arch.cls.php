@@ -5,6 +5,9 @@ class Arch
   // constructor provides head section of page
   function __construct()
   {
+    // import variables:
+    global $root;
+
     $lang = "en";
     $title = "";
     $descr = "";
@@ -26,9 +29,9 @@ class Arch
         <title>$title</title>
         <meta name="description" content="$descr">
         <meta name="keywords" content="$keywords">
-        <link href="css/$file_name.css" type="text/css" rel="stylesheet">
+        <link href="$root/css/main/$file_name.css" type="text/css" rel="stylesheet">
         <script defer src="$ajax_lib"></script>
-        <script defer src="js/$js_file.js"></script>
+        <script defer src="$root/js/$js_file.js"></script>
       </head>
       <body>
 DECLARE;

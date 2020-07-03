@@ -1,8 +1,6 @@
 <?php
 
-// preload code
-include_once 'includes/autoload.inc.php';
-include_once 'includes/library.inc.php';
+include_once 'includes/global.inc.php';
 
 // page code
 
@@ -12,16 +10,11 @@ $add->openw('header', 'left', '');
 
 $add->shut('header');
 
+$add->navbar();
+
 $add->openw('main', 'grid-container', '');
 
   $add->lorem_ipsum();
-  // $add->newform();
-      // $add->gateway_button('homepage');
-      // $add->gateway_button('business');
-      // $add->inactive_button('blog');
-      // $add->gateway_button('contact');
-      // $add->testbtn('homepage');
-  // $add->endform();
 
 $add->shut('main');
 
