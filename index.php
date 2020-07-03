@@ -12,7 +12,8 @@ $add->navbar();
 
 $add->openw('main', 'grid-container', '');
 
-  $add->lorem_ipsum();
+  $add->content('index');
+  // $add->lorem_ipsum();
 
 $add->shut('main');
 

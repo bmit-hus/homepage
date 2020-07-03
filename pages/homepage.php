@@ -4,7 +4,7 @@ include_once '../includes/global.inc.php';
 
 $add->openw('header', 'left', '');
 
-  $add->title( 'test' );
+  $add->title( 'homepage' );
 
 $add->shut('header');
 

@@ -106,6 +106,19 @@ TITLE;
   }
 
   /**
+   * MAIN methods
+  **/
+
+  public function content( $target )
+  {
+    // get parsedown variable
+    global $root;
+    global $parsedown;
+
+    $parsedown->text( file_get_contents( "$root/content/$target.md" ));
+  }
+
+  /**
    * Footer methods
   **/
 

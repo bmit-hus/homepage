@@ -4,7 +4,7 @@ include_once '../includes/global.inc.php';
 
 $add->openw('header', 'left', '');
 
-  $add->title( 'test' );
+  $add->title( 'blog' );
 
 $add->shut('header');
 

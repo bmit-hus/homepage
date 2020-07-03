@@ -7,6 +7,8 @@
   $arch = new Arch();
 // load PageElement builder
   $add = new PageElement();
+// get Parsedown
+  $parsedown = new Parsedown();
 
 // page informations
   $portal = new Page('portal','en','portal landing page');

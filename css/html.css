@@ -37,7 +37,7 @@ header{
 
 nav{
   text-align: center;
-  margin: var(--cyde);
+  margin: var(--larj);
 }
 nav a{
   margin: var(--smol);
@@ -80,11 +80,13 @@ nav a.test:hover{
 **/
 
 main{
-  margin: var(--smol) 0;
+  margin: var(--huge) 0;
+  border: var(--mini) inset;
   border-radius: var(--r);
   padding: var(--smol);
 
   background-color: var(--dark);
+  border-color: var(--site-color);
 }
 
 /**
