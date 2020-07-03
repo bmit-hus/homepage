@@ -2,8 +2,6 @@
 
 include_once 'includes/global.inc.php';
 
-// page code
-
 $add->openw('header', 'left', '');
 
   $add->title( 'landing page' );

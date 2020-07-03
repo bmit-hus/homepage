@@ -43,48 +43,45 @@ class PageElement
 
   public function target( $target )
   {
-    $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    // import $root
+    global $root;
 
-    // adjust path depending on file location
-      if ( strpos( $url, 'pages' ) !== false )
-      {
-        $path = '';
-      }
-      else
-      {
-        $path = './pages/';
-      }
+    // check if file exists >> hide
 
-    $ext = '.php';
+    // check if target is self >> hide
 
-    $target_file = $path . $target . $ext;
-
-    // if target 'index' set $target_name to 'home' 
+    // check target: if(index){}else{}
     if ( $target == 'index')
     {
       $target_name = 'Portal';
+      echo <<<INDEX
+        <a class="navbtn $target" href="$root/$target.php"> $target_name </a>
+INDEX;
     }
     else
     {
       $target_name = ucwords($target);
+      echo <<<PAGE
+        <a class="navbtn $target" href="$root/pages/$target.php"> $target_name </a>
+PAGE;
     }
 
     // check if target exists
-    // if ( !file_exists( $target_file ) )
-    // {
-    //   return false;
-    // }
+    if ( !file_exists( $target) )
+    {
+      return false;
+    }
 
     // check if target is self
-    if ( $_SERVER['REQUEST_URI'] == $target_file)
+    if ( $_SERVER['REQUEST_URI'] == "$target.php")
     {
       return false;
     }
 
     // output
-    echo <<<TARGET
-      <a class="navbtn $target" href="$target_file"> $target_name </a>
-TARGET;
+    // echo <<<TARGET
+      // <a class="navbtn $target" href="$target_file"> $target_name </a>
+// TARGET;
   }
 
   public function navbar()
