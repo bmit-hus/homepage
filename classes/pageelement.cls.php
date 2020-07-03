@@ -47,8 +47,20 @@ class PageElement
     global $root;
 
     // check if file exists >> hide
+    if ( 
+      !file_exists( "$root/$target.php") &&
+      !file_exists( "$root/pages/$target.php" ))
+    {
+      return false;
+    }
 
     // check if target is self >> hide
+    if ( 
+      $_SERVER['REQUEST_URI'] == "$root/$target.php" &&
+      $_SERVER['REQUEST_URI'] == "$root/pages/$target.php")
+    {
+      return false;
+    }
 
     // check target: if(index){}else{}
     if ( $target == 'index')
@@ -65,23 +77,6 @@ INDEX;
         <a class="navbtn $target" href="$root/pages/$target.php"> $target_name </a>
 PAGE;
     }
-
-    // check if target exists
-    if ( !file_exists( $target) )
-    {
-      return false;
-    }
-
-    // check if target is self
-    if ( $_SERVER['REQUEST_URI'] == "$target.php")
-    {
-      return false;
-    }
-
-    // output
-    // echo <<<TARGET
-      // <a class="navbtn $target" href="$target_file"> $target_name </a>
-// TARGET;
   }
 
   public function navbar()
@@ -89,12 +84,12 @@ PAGE;
     echo "<nav>";
       $this->target( 'index');
       $this->target( 'homepage');
-      $this->target( 'portfolio');
-      // $this->target( 'business');
+      $this->target( 'business');
       $this->target( 'blog');
       $this->target( 'contact');
 
       $this->target('test');
+      $this->target('new');
     echo "</nav>";
   }
 
