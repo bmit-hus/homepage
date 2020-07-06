@@ -3,7 +3,7 @@
 /* custom :root-variables */
 :root{
   --bgcolor: var(--none);
-  --site-color: var(--portal-color);
+  --site-color: var(--homepage-color);
 }
 
 /**

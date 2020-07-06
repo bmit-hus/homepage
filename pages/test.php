@@ -2,12 +2,9 @@
 
 include_once "../includes/global.inc.php";
 
-$add->openw('header', 'left', '');
-
-  $add->title( 'test' );
-  $add->navbar();
-
-$add->shut('header');
+$title = 'just a testpage';
+$subtitle = 'this is';
+include_once "$root/includes/header.inc.php";
 
 $add->openw('main', 'grid-container', '');
 
@@ -15,10 +12,7 @@ $add->openw('main', 'grid-container', '');
 
 $add->shut('main');
 
-$add->openw('footer', 'right', '');
-
-  $add->declare_c();
-
-$add->shut('footer');
+include_once "$root/includes/navigation.inc.php";
+include_once "$root/includes/footer.inc.php";
 
 // EOF

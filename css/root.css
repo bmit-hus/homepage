@@ -11,9 +11,8 @@
   --r: var(--cyde);
 
   /* page color variables */
-  --portal-color: var(--yllw);
-  --personal-color: var(--cyan);
-  --business-color: var(--blue);
+  --homepage-color: var(--yllw);
+  --portfolio-color: var(--blue);
   --blog-color: var(--vlet);
   --contact-color: var(--gryn);
   --test-color: var(--mgen);

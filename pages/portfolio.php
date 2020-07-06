@@ -1,24 +1,17 @@
 <?php
 
-include_once "../includes/global.inc.php";
+include_once '../includes/global.inc.php';
 
-$add->openw('header', 'left', '');
-
-  $add->title( 'portfolio' );
-  $add->navbar();
-
-$add->shut('header');
+$title = 'my web portfolio';
+$subtitle = 'allow me to introduce myself';
+include_once "$root/includes/header.inc.php";
 
 $add->openw('main', 'grid-container', '');
 
-  $add->lorem_ipsum();
 
 $add->shut('main');
 
-$add->openw('footer', 'right', '');
-
-  $add->declare_c();
-
-$add->shut('footer');
+include_once "$root/includes/navigation.inc.php";
+include_once "$root/includes/footer.inc.php";
 
 // EOF

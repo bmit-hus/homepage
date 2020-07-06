@@ -2,23 +2,16 @@
 
 include_once '../includes/global.inc.php';
 
-$add->openw('header', 'left', '');
-
-  $add->title( 'contact' );
-  $add->navbar();
-
-$add->shut('header');
+$title = 'contact me';
+$subtitle = 'feel free to';
+include_once "$root/includes/header.inc.php";
 
 $add->openw('main', 'grid-container', '');
 
-  $add->lorem_ipsum();
 
 $add->shut('main');
 
-$add->openw('footer', 'right', '');
-
-  $add->declare_c();
-
-$add->shut('footer');
+include_once "$root/includes/navigation.inc.php";
+include_once "$root/includes/footer.inc.php";
 
 // EOF

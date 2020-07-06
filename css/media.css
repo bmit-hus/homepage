@@ -2,39 +2,40 @@
  * RESPONSIVE DESIGN: mobile first approach!
 **/
 
-/*
-.gateway
-{
-  min-height: var(--HUGE);
-  min-width: calc( 3 * var(--HUGE) );
+/**
+ * HEADER
+ *
+ * NAVBAR is closed for smartphones &| small screens but becomes visible
+ * from 700px onwards.
+ *
+**/
+
+.navbar{
+  visibility: hidden;
 }
-.gateway > h2
-{
-  font-size: var(--mega);
+.navmenu{
+  visibility: hidden;
+  
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+
+  background-color: var(--dark);
 }
 
-@media only screen and (min-width: 800px)
-{
-  .gateway
-  {
-    min-height: var(--MEGA);
-    min-width: calc( 3 * var(--MEGA) );
+  @media only screen and (min-width: 700px){
+    header{
+      display: grid;
+      grid-template-columns: 40% 60%;
+    }
+    .navbar{
+      visibility: hidden;
+      display: flexbox;
+    }
+    .navmenu{
+      visibility: hidden;
+    }
   }
-  .gateway > h2
-  {
-    font-size: var(--giga);
+  @media only screen and (min-width: 1400px){
+    /* for almost fullscreen displays */
   }
-}
-
-@media only screen and (min-width: 1000px)
-{
-  .gateway
-  {
-    min-height: var(--GIGA);
-    min-width: calc( 3 * var(--GIGA) );
-  }
-  .gateway > h2
-  {
-    font-size: var(--SIZE);
-  }
-}

@@ -3,5 +3,5 @@
 /* custom :root-variables */
 :root{
   --bgcolor: var(--none);
-  --site-color: var(--business-color);
+  --site-color: var(--portfolio-color);
 }
