@@ -1,7 +1,0 @@
-@import '../global.css';
-
-/* custom :root-variables */
-:root{
-  --bgcolor: var(--none);
-  --site-color: var(--homepage-color);
-}

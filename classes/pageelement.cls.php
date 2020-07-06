@@ -56,8 +56,8 @@ class PageElement
 
     // check if target is self >> hide
     if ( 
-      $_SERVER['REQUEST_URI'] == "$root/$target.php" &&
-      $_SERVER['REQUEST_URI'] == "$root/pages/$target.php")
+      strpos( $_SERVER['REQUEST_URI'], $target) == true
+    )
     {
       return false;
     }
@@ -65,7 +65,7 @@ class PageElement
     // check target: if(index){}else{}
     if ( $target == 'index')
     {
-      $target_name = 'Portal';
+      $target_name = 'homepage';
       echo <<<INDEX
         <a class="navbtn $target" href="$root/$target.php"> $target_name </a>
 INDEX;
@@ -83,7 +83,6 @@ PAGE;
   {
     echo "<nav>";
       $this->target( 'index');
-      $this->target( 'homepage');
       $this->target( 'business');
       $this->target( 'blog');
       $this->target( 'contact');
@@ -103,6 +102,13 @@ PAGE;
     echo <<<TITLE
       <h1> $Title </h1>
 TITLE;
+  }
+  public function subtitle( $subtitle )
+  {
+    $Subtitle = ucwords( $subtitle );
+    echo <<<SUBTITLE
+      <h2> $Subtitle </h2>
+SUBTITLE;
   }
 
   /**

@@ -4,11 +4,11 @@ include_once 'includes/global.inc.php';
 
 $add->openw('header', 'left', '');
 
-  $add->title( 'landing page' );
+  $add->subtitle( 'welcome to my' );
+  $add->title( 'homepage' );
+  $add->navbar();
 
 $add->shut('header');
-
-$add->navbar();
 
 $add->openw('main', 'grid-container', '');
 

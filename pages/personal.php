@@ -5,10 +5,9 @@ include_once '../includes/global.inc.php';
 $add->openw('header', 'left', '');
 
   $add->title( 'homepage' );
+  $add->navbar();
 
 $add->shut('header');
-
-$add->navbar();
 
 $add->openw('main', 'grid-container', '');
 

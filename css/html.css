@@ -22,6 +22,7 @@ body{
 **/
 
 header{
+  display: grid;
   border-radius: var(--r);
   border: var(--mini) inset;
   padding: var(--smol);
@@ -30,14 +31,13 @@ header{
   color: var(--site-color);
   border-color: var(--site-color);
 }
-
-/**
- * NAVIGATION
-**/
+header h1{
+  text-align: left;
+}
 
 nav{
-  text-align: center;
-  margin: var(--larj);
+  text-align: right;
+  /* margin: var(--larj); */
 }
 nav a{
   margin: var(--smol);
@@ -54,9 +54,9 @@ nav a.index:hover{
   color: var(--solr);
   background-color: var(--portal-color);
 }
-nav a.homepage:hover{
+nav a.personal:hover{
   color: var(--solr);
-  background-color: var(--homepage-color);
+  background-color: var(--personal-color);
 }
 nav a.business:hover{
   color: var(--solr);
@@ -74,6 +74,11 @@ nav a.test:hover{
   color: var(--solr);
   background-color: var(--test-color);
 }
+
+/**
+ * NAVIGATION
+**/
+
 
 /**
  * MAIN

@@ -1,7 +1,7 @@
 <?php
 
 // for testing purposes
-  // echo $_SERVER['REQUEST_URI'];
+  echo $_SERVER['REQUEST_URI'];
 
 // load meta info
   $arch = new Arch();
