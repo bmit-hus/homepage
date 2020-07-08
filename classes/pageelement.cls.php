@@ -151,7 +151,7 @@ SUBTITLE;
   public function declare_c()
   {
     echo <<<COPYRIGHT
-      &#169; Copyright Stigie Huber
+      <em> &#169; Copyright Stigie Huber </em>
 COPYRIGHT;
   }
 

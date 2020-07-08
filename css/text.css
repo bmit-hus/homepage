@@ -1,0 +1,56 @@
+/* GENERAL */
+body{
+  font-family: var(--sans);
+  font-size: var(--size);
+	line-height: var(--shrt);
+	padding-bottom: var(--smol);
+
+	color: var(--base);
+}
+h1, h2, a, em, strong{
+	color: var(--site-color);
+}
+
+/* HEADINGS */
+h1{
+	/* title */
+	font-size: var(--giga);
+}
+h2{
+	/* subtitle */
+	font-size: var(--huge);
+	padding-bottom: 0;
+}
+h3{
+	/* section */
+	font-size: var(--larj);
+}
+h4{
+	/* subsection */
+	font-size: var(--larj);
+}
+h5{
+	/* subsubsection */
+	font-size: var(--size);
+}
+h6{
+	/* subsubsubsection */
+	font-size: var(--size);
+}
+
+/* PARAGRAPHS */
+p{
+}
+q{
+}
+em{
+}
+strong{
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: overline;
+}

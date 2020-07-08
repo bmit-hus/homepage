@@ -1,0 +1,22 @@
+/* ~PHONES */
+html{
+	background: var(--bgcolor);
+	margin: var(--size);
+	max-width: 75rem;
+}
+
+/* ~TABLETS ************************************************************ */
+@media only screen and ( min-width: 700px){
+	html{
+		margin: var(--size) auto;
+		max-width: 45rem;
+	}
+}
+
+/* ~DESKTOPS ************************************************************ */
+@media only screen and ( min-width: 1400px){
+	html{
+		margin: var(--size) auto;
+		max-width: 75rem;
+	}
+}
