@@ -1,4 +1,6 @@
-<?php // look up "Font Awesome" for icons:
+<?php
+
+// look up "Font Awesome" for icons:
 // header('Location: https://hus.bm-it.ch/');
 
 // include_once "meta/db-handler.php";
@@ -27,3 +29,5 @@ include "meta/header.php";
 include "meta/footer.php";
 
 shut('body', 'html');
+
+// EOF
