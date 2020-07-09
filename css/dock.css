@@ -1,0 +1,65 @@
+nav{
+	/* show or not */
+	display: none;
+
+	/* dispay on top and stretch over page*/
+	overflow-x: hidden;
+	z-index: 1;
+	position: fixed;
+	max-width: 40rem;
+	top: var(--GIGA);
+	right: var(--SIZE);
+	bottom: var(--SIZE);
+	left: var(--SIZE);
+
+	/* style nav */
+	background: var(--bgcolor);
+}
+nav > *{
+	margin: var(--smol);
+}
+nav h2{
+	padding-bottom: var(--size);
+}
+nav ul{
+	margin: var(--smol);
+}
+nav li{
+	margin: var(--smol) calc(-1 * var(--mini));
+	background: var(--bgcolor);
+	border: var(--mini) inset;
+	border-radius: var(--r); 
+	border-color: var(--site-color);
+	padding: var(--tiny);
+	color: var(--solr);
+}
+nav li.inactive a{
+	color: var(--grey);
+}
+nav li:hover a{
+	color: var(--solr);
+}
+nav li.index:hover, nav li ul{
+	background: var(--homepage-color);
+}
+nav li.portfolio:hover, nav li ul{
+	background: var(--portfolio-color);
+}
+nav li.blog:hover, nav li ul{
+	background: var(--blog-color);
+}
+nav li.contact:hover, nav li ul{
+	background: var(--contact-color);
+}
+
+/* ~TABLETS ************************************************************ */
+@media only screen and ( min-width: 700px){
+	nav{
+		top: var(--GIGA);
+		bottom: var(--SIZE);
+	}
+}
+
+/* ~DESKTOPS *********************************************************** */
+@media only screen and ( min-width: 1400px){
+}

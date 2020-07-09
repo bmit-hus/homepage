@@ -38,81 +38,6 @@ class PageElement
   }
   
   /**
-   * NAVIGATION methods
-  **/
-
-  public function target( $target )
-  {
-    // import $root
-    global $root;
-
-    // check if file exists >> hide
-    if ( 
-      !file_exists( "$root/$target.php") &&
-      !file_exists( "$root/pages/$target.php" ))
-    {
-      return false;
-    }
-
-
-    // check target: if(index){}else{}
-    if ( $target == 'index')
-    {
-      // check if target is self >> set inactive
-      if ( strpos( $_SERVER['REQUEST_URI'], $target) == true)
-      {
-        $target_name = 'homepage';
-        echo <<<INACTIVE
-          <a class="navbtn $target inactive" href="$root/$target.php"> $target_name </a>
-INACTIVE;
-      }
-      else // paste normal link
-      {
-      $target_name = 'homepage';
-      echo <<<INDEX
-        <a class="navbtn $target" href="$root/$target.php"> $target_name </a>
-INDEX;
-      }
-    }
-    else // for all other pages
-    {
-      // check if target is self >> set inactive
-      if ( strpos( $_SERVER['REQUEST_URI'], $target) == true)
-      {
-        $target_name = ucwords($target);
-        echo <<<INACTIVE
-          <a class="navbtn $target inactive" href="$root/pages/$target.php"> $target_name </a>
-INACTIVE;
-      }
-      else // paste normal link
-      {
-        $target_name = ucwords($target);
-        echo <<<PAGE
-          <a class="navbtn $target" href="$root/pages/$target.php"> $target_name </a>
-PAGE;
-      }
-    }
-
-  }
-
-  public function navbar()
-  {
-    $this->openw('div', 'navbar','');
-      $this->target( 'index');
-      $this->target( 'portfolio');
-      $this->target( 'blog');
-      $this->target( 'contact');
-    $this->shut('div');
-  }
-
-  public function navmenu()
-  {
-    $this->openw('nav', 'navmenu','');
-      // insert navmenu
-    $this->shut('nav');
-  }
-
-  /**
    * Header methods
   **/
 
@@ -151,7 +76,7 @@ SUBTITLE;
   public function declare_c()
   {
     echo <<<COPYRIGHT
-      <em> &#169; Copyright Stigie Huber </em>
+      <p> &#169; Copyright Stigie Huber </p>
 COPYRIGHT;
   }
 

@@ -1,8 +1,25 @@
-/* ~PHONES */
+@import 'dock.css';
+
+/* ~PHONES ************************************************************* */
 html{
 	background: var(--bgcolor);
 	margin: var(--size);
-	max-width: 75rem;
+}
+body > *{
+	margin: var(--smol);
+	border: var(--mini) inset;
+	border-radius: var(--r); 
+	border-color: var(--site-color);
+	padding: var(--smol);
+}
+
+footer{
+	border: none;
+	border-top: var(--mini) inset;
+	border-color: var(--site-color);
+	
+	font-style: none;
+	color: var(--site-color);
 }
 
 /* ~TABLETS ************************************************************ */
@@ -13,10 +30,10 @@ html{
 	}
 }
 
-/* ~DESKTOPS ************************************************************ */
+/* ~DESKTOPS *********************************************************** */
 @media only screen and ( min-width: 1400px){
 	html{
 		margin: var(--size) auto;
-		max-width: 75rem;
+		max-width: calc( 1.5 * 45rem);
 	}
 }
