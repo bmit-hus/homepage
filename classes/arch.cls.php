@@ -8,16 +8,23 @@ class Arch
     // import variables:
     global $root;
 
-    $lang = "en";
-    $title = "";
-    $descr = "";
-    $keywords = "";
+    $lang = 'en-us';
+    $title = '';
+    $descr = '';
+    $keywords = '';
 
-    $file_path = $_SERVER['PHP_SELF'];
-    $file_name = basename($file_path);
+    if ( !isset( $_POST['theme']))
+    {
+      $theme = 'dark';
+    }
+    else
+    {
+      $theme = $_POST['theme'];
+    }
+    $file_name = basename( $_SERVER['PHP_SELF'] );
     
-    $ajax_lib = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js";
-    $js_file = "";
+    $ajax_lib = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+    $js_file = '';
 
     echo <<<DECLARE
       <!doctype html>
@@ -29,7 +36,7 @@ class Arch
         <title>$title</title>
         <meta name="description" content="$descr">
         <meta name="keywords" content="$keywords">
-        <link href="$root/css/main/$file_name.css" type="text/css" rel="stylesheet">
+        <link href="$root/css/$theme/$file_name.css" type="text/css" rel="stylesheet">
         <script defer src="$ajax_lib"></script>
         <script defer src="$root/js/$js_file.js"></script>
       </head>

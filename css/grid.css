@@ -1,0 +1,80 @@
+body{
+	display: grid;
+	grid-gap: var(--smol);
+	grid-template-areas: 
+		'. head .'
+		'. main .'
+		'. foot .'
+	;
+	grid-template-columns: 1fr 14fr 1fr;
+}
+
+header{ grid-area: head; }
+nav{ 	  grid-area: navi; }
+main{	  grid-area: main; }
+/* aside{  grid-area: side; } */
+footer{	grid-area: foot; }
+
+
+@media only screen and (min-width: 900px){
+	body{
+		grid-template-areas: 
+			'. head .'
+			'. main .'
+			'. foot .'
+		;
+		grid-template-columns: 1.5fr 13fr 1.5fr;
+	}
+}
+@media only screen and (min-width: 1200px){
+	body{
+		grid-template-areas: 
+			'. head head .'
+			'. main navi .'
+			'. foot foot .'
+		;
+		grid-template-columns: 2fr 8.5fr 3.5fr 2fr;
+	}
+	nav{
+		display: block;
+	}
+}
+@media only screen and (min-width: 1500px){
+	body{
+		grid-template-areas: 
+			'. head head .'
+			'. main navi .'
+			'. foot foot .'
+		;
+		grid-template-columns: 2.5fr 8fr 3fr 2.5fr;
+	}
+	nav{
+		display: block;
+	}
+}
+@media only screen and (min-width: 1800px){
+	body{
+		grid-template-areas: 
+			'. head head .'
+			'. main navi .'
+			'. foot foot .'
+		;
+		grid-template-columns: 3fr 8fr 3fr 3fr;
+	}
+	nav{
+		display: block;
+	}
+}
+@media only screen and (min-width: 2100px){
+	body{
+		grid-template-areas: 
+			'. head head .'
+			'. main navi .'
+			'. foot foot .'
+		;
+		grid-template-columns: 3fr 8fr 3fr auto;
+	}
+	nav{
+		display: block;
+	}
+}

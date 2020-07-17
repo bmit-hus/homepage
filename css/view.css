@@ -1,39 +1,32 @@
-@import 'dock.css';
-
-/* ~PHONES ************************************************************* */
 html{
-	background: var(--bgcolor);
+	background: var( --base-color);
+	color: var(--text-color);
 	margin: var(--size);
 }
 body > *{
 	margin: var(--smol);
+}
+
+nav{
+	display: none;
+	text-align: center;
+	border: none;
+}
+nav ul{
+	margin: var(--tiny);
+}
+nav li{
+	margin: var(--smol);
 	border: var(--mini) inset;
-	border-radius: var(--r); 
+	border-radius: var(--radius);
 	border-color: var(--site-color);
-	padding: var(--smol);
 }
 
 footer{
 	border: none;
 	border-top: var(--mini) inset;
 	border-color: var(--site-color);
-	
-	font-style: none;
+	border-radius: var(--radius);
+	text-align: right;
 	color: var(--site-color);
-}
-
-/* ~TABLETS ************************************************************ */
-@media only screen and ( min-width: 700px){
-	html{
-		margin: var(--size) auto;
-		max-width: 45rem;
-	}
-}
-
-/* ~DESKTOPS *********************************************************** */
-@media only screen and ( min-width: 1400px){
-	html{
-		margin: var(--size) auto;
-		max-width: calc( 1.5 * 45rem);
-	}
 }

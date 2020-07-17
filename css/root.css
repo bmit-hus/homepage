@@ -8,13 +8,14 @@
   --sfSC: 'Noto Serif SC', serif;
 
   /* miscellanious */
-  --r: var(--cyde);
+  --radius: 0.25rem;
+  --speed: 350ms;
 
   /* page color variables */
-  --homepage-color: var(--yllw);
-  --portfolio-color: var(--blue);
+  --home-color: var(--yllw);
+  --work-color: var(--blue);
   --blog-color: var(--vlet);
-  --contact-color: var(--gryn);
+  --mail-color: var(--gryn);
   --test-color: var(--mgen);
 
   /* sizes */

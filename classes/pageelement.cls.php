@@ -50,9 +50,8 @@ TITLE;
   }
   public function subtitle( $subtitle )
   {
-    $Subtitle = ucwords( $subtitle );
     echo <<<SUBTITLE
-      <h2> $Subtitle </h2>
+      <p class="subtitle"> $subtitle </p>
 SUBTITLE;
   }
 

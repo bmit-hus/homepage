@@ -1,6 +1,6 @@
 <?php
 
-$add->openw('footer', 'right', '');
+$add->open('footer');
 
   $add->declare_c();
 

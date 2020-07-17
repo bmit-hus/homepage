@@ -31,6 +31,24 @@ INACTIVE;
 INDEX;
 		}
 	}
+	// check if contact
+	elseif ( $target == 'contact')
+	{
+		$target_name = 'Contact';
+		// check if target is self >> set inactive
+		if ( strpos( $_SERVER['REQUEST_URI'], $target) == true)
+		{
+			echo <<<INACTIVE
+				<li class="navbtn $target inactive"><a href="$root/pages/$target.php"> $target_name </a></li>
+INACTIVE;
+		}
+		else // paste normal link
+		{
+			echo <<<CONTACT
+				<li class="navbtn $target fillin"><a href="$root/pages/$target.php"> $target_name </a></li>
+CONTACT;
+		}
+	}
 	else // for all other pages
 	{
 		// check if target is self >> set inactive
@@ -51,30 +69,42 @@ PAGE;
 	}
 }
 
+function switch_theme()
+{
+	
+}
+
 $add->openw('nav', '','');
-	$add->subtitle('navigation dock');
+	// $add->subtitle('navigation dock');
 	$add->open('ul');
-		target( 'index');
+
+		$switch_theme();
+
+	$add->shut('ul');
+
+	$add->open('ul');
+
+		target('index');
 			$add->open('ul');
-				target( 'test');
-				target( 'test');
+				target('test');
+				target('test');
 			$add->shut('ul');
 
-		target( 'portfolio');
+		target('work');
 			$add->open('ul');
-				target( 'test');
-				target( 'test');
-				target( 'test');
+				target('test');
+				target('test');
+				target('test');
 			$add->shut('ul');
 
-		target( 'blog');
+		target('blog');
 			$add->open('ul');
-				target( 'test');
-				target( 'test');
-				target( 'test');
+				target('test');
+				target('test');
+				target('test');
 			$add->shut('ul');
 
-		target( 'contact');
+		target('contact');
 
 	$add->shut('ul');
 $add->shut('nav');

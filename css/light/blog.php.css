@@ -1,7 +1,7 @@
 @import '../global.css';
+@import 'theme.css';
 
 /* custom :root-variables */
 :root{
-  --bgcolor: var(--none);
-  --site-color: var(--test-color);
+  --site-color: var(--blog-color);
 }

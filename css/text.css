@@ -1,53 +1,56 @@
 /* GENERAL */
-body{
+body, body > *{
   font-family: var(--sans);
   font-size: var(--size);
 	line-height: var(--shrt);
-	padding-bottom: var(--smol);
-
-	color: var(--base);
 }
 h1, h2, a, em, strong{
 	color: var(--site-color);
 }
 
 /* HEADINGS */
+h1, h2, h3, h4, h5, h6{
+	text-transform: capitalize;
+}
 h1{
 	/* title */
+	background: var(--site-color);
+	border-radius: var(--radius);
+	text-align: center;
 	font-size: var(--giga);
-  text-transform: capitalize;
+	color: var( --base-color);
+}
+.subtitle{
+	padding: var(--mini);
+	font-size: var(--huge);
 }
 h2{
-	/* subtitle */
-	padding-bottom: 0;
-	font-size: var(--huge);
-  text-transform: capitalize;
-}
-h3{
 	/* section */
 	font-size: var(--larj);
-  text-transform: capitalize;
 }
-h4{
+h3{
 	/* subsection */
 	font-size: var(--larj);
-  text-transform: capitalize;
+}
+h4{
+	/* subsubsection */
+	font-size: var(--larj);
 }
 h5{
-	/* subsubsection */
-	font-size: var(--size);
-  text-transform: capitalize;
-}
-h6{
 	/* subsubsubsection */
 	font-size: var(--size);
-  text-transform: capitalize;
+}
+h6{
+	/* subsubsubsubsection */
+	font-size: var(--size);
 }
 
 /* PARAGRAPHS */
 p{
+	padding: var(--smol) 0;
 }
 q{
+	padding: var(--larj) var(--size);
 }
 em{
 	font-style: italic;
@@ -57,7 +60,4 @@ strong{
 }
 a{
 	text-decoration: none;
-}
-a:hover{
-	/* text-decoration: overline; */
 }

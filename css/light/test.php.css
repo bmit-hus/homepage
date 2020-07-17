@@ -1,0 +1,7 @@
+@import '../global.css';
+@import 'theme.css';
+
+/* custom :root-variables */
+:root{
+  --site-color: var(--test-color);
+}

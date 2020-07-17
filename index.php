@@ -6,13 +6,10 @@ $title = 'my homepage';
 $subtitle = 'welcome to';
 include_once "$root/includes/header.inc.php";
 include_once "$root/includes/navigation.inc.php";
-
-$add->openw('main', 'grid-container', '');
-
-
-
-$add->shut('main');
-
 include_once "$root/includes/footer.inc.php";
+
+include_once "$root/includes/ipsum.inc.php";
+
+// page content
 
 // EOF

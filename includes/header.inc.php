@@ -1,11 +1,9 @@
 <?php
 
-$add->openw('header', 'left', '');
+$add->open('header');
 
-  $add->open('div');
-    $add->subtitle( $subtitle );
-    $add->title( $title );
-  $add->shut('div');
+  $add->subtitle( $subtitle );
+  $add->title( $title );
 
 $add->shut('header');
 
