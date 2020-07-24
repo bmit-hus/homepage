@@ -1,0 +1,65 @@
+:root{
+  /* fonts */
+  --mono: 'Space Mono', monospace;
+  --sans: 'Noto Sans', sans-serif;
+  --serf: 'Noto Serif', serif;
+  --sfJP: 'Noto Serif JP', serif;
+  --sfKR: 'Noto Serif KR', serif;
+  --sfSC: 'Noto Serif SC', serif;
+
+  /* miscellanious */
+  --radius: 0.25rem;
+  --speed: 350ms;
+
+  /* page color variables */
+  --home-color: var(--yllw);
+  --work-color: var(--blue);
+  --blog-color: var(--vlet);
+  --mail-color: var(--gryn);
+  --test-color: var(--mgen);
+
+  /* sizes */
+  --shrt: 1.5;
+  --tall: 1.75;
+
+  --nano: 0.1rem;
+  --mini: 0.2rem;
+  --tiny: 0.4rem;
+  --smol: 0.6rem;
+  --cyde: 0.8rem;
+  
+  --size: 1.0rem;
+
+  --larj: 1.2rem;
+  --huge: 1.4rem;
+  --mega: 1.8rem;
+  --giga: 2.0rem;
+  
+  --SIZE: 3.0rem;
+  --LARJ: 4.0rem;
+  --HUGE: 6.0rem;
+  --MEGA: 7.5rem;
+  --GIGA: 9.0rem;
+
+  /* color scheme */
+  --none: #002b36;
+  --dark: #073642;
+  --grey: #586e75;
+  --base: #657b83;
+  --step: #839496;
+  --half: #93a1a1;
+  --solr: #eee8d5;
+  --high: #fdf6e3;
+
+  --main: #bbb891;
+
+  --gold: #ffd700;
+  --yllw: #b58900;
+  --ornj: #cb4b16;
+  --redx: #dc322f;
+  --mgen: #d33682;
+  --vlet: #6c71c4;
+  --blue: #268bd2;
+  --cyan: #2aa198;
+  --gryn: #859900;
+}

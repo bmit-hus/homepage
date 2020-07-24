@@ -1,33 +1,16 @@
 <?php
 
-// look up "Font Awesome" for icons:
-// header('Location: https://hus.bm-it.ch/');
+include_once "includes/setup.inc.php";
 
-// include_once "meta/db-handler.php";
-include "imported/parsedown.php";
-include "meta/run.php";
-include "meta/var.php";
+echo <<<NAVIGATE
 
-$load->html();
+  <a href="$root/pages/home.php"><button>home</button></a>
+  <a href="$root/pages/business.php"><button>business</button></a>
+  <a href="$root/pages/blog.php"><button>blog</button></a>
+  <a href="$root/pages/contact.php"><button>contact</button></a>
 
-open('head');
+NAVIGATE;
 
-$load->metadata();
-
-shutopen('head', 'body');
-
-include "meta/header.php";
-
-    openw('div', 'container frame');
-
-        include "meta/navbar.php";
-
-        $load->content();
-
-    shut('div');
-
-include "meta/footer.php";
-
-shut('body', 'html');
+// 
 
 // EOF

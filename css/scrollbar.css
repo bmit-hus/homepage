@@ -1,0 +1,33 @@
+/* width */
+::-webkit-scrollbar {
+  width: var(--mini);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var( --background-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--text-color);
+	border-radius: var(--radius);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--site-color);
+}
+
+@media only screen and ( min-width: 600px){
+	/* width */
+	::-webkit-scrollbar {
+		width: var(--tiny);
+	}
+}
+@media only screen and ( min-width: 1200px){
+	/* width */
+	::-webkit-scrollbar {
+		width: var(--smol);
+	}
+}

@@ -1,0 +1,32 @@
+html{
+	background: var( --base-color);
+	color: var(--text-color);
+	margin: var(--size);
+}
+body > *{
+	margin: var(--smol);
+}
+
+nav{
+	display: none;
+	text-align: center;
+	border: none;
+}
+nav ul{
+	margin: var(--tiny);
+}
+nav li{
+	margin: var(--smol);
+	border: var(--mini) inset;
+	border-radius: var(--radius);
+	border-color: var(--site-color);
+}
+
+footer{
+	border: none;
+	border-top: var(--mini) inset;
+	border-color: var(--site-color);
+	border-radius: var(--radius);
+	text-align: right;
+	color: var(--site-color);
+}

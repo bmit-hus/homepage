@@ -1,0 +1,23 @@
+/* everything but monospace font, from the noto family */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif&family=Noto+Serif+JP&family=Noto+Serif+KR&family=Noto+Serif+SC&display=swap');
+/* monospace font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+/* reset everything */
+@import 'reset.css';
+
+/* set :root variables */
+@import 'root.css';
+
+/* define text properties */
+@import 'text.css';
+/* define grafical (& grid) properties */
+@import 'view.css';
+/* define grid properties */
+@import 'grid.css';
+
+/* define important css classes */
+/* @import 'important.css'; */
+
+/* stylize scrollbar */
+@import 'scrollbar.css';
