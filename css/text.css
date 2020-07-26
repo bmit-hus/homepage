@@ -1,0 +1,84 @@
+/* GENERAL */
+body, body > * {
+  font-family: var(--sans);
+  font-size: var(--size);
+	line-height: 1;
+}
+a, em, strong {
+	color: var(--site-color);
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+	color: var(--site-color);
+	font-weight: bold;
+  text-transform: capitalize;
+}
+h1, h2 {
+	border-bottom: var(--mini) var(--border-style);
+	padding-bottom: var(--mini);
+}
+h2, h3, h4 {
+	padding-top: var(--giga);
+}
+h3, h4 {
+	border-bottom: var(--nano) var(--border-style);
+	padding-bottom: var(--nano);
+	padding-top: var(--size);
+}
+h5, h6 {
+	border: none;
+	padding-top: var(--smol);
+}
+
+h1 {
+	font-size: var(--giga);
+}
+h2 {
+	font-size: var(--mega);
+}
+h3 {
+	font-size: var(--huge);
+}
+h4 {
+	font-size: var(--larj);
+}
+h5 {
+	font-size: var(--bigr);
+}
+h6 {
+	font-size: var(--bigx);
+}
+
+/* PARAGRAPHS */
+p {
+	padding: 0;
+}
+q {
+	padding: var(--larj) var(--size);
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+}
+button {
+	font-size: var(--size);
+}
+
+/* CLASSES */
+.title {
+	background: var(--site-color);
+	border-radius: var(--border-radius);
+	text-align: center;
+	font-size: var(--giga);
+	color: var( --base-color);
+}
+.subtitle {
+	padding: var(--mini);
+	font-size: var(--huge);
+}

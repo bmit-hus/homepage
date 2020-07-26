@@ -1,0 +1,10 @@
+a button {
+  margin: var(--smol);
+  border: var(--nano) var(--border-style);
+  border-radius: var(--border-radius);
+  padding: var(--smol);
+
+  background-color: var(--base-color);
+  border-color: var(--site-color);
+  color: var(--site-color);
+}

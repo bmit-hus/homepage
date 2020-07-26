@@ -1,32 +1,32 @@
-html{
+html {
 	background: var( --base-color);
 	color: var(--text-color);
 	margin: var(--size);
 }
-body > *{
+body > * {
 	margin: var(--smol);
 }
 
-nav{
+nav {
 	display: none;
 	text-align: center;
 	border: none;
 }
-nav ul{
+nav ul {
 	margin: var(--tiny);
 }
-nav li{
+nav li {
 	margin: var(--smol);
-	border: var(--mini) inset;
-	border-radius: var(--radius);
+	border: var(--mini) var(--border-style);
+	border-radius: var(--border-radius);
 	border-color: var(--site-color);
 }
 
-footer{
+footer {
 	border: none;
-	border-top: var(--mini) inset;
+	border-top: var(--mini) var(--border-style);
 	border-color: var(--site-color);
-	border-radius: var(--radius);
+	border-radius: var(--border-radius);
 	text-align: right;
 	color: var(--site-color);
 }

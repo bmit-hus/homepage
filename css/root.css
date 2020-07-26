@@ -1,4 +1,4 @@
-:root{
+:root {
   /* fonts */
   --mono: 'Space Mono', monospace;
   --sans: 'Noto Sans', sans-serif;
@@ -8,7 +8,8 @@
   --sfSC: 'Noto Serif SC', serif;
 
   /* miscellanious */
-  --radius: 0.25rem;
+  --border-radius: 0.25rem;
+  --border-style: inset;
   --speed: 350ms;
 
   /* page color variables */
@@ -30,10 +31,12 @@
   
   --size: 1.0rem;
 
-  --larj: 1.2rem;
-  --huge: 1.4rem;
-  --mega: 1.8rem;
-  --giga: 2.0rem;
+  --bigx: 1.2rem;
+  --bigr: 1.4rem;
+  --larj: 1.6rem;
+  --huge: 1.8rem;
+  --mega: 2.0rem;
+  --giga: 2.2rem;
   
   --SIZE: 3.0rem;
   --LARJ: 4.0rem;
