@@ -29,4 +29,15 @@ footer {
 	border-radius: var(--border-radius);
 	text-align: right;
 	color: var(--site-color);
+} 
+
+a button {
+  margin: var(--smol);
+  border: var(--mini) var(--border-style);
+  border-radius: var(--border-radius);
+  padding: var(--smol);
+
+  background-color: var(--base-color);
+  border-color: var(--site-color);
+  color: var(--site-color);
 }

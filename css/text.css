@@ -2,28 +2,25 @@
 body, body > * {
   font-family: var(--sans);
   font-size: var(--size);
-	line-height: 1;
+	line-height: var(--shrt);
 }
 a, em, strong {
 	color: var(--site-color);
 }
 
 /* HEADINGS */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .title {
 	color: var(--site-color);
+	border-color: var(--site-color);
 	font-weight: bold;
   text-transform: capitalize;
 }
 h1, h2 {
-	border-bottom: var(--mini) var(--border-style);
-	padding-bottom: var(--mini);
-}
-h2, h3, h4 {
-	padding-top: var(--giga);
+  border-bottom: var(--mini) var(--border-style);
+	padding-top: var(--bigr);
 }
 h3, h4 {
 	border-bottom: var(--nano) var(--border-style);
-	padding-bottom: var(--nano);
 	padding-top: var(--size);
 }
 h5, h6 {
@@ -52,7 +49,7 @@ h6 {
 
 /* PARAGRAPHS */
 p {
-	padding: 0;
+	padding: var(--smol) 0;
 }
 q {
 	padding: var(--larj) var(--size);
@@ -73,12 +70,14 @@ button {
 /* CLASSES */
 .title {
 	background: var(--site-color);
-	border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+
 	text-align: center;
-	font-size: var(--giga);
+  font-size: var(--giga);
 	color: var( --base-color);
 }
 .subtitle {
 	padding: var(--mini);
-	font-size: var(--huge);
+	text-align: right;
+	font-size: var(--bigr);
 }

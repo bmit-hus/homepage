@@ -5,7 +5,5 @@
 
 /* custom :root-variables */
 :root{
-  --base-color: var(--none);
-  --text-color: var(--main);
   --site-color: var(--home-color);
 }

@@ -10,10 +10,10 @@ body {
 }
 
 header { grid-area: head; }
-nav { 	  grid-area: navi; }
-main {	  grid-area: main; }
-/* aside {  grid-area: side; } */
-footer {	grid-area: foot; }
+nav { grid-area: navi; }
+main { grid-area: main; }
+aside { grid-area: side; }
+footer { grid-area: foot; }
 
 
 @media only screen and (min-width: 900px) {

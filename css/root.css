@@ -13,14 +13,14 @@
   --speed: 350ms;
 
   /* page color variables */
-  --home-color: var(--yllw);
+  --home-color: var(--mgen);
   --work-color: var(--blue);
   --blog-color: var(--vlet);
   --mail-color: var(--gryn);
   --test-color: var(--mgen);
 
   /* sizes */
-  --shrt: 1.5;
+  --shrt: 1.25;
   --tall: 1.75;
 
   --nano: 0.1rem;

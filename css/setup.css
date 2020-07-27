@@ -12,11 +12,9 @@
 /* define text properties */
 @import 'text.css';
 /* define grafical (& grid) properties */
-@import 'view.css';
-/* style properties */
-@import 'styles.css';
+@import 'design.css';
 /* define grid properties */
-/* @import 'grid.css'; */
+@import 'grid.css';
 
 /* define important css classes */
 /* @import 'important.css'; */
