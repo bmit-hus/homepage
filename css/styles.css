@@ -14,6 +14,17 @@ body > * {
 }
 
 
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+/* nav */
+/* aside */
+/* main */
+/* footer */
+
+
 
 a, em, strong {
 	color: var(--site-color);
@@ -74,4 +85,14 @@ a {
 }
 button {
 	font-size: var(--size);
+  text-transform: capitalize;
+
+  margin: var(--smol);
+  border: var(--mini) var(--border-style);
+  border-radius: var(--border-radius);
+  padding: var(--smol);
+
+  background-color: var(--base-color);
+  border-color: var(--site-color);
+  color: var(--site-color);
 }

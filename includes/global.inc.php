@@ -1,8 +1,9 @@
 <?php
 
-include_once "$goto_root/includes/autoload-classes.inc.php";
+include_once "$root/includes/autoload-classes.inc.php";
 
 $make = new Website();
+$add = new Element();
 $parsedown = new Parsedown();
 
 // EOF

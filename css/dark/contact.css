@@ -3,5 +3,5 @@
 @import "theme.css";
 
 :root {
-  --site-color: var(--index-color);
+  --site-color: var(--contact-color);
 }

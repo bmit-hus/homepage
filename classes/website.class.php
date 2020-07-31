@@ -5,7 +5,6 @@ class Website
   private $path_to_root;
   private $page_theme;
   private $file_name;
-  private $ajax_lib;
   public function get_path_to_root()
   {
     $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -35,10 +34,7 @@ class Website
   {
     $this->file_name = rtrim( basename ( $_SERVER[ 'PHP_SELF']), '.php');
   }
-  private function get_ajax_lib()
-  {
-    $this->ajax_lib = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
-  }
+
 
   private $lang;
   private $title;
@@ -80,7 +76,8 @@ class Website
         <meta name="description" content="$this->descr">
         <meta name="keywords" content="$this->keywords">
         <link href="$this->path_to_root/css/$this->page_theme/$this->file_name.css" type="text/css" rel="stylesheet">
-        <script defer src="$this->ajax_lib"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/c192e4453c.js" crossorigin="anonymous"></script>
         <script defer src="$this->path_to_root/js/$this->scripts.js"></script>
       </head>
       <body>
@@ -97,7 +94,6 @@ DECLARE;
     $this->get_path_to_root();
     $this->get_page_theme();
     $this->get_file_name();
-    $this->get_ajax_lib();
 
     $this->set_lang_var( 'en-us');
     $this->set_title_var( '');
