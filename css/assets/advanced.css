@@ -1,4 +1,10 @@
-.hidden {
-  opacity: 0;
-  transition: ease-in-out 500ms;
+@media (max-width: 800px) {
+  .hidden-on-mobile {
+    opacity: 0;
+    transition: ease-in-out 500ms;
+  }
+}
+
+.shant-exist {
+  display: none;
 }

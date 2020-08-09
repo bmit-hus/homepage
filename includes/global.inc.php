@@ -6,12 +6,11 @@ $make = new Website();
 $add = new Element();
 $parsedown = new Parsedown();
 
-function fill( $iteration)
-{
-  for ($iteration = 0; $iteration <= 10; $iteration++)
-  {
-    echo "The quick brown fox jumps over the lazy dog. ";
-  }
-}
+include_once "$root/includes/function.inc.php";
+
+
+// include_once "$root/assets/elements/test-template.html";
+include_once "$root/assets/page-elements.php";
+
 
 // EOF
