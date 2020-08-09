@@ -29,11 +29,13 @@ header,
 }
 
 
-.page-name::before {
-  display: inline-block;
-  content: 'current page:';
-  color: var(--base);
-  font-size: .8rem;
+@media (min-width: 400px) {
+  .page-name::before {
+    display: inline-block;
+    content: 'current page:';
+    color: var(--base);
+    font-size: .8rem;
+  }
 }
 
 
