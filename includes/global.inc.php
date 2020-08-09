@@ -8,9 +8,4 @@ $parsedown = new Parsedown();
 
 include_once "$root/includes/function.inc.php";
 
-
-// include_once "$root/assets/elements/test-template.html";
-include_once "$root/assets/page-elements.php";
-
-
 // EOF
