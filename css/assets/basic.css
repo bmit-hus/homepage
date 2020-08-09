@@ -41,10 +41,6 @@ ul, ol {
 
 @media (min-width: 800px) {
   html {
-    padding: 2rem;
-  }
-
-  aside {
-    display: block;
+    padding: 2rem 5rem;
   }
 }

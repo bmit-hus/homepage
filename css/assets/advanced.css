@@ -1,0 +1,4 @@
+.hidden {
+  opacity: 0;
+  transition: ease-in-out 500ms;
+}
