@@ -78,11 +78,12 @@ class Website
         <meta name="keywords" content="$this->keywords">
         <link href="$this->path_to_root/css/$this->file_name.css" type="text/css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/c192e4453c.js" crossorigin="anonymous"></script>
-        <script defer src="$this->path_to_root/js/$this->scripts.js"></script>
+        <script defer src="$this->path_to_root/js/scripts.js"></script>
       </head>
       <body>
 DECLARE;
+        // <script src="https://kit.fontawesome.com/c192e4453c.js" crossorigin="anonymous"></script>
+        // <script defer src="$this->path_to_root/js/$this->scripts.js"></script>
   }
   private function close_html()
   {

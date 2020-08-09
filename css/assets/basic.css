@@ -17,9 +17,18 @@ body {
   line-height: 1.5;
 }
 
+header {
+  position: relative;
+}
+
 main {
   max-width: 80ch;
 }
+
+aside {
+  display: none;
+}
+
 
 a:hover, em, strong {
   color: var(--gold);
@@ -29,8 +38,13 @@ ul, ol {
   list-style: none;
 }
 
+
 @media (min-width: 800px) {
   html {
     padding: 2rem;
+  }
+
+  aside {
+    display: block;
   }
 }
