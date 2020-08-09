@@ -64,3 +64,9 @@ header,
   /* opacity: 0; */
   transform: rotate(-45deg) translateY(-3px) translateX(2px);
 }
+
+@media (min-width: 800px) {
+  .burger-menu {
+    display: none;
+  }
+}
