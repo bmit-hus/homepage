@@ -1,5 +1,6 @@
 :root {
   font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 16px;
 }
 
@@ -9,12 +10,12 @@
 }
 
 html {
-  padding: 1rem;
+  padding: 1ch;
 }
 
 body {
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 header {
@@ -30,17 +31,23 @@ aside {
 }
 
 
-a:hover, em, strong {
-  color: var(--gold);
+a:hover, em, strong, blockquote {
+  color: var(--site-color);
+}
+
+blockquote {
+  text-transform: lowercase;
+  margin: 1ch 2ch;
 }
 
 ul, ol {
   list-style: none;
+  margin-left: 4ch;
 }
 
 
 @media (min-width: 800px) {
   html {
-    padding: 2rem 5rem;
+    padding: 2ch 10ch;
   }
 }
