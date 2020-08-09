@@ -1,0 +1,11 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner:first-child {
+  margin-right: auto;
+}
+.banner:last-child {
+  margin-left: auto;
+}

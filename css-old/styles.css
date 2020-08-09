@@ -1,3 +1,5 @@
+@import "styles/header.css";
+
 html {
   background: var(--base-color);
   color: var(--text-color);
@@ -12,19 +14,6 @@ body {
 body > * {
   margin: var(--smol);
 }
-
-
-/* header */
-header {
-  display: flex;
-  justify-content: space-between;
-}
-/* nav */
-/* aside */
-/* main */
-/* footer */
-
-
 
 a, em, strong {
 	color: var(--site-color);

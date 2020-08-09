@@ -1,0 +1,36 @@
+:root {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+* {
+  background-color: var(--none);
+  color: var(--main);
+}
+
+html {
+  padding: 1rem;
+}
+
+body {
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 80ch;
+}
+
+a:hover, em, strong {
+  color: var(--gold);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+@media (min-width: 800px) {
+  html {
+    padding: 2rem;
+  }
+}

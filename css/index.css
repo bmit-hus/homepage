@@ -1,0 +1,13 @@
+@charset "uft-8";
+
+/* import font : Open Sans Family (regular, italic & bold) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+@import "assets/color-scheme.css";
+@import "assets/basic.css";
+@import "assets/grid.css";
+
+/* @import "elements/banner.css"; */
+
+:root {
+  --site-color: var(--mgen);
+}
