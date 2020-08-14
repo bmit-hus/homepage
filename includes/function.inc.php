@@ -16,6 +16,16 @@ function parse( $this_file)
   echo $parsedown->text(file_get_contents( $this_file));
 }
 
+function create( $element)
+{
+  global $root;
+  global $self;
+
+  open( $element);
+    parse( "$root/assets/content/$self/$element.md");
+  close( $element);
+}
+
 // 
 
 // EOF
