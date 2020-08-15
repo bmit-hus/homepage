@@ -1,53 +1,67 @@
 :root {
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
+  font-size: 1.17em;
+  line-height: 1.25;
+
+  --home:     #b58900;
+  --about:    #cb4b16;
+  --projects: #268bd2;
+  --blog:     #6c71c4;
+  --contact:  #859900;
+  --login:    #2aa198;
 }
 
 * {
-  background-color: var(--none);
-  color: var(--main);
+  margin: 0;
+  padding: 0;
+
+  color: var(--solr);
+  background: var(--none);
 }
+
+
+/* ELEMENTS */
 
 html {
-  padding: 1ch;
+  padding: 1em;
 }
-
 body {
+  /* min() uses the smallest value */
+  width: min(1000px, 90%); 
   margin: 0 auto;
-  line-height: 1.25;
 }
 
-header {
-  position: relative;
+button {
+  font-size: 1rem;
+  padding: 0.3em;
+  border-radius: 0.5em;
+}
+button:hover {
+  color: var(--site-color);
+  border-color: var(--site-color);
 }
 
-main {
-  max-width: 80ch;
-}
 
-aside {
-  display: none;
-}
-
+/* TEXT */
 
 a:hover, em, strong, blockquote {
-  color: var(--site-color);
+  color: var(--main);
 }
-
+a {
+  color: var(--site-color);
+  text-decoration: none;
+}
 blockquote {
   text-transform: lowercase;
   margin: 1ch 2ch;
 }
 
-ul, ol {
-  list-style: none;
-  margin-left: 4ch;
-}
-
-
-@media (min-width: 800px) {
-  html {
-    padding: 2ch 10ch;
-  }
+* + p,
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+  padding-top: 1.5em;
 }

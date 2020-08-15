@@ -1,26 +1,41 @@
+/* ELEMENTS */
+@import "../elements/banner.css";
+/* @import "elements/navigation.css"; */
+
+@import "../elements/hamburger.css";
+
+
+/* RETURN HOME */
+.return--button::before {
+  display: inline-block;
+  content: 'return';
+
+  font-size: 0.8em;
+  color: var(--base);
+}
+
 /* make links display color of target page */
-.go-home:hover {
-  color: var(--yllw);
+.goto-home:hover,
+.goto-home:focus {
+  color: var(--home);
 }
-.go-about:hover {
-  color: var(--blue);
+.goto-about:hover,
+.goto-about:focus {
+  color: var(--about);
 }
-.go-blog:hover {
-  color: var(--vlet);
+.goto-projects:hover,
+.goto-projects:focus {
+  color: var(--projects);
 }
-.go-contact:hover {
-  color: var(--gryn);
+.goto-blog:hover,
+.goto-blog:focus {
+  color: var(--blog);
 }
-
-/* used to hide elements on mobile */
-@media (max-width: 800px) {
-  .hidden-on-mobile {
-    opacity: 0;
-    transition: ease-in-out 500ms;
-  }
+.goto-contact:hover,
+.goto-contact:focus {
+  color: var(--contact);
 }
-
-/* used to hide elements from flow */
-.shant-exist {
-  display: none;
+.goto-login:hover,
+.goto-login:focus {
+  color: var(--login);
 }

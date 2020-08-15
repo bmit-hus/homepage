@@ -1,0 +1,62 @@
+.banner {
+  /* margin: 0;
+  padding: 0; */
+  height: 2.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.banner > * {
+  padding: 1ch;
+}
+/* .banner > ul {
+  margin: 0;
+  padding: 0;
+}
+ */
+.banner-element {
+  text-transform: capitalize;
+}
+
+
+/* HOME BUTTON */
+.home-button {
+  max-width: 20%;
+  text-transform: uppercase;
+}
+
+
+/* PAGE NAME */
+.page-name {
+  margin-left: auto;
+  max-width: 35%;
+}
+@media (min-width: 400px) {
+  .page-name::before {
+    display: inline-block;
+    content: 'locale:';
+
+    color: var(--base);
+    font-size: .6rem;
+  }
+}
+
+
+/* PAGE STRIP */
+.page-strip {
+  text-align: end;
+  line-height: 2;
+  width: 2.6em;
+}
+
+.page-strip .hamburger--button {
+  margin-left: auto;
+}
+
+.page-strip--element {
+  opacity: 0;
+}
+.page-strip--open-element {
+  opacity: 1;
+}

@@ -1,0 +1,85 @@
+/* MENU SWITCH */
+.menu-switch {
+  position: relative;
+
+  /* adjust button switch */
+  height: 2em;
+  width: 3em;
+  border-radius: 10px;
+}
+
+/* 
+  display switch as active.
+  change hamburger to cross.
+*/
+.menu-switch--active .hamburger,
+.menu-switch--active:hover .hamburger {
+  background: none !important; /* quick fix */
+}
+
+.menu-switch--active .hamburger::before {
+  transform: rotate( 45deg) translateX( -1px) translateY( -1px);
+  /*
+    set transition :
+    cross animation (in)
+  */
+  transition: ease-in-out 200ms;
+}
+.menu-switch--active .hamburger::after {
+  transform: rotate( -45deg) translateX( 1px) translateY( -1px);
+  /* 
+    set transition :
+    cross animation (in)
+  */
+  transition: ease-in-out 200ms;
+}
+
+/* creating hover (focus) effect */
+.menu-switch:hover .hamburger,
+.menu-switch:hover .hamburger::before,
+.menu-switch:hover .hamburger::after,
+.menu-switch:focus .hamburger,
+.menu-switch:focus .hamburger::before,
+.menu-switch:focus .hamburger::after {
+  background: var(--site-color);
+
+  transition: ease-in 200ms;
+}
+
+
+
+/* HAMBRUGER */
+
+/* creating the burger */
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  /* make in style object only */
+  pointer-events: none;
+
+  /* bars */
+  display: block;
+  content: '';
+  background: var(--solr);
+
+  /* positioning */
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  top: 50%;
+  left: 32.5%;
+  border-radius: 10px;
+}
+
+/* aligning the burger and lines */
+.hamburger {
+  transform: translateY(-1px);
+}
+.hamburger::before {
+  left: 0;
+  transform: translateY(-9px);
+}
+.hamburger::after {
+  left: 0;
+  transform: translateY(5px);
+}

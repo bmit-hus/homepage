@@ -1,0 +1,87 @@
+/* make links display color of target page */
+.goto-home:hover,
+.goto-home:focus {
+  color: var(--home);
+}
+.goto-about:hover,
+.goto-about:focus {
+  color: var(--about);
+}
+.goto-projects:hover,
+.goto-projects:focus {
+  color: var(--projects);
+}
+.goto-blog:hover,
+.goto-blog:focus {
+  color: var(--blog);
+}
+.goto-contact:hover,
+.goto-contact:focus {
+  color: var(--contact);
+}
+.goto-login:hover,
+.goto-login:focus {
+  color: var(--login);
+}
+
+
+/* HAMBURGER */
+.hamburger--button {
+  cursor: pointer;
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 10px;
+
+  /* background: var(--high); */
+}
+
+.hamburger--icon,
+.hamburger--icon::before,
+.hamburger--icon::after {
+  position: absolute;
+  display: block;
+  content: '';
+  pointer-events: none;
+
+  background: var(--main);
+  height: 3px;
+  width: 1.5em;
+  border-radius: 5px;
+
+  top: 25%;
+  left: 20.5%;
+  transition: ease-in-out 250ms;
+}
+.hamburger--icon::before {
+  transform: translateX(-5px) translateY(-9px);
+}
+.hamburger--icon::after {
+  transform: translateX(-5px) translateY(7px);
+}
+
+.hamburger--open .hamburger,
+.hamburger--open:hover .hamburger {
+  background: var(--none);
+}
+.hamburger--open .hamburger::before {
+  transform: rotate(45deg) translateY(0) translateX(-1px);
+}
+.hamburger--open .hamburger::after {
+  transform: rotate(-45deg) translateY(-3px) translateX(2px);
+}
+
+
+/* used to hide elements on mobile */
+@media (max-width: 800px) {
+  .hidden-on-mobile {
+    opacity: 0;
+    transition: ease-in-out 500ms;
+  }
+}
+
+
+/* used to hide elements from flow */
+.shant-exist {
+  display: none;
+}
