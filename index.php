@@ -1,14 +1,15 @@
 <?php
 
-$root = '.';
-include_once "$root/includes/global.inc.php";
+include_once 'includes/global.inc.php';
 
-
+// 
 
 // EOF
 
-// create example page: ?>
 
+?>
+
+<!-- create example page: -->
 
 <header>
 
@@ -43,8 +44,4 @@ include_once "$root/includes/global.inc.php";
   </ul>
 
 </header>
-
-
-
-
 

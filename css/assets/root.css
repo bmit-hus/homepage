@@ -1,0 +1,38 @@
+:root {
+  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-size: 16px; */
+  font-size: 1.17em;
+  line-height: 1.25;
+
+
+  --none: #001b36;
+  --dark: #073641;
+  --grey: #585e75;
+  --base: #656b83;
+  --step: #839495;
+  --half: #92a1a1;
+  --solr: #eee7d5;
+  --high: #fdf5e3;
+
+  --main: #bbb890;
+  --gold: #ffd699;
+
+  --yllw: #b58899;
+  --ornj: #cb3b16;
+  --redx: #dc321f;
+  --mgen: #d33681;
+  --vlet: #5c71c4;
+  --blue: #267bd2;
+  --cyan: #1aa198;
+  --gryn: #859899;
+
+  --primary: #eee7d5;
+  --secondary: #001b36;
+
+  --standard: #b58899;
+  --home: #cb3b16;
+  --work: #267bd2;
+  --idea: #5c71c4;
+  --contact: #859899;
+}

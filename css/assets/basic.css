@@ -1,22 +1,9 @@
-:root {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.17em;
-  line-height: 1.25;
-
-  --home:     #b58900;
-  --about:    #cb4b16;
-  --projects: #268bd2;
-  --blog:     #6c71c4;
-  --contact:  #859900;
-  --login:    #2aa198;
-}
-
 * {
   margin: 0;
   padding: 0;
 
-  color: var(--solr);
-  background: var(--none);
+  color: var(--primary);
+  background: var(--secondary);
 }
 
 
