@@ -1,0 +1,12 @@
+li[ class ^= "return-"] a {
+  color: var(--main);
+}
+
+/* 
+.return--button::before {
+  display: inline-block;
+  content: 'return';
+
+  font-size: 0.8em;
+  color: var(--base);
+}

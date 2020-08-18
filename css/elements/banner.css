@@ -12,6 +12,12 @@
 
   justify-content: space-between;
 }
+.banner *,
+.banner *::before,
+.banner *::after {
+  color: var(--main);
+  text-transform: uppercase;
+}
 .banner--item {
   /* 
     make elements center vertically,
@@ -53,10 +59,6 @@
 
   /* align text horizontally */
   text-align: center;
-
-  /* stylize */
-  color: var(--solr);
-  text-transform: uppercase;
 }
  
 

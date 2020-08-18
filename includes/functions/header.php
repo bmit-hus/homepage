@@ -22,17 +22,15 @@ __ITEM;
 
 // RETURN HOME BUTTON
 
-function return_home__button()
+function return__home()
 {
   global $root;
   global $self;
 
-  $not_home_already = strpos($self, 'index') == true;
-
-  if ( $not_home_already)
+  if ( $self != 'index' )
   {
     echo <<<____RETURN
-      <a href="$root/index.php"> <button class="return--button "> home</button> </a>
+      <a href="$root/index.php"> home</a>
 ____RETURN;
   }
 }

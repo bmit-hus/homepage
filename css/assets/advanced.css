@@ -2,15 +2,6 @@
 @import "../elements/hamburger.css";
 @import "../elements/banner.css";
 @import "../elements/goto.css";
+@import "../elements/return.css";
 /* @import "elements/navigation.css"; */
 
-
-
-/* RETURN HOME */
-.return--button::before {
-  display: inline-block;
-  content: 'return';
-
-  font-size: 0.8em;
-  color: var(--base);
-}

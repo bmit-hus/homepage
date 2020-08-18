@@ -7,7 +7,7 @@ open( 'header');
   banner();
 
     banner_item( 'return-home');
-      return_home__button();
+      return__home();
     close( 'li');
 
     banner_list( 'page-menu');

@@ -8,6 +8,7 @@ li[class *= "goto-"] a {
   position: relative;
 }
 
+
 li[class *= "goto-"]::before {
   content: '';
   position: absolute;
