@@ -18,21 +18,21 @@
   --main: #bbb890;
   --gold: #ffd699;
 
-  --yllw: #b58899;
-  --ornj: #cb3b16;
-  --redx: #dc321f;
-  --mgen: #d33681;
-  --vlet: #5c71c4;
-  --blue: #267bd2;
+  --yellow: #b58900;
+  --orange: #cb3b16;
+  --crimson: #dc321f;
+  --magenta: #d33681;
+  --violet: #5c71c4;
+  --marine: #267bd2;
   --cyan: #1aa198;
-  --gryn: #859899;
+  --green: #859900;
 
-  --primary: #eee7d5;
-  --secondary: #001b36;
+  --primary: var(--solr);
+  --secondary: var(--none);
 
-  --standard: #b58899;
-  --home: #cb3b16;
-  --work: #267bd2;
-  --idea: #5c71c4;
-  --contact: #859899;
+  --clear: var(--main);
+  --home: var(--crimson);
+  --work: var(--marine);
+  --idea: var(--violet);
+  --contact: var(--green);
 }

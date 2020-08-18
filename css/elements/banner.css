@@ -52,6 +52,10 @@
 
   /* align text horizontally */
   text-align: center;
+
+  /* stylize */
+  color: var(--solr);
+  text-transform: uppercase;
 }
 
 
@@ -60,4 +64,32 @@
   display: block;
   z-index: 1;
   opacity: 0.93;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .page-menu--icon {
+    display: none;
+  }
+
+  .page-menu--container {
+    /* reposition container */
+    display: inline-flex;
+    position: initial;
+
+    /* stylize */
+    line-height: 1;
+    font-size: 1rem;
+    
+    /* set it in front, but make it invisible */
+    z-index: 1;
+    opacity: 1;
+    background: var(--none);
+  }
+
+  .page-menu--item {
+    margin-left: 2rem;
+    padding: 0.5rem;
+  }
+
 }
