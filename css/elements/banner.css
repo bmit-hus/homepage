@@ -47,6 +47,7 @@
 
 /* PAGE MENU items */
 .page-menu--item {
+  position: relative;
   /* fill to width */
   width: 100%;
 
@@ -57,7 +58,7 @@
   color: var(--solr);
   text-transform: uppercase;
 }
-
+ 
 
 /* PAGE MENU javascript */
 .page-menu--display {

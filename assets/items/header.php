@@ -7,9 +7,7 @@ open( 'header');
   banner();
 
     banner_item( 'return-home');
-      echo <<<______RETURN
-        <a href="$root/index.php"> <button class="return--button "> home</button> </a>
-______RETURN;
+      return_home__button();
     close( 'li');
 
     banner_list( 'page-menu');

@@ -1,0 +1,71 @@
+/* make links display color of target page */
+li[class *= "goto-"] a {
+  color: var(--main);
+}
+
+/* needed for following lines */
+.page-menu--container {
+  position: relative;
+}
+
+li[class *= "goto-"]::before {
+  content: '';
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--main);
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+li[ class *= "goto-"]:hover::before,
+li[ class *= "goto-"]:focus::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.goto-about:hover::before,
+.goto-about:focus::before {
+  background: var(--home);
+}
+.goto-projects:hover::before,
+.goto-projects:focus::before {
+  background: var(--work);
+}
+.goto-blog:hover::before,
+.goto-blog:focus::before {
+  background: var(--idea);
+}
+.goto-contact:hover::before,
+.goto-contact:focus::before {
+  background: var(--contact);
+}
+.goto-login:hover::before,
+.goto-login:focus::before {
+  background: var(--home);
+}
+
+.goto-about:hover a,
+.goto-about:focus a{
+  color: var(--home);
+}
+.goto-projects:hover a,
+.goto-projects:focus a{
+  color: var(--work);
+}
+.goto-blog:hover a,
+.goto-blog:focus a {
+  color: var(--idea);
+}
+.goto-contact:hover a,
+.goto-contact:focus a {
+  color: var(--contact);
+}
+.goto-login:hover a,
+.goto-login:focus a {
+  color: var(--home);
+}

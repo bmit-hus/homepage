@@ -1,6 +1,7 @@
 /* ELEMENTS */
 @import "../elements/hamburger.css";
 @import "../elements/banner.css";
+@import "../elements/goto.css";
 /* @import "elements/navigation.css"; */
 
 
@@ -12,26 +13,4 @@
 
   font-size: 0.8em;
   color: var(--base);
-}
-
-/* make links display color of target page */
-.goto-about:hover,
-.goto-about:focus {
-  color: var(--home);
-}
-.goto-projects:hover,
-.goto-projects:focus {
-  color: var(--work);
-}
-.goto-blog:hover,
-.goto-blog:focus {
-  color: var(--idea);
-}
-.goto-contact:hover,
-.goto-contact:focus {
-  color: var(--contact);
-}
-.goto-login:hover,
-.goto-login:focus {
-  color: var(--home);
 }
