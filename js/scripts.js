@@ -7,3 +7,9 @@ $('.page-menu--icon').click( function() {
 
 })
 
+// Toggle manipulation
+$('.toggle--rail').click( function() {
+
+  $('.toggle--rail').toggleClass('toggle--active');
+
+})

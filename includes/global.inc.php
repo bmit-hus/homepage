@@ -26,4 +26,6 @@ include_once "$goto/includes/autoload/classes.inc.php";
 include_once "$goto/includes/globals/variables.inc.php";
 include_once "$goto/includes/globals/functions.inc.php";
 
+include_once "$goto/includes/new/feature.inc.php";
+
 // EOF
