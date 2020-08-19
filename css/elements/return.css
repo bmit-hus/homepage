@@ -1,5 +1,36 @@
-li[ class ^= "return-"] a {
+li[ class *= "return-"] a {
   color: var(--main);
+}
+
+* li[ class *= "return-"] {
+  position: relative;
+}
+
+li[ class *= "return-"]::before {
+  content: '';
+  position: absolute;
+
+  top: 1.5rem;
+  left: 0;
+  width: 150%;
+  height: 2px;
+  background: var(--main);
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 350ms ease-in;
+}
+
+li[ class *= "return-"]:hover::before {
+  transform-origin: right;
+  transform: scaleX(1);
+}
+
+li[ class *= "return-"]:hover a {
+  color: var(--half);
+}
+li[ class *= "return-"]:hover::before {
+  background: var(--half);
 }
 
 /* 

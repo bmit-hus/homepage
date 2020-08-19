@@ -37,10 +37,7 @@
 /* creating hover (focus) effect */
 .menu-switch:hover .hamburger,
 .menu-switch:hover .hamburger::before,
-.menu-switch:hover .hamburger::after,
-.menu-switch:focus .hamburger,
-.menu-switch:focus .hamburger::before,
-.menu-switch:focus .hamburger::after {
+.menu-switch:hover .hamburger::after {
   background: var(--site-color);
 
   transition: ease-in 200ms;

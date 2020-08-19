@@ -18,6 +18,8 @@
   color: var(--main);
   text-transform: uppercase;
 }
+
+
 .banner--item {
   /* 
     make elements center vertically,

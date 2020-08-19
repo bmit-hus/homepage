@@ -27,7 +27,7 @@
   --cyan: #1aa198;
   --green: #859900;
 
-  --primary: var(--solr);
+  --primary: var(--half);
   --secondary: var(--none);
 
   --home: var(--crimson);
