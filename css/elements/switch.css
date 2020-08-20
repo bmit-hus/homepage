@@ -1,0 +1,52 @@
+.has-switch {
+  position: relative;
+
+  text-transform: capitalize;
+  color: var(--site-color);
+}
+
+.has-switch::after,
+.has-switch::before {
+  cursor: pointer;
+
+  position: absolute;
+  content: '';
+  display: inline-block;
+}
+
+.has-switch::before {
+  /* is rail */
+
+  /* creating the rail */
+  background: var(--primary);
+  border-radius: 0.4rem;
+  height: 1rem;
+  width: 2rem;
+
+  /* position the rail */
+  top: 0;
+  left: -2.25rem;
+
+  /* effects */
+  transition: ease-in-out 150ms;
+}
+.has-switch::after {
+  /* is nipple */
+
+  /* creating the nipple */
+  background: var(--site-color);
+  border-radius: 0.4rem;
+  height: 0.8rem;
+  width: 1.25rem;
+
+  /* position the rail */
+  top: 0.1rem;
+  left: -2.15rem;
+
+  /* effects */
+  transition: ease-in-out 150ms;
+}
+
+.switch--active.has-switch::after {
+	left: -1.6rem;
+}

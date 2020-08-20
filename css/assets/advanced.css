@@ -1,6 +1,7 @@
 /* ELEMENTS */
 @import "../elements/hamburger.css";
-@import "../elements/toggle.css";
+/* @import "../elements/toggle.css"; */
+@import "../elements/switch.css";
 
 @import "../elements/goto.css";
 @import "../elements/return.css";

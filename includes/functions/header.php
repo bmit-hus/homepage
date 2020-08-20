@@ -20,6 +20,16 @@ function banner_list( $additional_classes)
 __ITEM;
 }
 
+
+// THEME SWITCH
+function theme_switch()
+{
+  echo <<<__THEME
+    <div class="has-switch">light switch</div>
+__THEME;
+}
+
+
 // RETURN HOME BUTTON
 
 function return__home()

@@ -7,9 +7,11 @@ $('.page-menu--icon').click( function() {
 
 })
 
-// Toggle manipulation
-$('.toggle--rail').click( function() {
 
-  $('.toggle--rail').toggleClass('toggle--active');
+// switch manipulation
+$('.has-switch').click( function() {
+
+  $('.has-switch').toggleClass('switch--active');
+  // $('.is-body').toggleClass('lights-on');
 
 })

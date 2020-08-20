@@ -6,6 +6,12 @@ open( 'header');
 
   banner();
 
+    banner_item( 'them-switch');
+
+      theme_switch();
+
+    close( 'li');
+
     banner_item( 'return-home');
       return__home();
     close( 'li');
