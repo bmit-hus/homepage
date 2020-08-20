@@ -21,7 +21,15 @@ function root()
 
 $goto = root();
 
-include_once "$goto/includes/autoload/classes.inc.php";
+
+// use the following lines of code
+// if working on MacBook... (HOTFIX)
+  include_once "$goto/assets/classes/arch.class.php";
+  include_once "$goto/assets/classes/parsedown.class.php";
+
+// use this line of code
+// if working on Windows (DEFAULT)
+  // include_once "$goto/includes/autoload/classes.inc.php";
 
 include_once "$goto/includes/globals/variables.inc.php";
 include_once "$goto/includes/globals/functions.inc.php";

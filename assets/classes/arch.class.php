@@ -1,7 +1,8 @@
 <?php
 
 // This class contains a constructor and a destructor.
-  // constructor loads head with meta information and pastes important global variables.
+  // constructor loads head with meta information 
+  // and pastes important global variables.
   // destructor pastes closing body and html tags.
 // This class also contains global variables.
 

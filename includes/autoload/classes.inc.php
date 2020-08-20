@@ -8,8 +8,8 @@ function autoload_class( $class)
   $uri = $_SERVER[ 'REQUEST_URI'];
 
   // define path to file
-  $uri_contains__pages = strpos( $uri, 'pages') !== false;
-  if ( $uri_contains__pages)
+  $uri_contains__pages = strpos( $uri, 'pages');
+  if ( $uri_contains__pages !== false)
   {
     $path = '../assets/classes/';
   }
