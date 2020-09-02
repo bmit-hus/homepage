@@ -1,7 +1,3 @@
-li[ class *= "return-"] a {
-  color: var(--main);
-}
-
 * li[ class *= "return-"] {
   position: relative;
 }
@@ -27,17 +23,8 @@ li[ class *= "return-"]:hover::before {
 }
 
 li[ class *= "return-"]:hover a {
-  color: var(--half);
+  color: var(--main);
 }
 li[ class *= "return-"]:hover::before {
-  background: var(--half);
-}
-
-/* 
-.return--button::before {
-  display: inline-block;
-  content: 'return';
-
-  font-size: 0.8em;
-  color: var(--base);
+  background: var(--main);
 }

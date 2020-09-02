@@ -15,7 +15,6 @@
 .banner *,
 .banner *::before,
 .banner *::after {
-  color: var(--main);
   text-transform: uppercase;
 }
 
@@ -44,7 +43,7 @@
   /* set it in front, but make it invisible */
   z-index: -1;
   opacity: 0;
-  background: var(--none);
+  background: var(--tertiary);
 
   /* 
     set transition : 
@@ -68,7 +67,7 @@
 .page-menu--display {
   display: block;
   z-index: 1;
-  opacity: 0.93;
+  opacity: 0.9;
 }
 
 @media only screen and (min-width: 800px) {

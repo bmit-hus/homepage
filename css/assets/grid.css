@@ -1,0 +1,14 @@
+body {
+  display: grid;
+  grid-template-rows: 250px 1fr 500px;
+  grid-template-columns: repeat(auto-fill, 1fr);
+}
+
+header {
+  grid-row: 1 / 1;
+  grid-column: 1 / -1;
+}
+footer {
+  grid-row: -1 / -1;
+  grid-column: 1 / -1;
+}

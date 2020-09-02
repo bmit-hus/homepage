@@ -57,7 +57,7 @@
   /* bars */
   display: block;
   content: '';
-  background: var(--solr);
+  background: var(--primary);
 
   /* positioning */
   position: absolute;
