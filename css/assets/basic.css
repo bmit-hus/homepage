@@ -46,25 +46,30 @@ footer {
 main {
   margin-bottom: 2rem;
 }
+  .content {
+    width: auto;
+  }
 
 
 /* TEXT */
-
-a:hover, em, strong, blockquote {
-  color: var(--site-color);
-}
 a {
   color: var(--main);
-}
-a:hover {
   text-decoration: none;
+}
+a:hover, em, blockquote {
+  color: var(--secondary);
+}  
+strong {
+  color: var(--site-color);
 }
 blockquote {
   text-transform: lowercase;
   margin: 1ch 2ch;
 }
 
-p + p,
+p + p {
+  padding-top: 0.5rem;
+}
 p + h1,
 p + h2,
 p + h3,

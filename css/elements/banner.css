@@ -52,7 +52,7 @@
     set transition : 
     page-menu--items opacity transition
   */
-  transition: ease-in-out 400ms;
+  transition: ease-in-out 200ms;
 }
 
 /* PAGE MENU items */

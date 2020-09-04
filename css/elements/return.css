@@ -14,7 +14,7 @@ li[ class *= "return-"]::before {
 
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 350ms ease-in;
+  transition: transform 200ms ease-in;
 }
 
 li[ class *= "return-"]:hover::before {
@@ -23,8 +23,8 @@ li[ class *= "return-"]:hover::before {
 }
 
 li[ class *= "return-"]:hover a {
-  color: var(--main);
+  color: var(--site-color);
 }
 li[ class *= "return-"]:hover::before {
-  background: var(--main);
+  background: var(--site-color);
 }
