@@ -23,8 +23,8 @@
   --cyan: #1aa198;
   --green: #859900;
 
-  --home: var(--crimson);
+  --home: var(--orange);
   --work: var(--marine);
-  --idea: var(--violet);
+  --idea: var(--magenta);
   --contact: var(--green);
 }

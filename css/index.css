@@ -4,5 +4,5 @@
 @import "elements/banner.css";
 
 :root {
-  --site-color: var(--gold);
+  --site-color: var(--yellow);
 }

@@ -5,9 +5,9 @@ echo <<<FOOTER
 
   <footer>
 
-    <p>
+    <p><em>
       $copyright $author, $date__yyyy.
-    </p>
+    </em></p>
 
     <p>
       This domain is sponsered by 
