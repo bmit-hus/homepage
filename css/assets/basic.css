@@ -67,3 +67,8 @@ p + h5,
 p + h6 {
   padding-top: 1.5em;
 }
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}

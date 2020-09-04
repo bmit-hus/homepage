@@ -36,11 +36,14 @@
   left: 0;
   right: 0;
 
+  /* position childer */
+  justify-content: space-between;
+
   /* stylize */
   line-height: 2;
   font-size: 1.5rem;
   
-  /* set it in front, but make it invisible */
+  /* put it in the back and make it invisible */
   z-index: -1;
   opacity: 0;
   background: var(--tertiary);
@@ -56,7 +59,7 @@
 .page-menu--item {
   position: relative;
   /* fill to width */
-  width: 100%;
+  width: 100px;
 
   /* align text horizontally */
   text-align: center;
@@ -91,9 +94,12 @@
     background: var(--none);
   }
 
-  .page-menu--item {
-    margin-left: 2rem;
+  .page-menu--item,
+  .return-home {
     padding: 0.5rem;
+  }
+  .page-menu--item {
+    margin-left: 10px;
   }
 
 }

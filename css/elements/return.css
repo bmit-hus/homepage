@@ -6,7 +6,7 @@ li[ class *= "return-"]::before {
   content: '';
   position: absolute;
 
-  top: 1.5rem;
+  bottom: 0;
   left: 0;
   width: 150%;
   height: 2px;
