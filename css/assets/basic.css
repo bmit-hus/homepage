@@ -11,8 +11,8 @@ html {
   padding: 1em;
 }
 body {
-  --primary: var(--clr-lvl-5);
-  --secondary: var(--clr-lvl-4);
+  --primary: var(--clr-lvl-4);
+  --secondary: var(--clr-lvl-6);
   --tertiary: var(--clr-lvl-1);
   color: var(--primary);
   background: var(--tertiary);
@@ -35,11 +35,16 @@ body.typeset {
 
 header,
 header a {
+  margin: auto 0;
   text-decoration: none;
 }
 footer {
   padding-top: 1rem;
   font-size: 12px;
+}
+
+main {
+  margin-bottom: 2rem;
 }
 
 
@@ -59,15 +64,45 @@ blockquote {
   margin: 1ch 2ch;
 }
 
-* + p,
+p + p,
 p + h1,
 p + h2,
 p + h3,
 p + h4,
 p + h5,
 p + h6 {
-  padding-top: 1.5em;
+  padding-top: 1rem;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  color: var(--site-color);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+h5 {
+  margin-bottom: 0.2rem;
+}
+h6 {
+  color: var(--secondary);
+}
+
+
 
 ul, ol, li {
   margin: 0;

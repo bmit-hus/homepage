@@ -37,6 +37,4 @@ include_once "$goto/includes/globals/functions.inc.php";
 include_once "$root/assets/items/header.php";
 include_once "$root/assets/items/footer.php";
 
-include_once "$goto/includes/new/feature.inc.php";
-
 // EOF
