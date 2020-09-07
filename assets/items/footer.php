@@ -26,15 +26,10 @@ echo <<<FOOTER
       especially our
         <a href="$espas_it_services"> 
           IT services</a>.
-        
     </p>
-
-    <p></p>
 
   </footer>
 
 FOOTER;
-
-// 
 
 // EOF

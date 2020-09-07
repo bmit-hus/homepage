@@ -14,21 +14,29 @@ function open( $element)
   {
     echo "</div>";
   }
+  function startlist( $class)
+  {
+    echo "<ul class=\" $class\">";
+  }
+  function endlist()
+  {
+    echo "</ul>";
+  }
 
 function close( $element)
 {
   echo "</$element>";
 }
 
-function parsedown( $file)
+function getContent()
 {
   global $root;
   global $parsedown;
-  echo $parsedown->text( 
-    file_get_contents( 
-      "$root/assets/content/$file.md"
-    )
-  );
+  global $content_file;
+
+  $get = "$root/assets/content/$content_file.md"; 
+
+  echo $parsedown->text( file_get_contents( $get));
 }
 
 function bigmac( $additional_classes)

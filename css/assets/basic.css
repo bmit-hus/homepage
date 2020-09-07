@@ -17,8 +17,8 @@ body {
   color: var(--primary);
   background: var(--tertiary);
   line-height: 1.25;
-  
   font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
 
   /* min() uses the smallest value */
   width: min(1000px, 90%); 
@@ -29,8 +29,11 @@ body.solarized {
   --secondary: var(--clr-lvl-1);
   --tertiary: var(--clr-lvl-8);
 }
-body.typeset {
+body.typeset,
+body.typeset * {
   font-family: 'Roboto Mono', monospace;
+
+  width: 80ch;
 }
 
 header,
