@@ -1,5 +1,9 @@
-
 <?php
+
+// Links:
+$espas_homepage =     "https://www.espas.ch/";
+$espas_services =     "https://www.espas.ch/de/unsere-dienstleistungen";
+$espas_it_services =  "https://its-espas.ch/";
 
 echo <<<FOOTER
 
@@ -13,13 +17,16 @@ echo <<<FOOTER
 
     <p>
       This domain is sponsered by 
-        <a href="https://www.espas.ch/"> ESPAS</a>. 
+        <a href="$espas_homepage"> 
+          ESPAS</a>. 
 
-      Check out 
-        <a href=""> their services</a>.
-
-      Also check out <em>IT Services by ESPAS</em>' services 
-        <a href="https://its-espas.ch/"> here</a>.
+      Check out our
+        <a href="$espas_services"> 
+          offer of services</a>, 
+      especially our
+        <a href="$espas_it_services"> 
+          IT services</a>.
+        
     </p>
 
     <p></p>
