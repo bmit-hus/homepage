@@ -1,6 +1,8 @@
 body {
   display: grid;
-  grid-template-rows: 50px auto 200px;
+  overflow: hidden;
+  height: 100vh;
+  grid-template-rows: 50px 1fr 200px;
   grid-template-columns: repeat(auto-fill, 1fr);
 }
 
@@ -14,6 +16,7 @@ footer {
 }
 
 main {
+  overflow: auto;
   grid-row: 2 / 3;
   grid-column: 1 / -1;
 }

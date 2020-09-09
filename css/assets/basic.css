@@ -14,6 +14,7 @@ body {
   --primary: var(--clr-lvl-4);
   --secondary: var(--clr-lvl-6);
   --tertiary: var(--clr-lvl-1);
+  --fallback: var(--clr-lvl-2);
   color: var(--primary);
   background: var(--tertiary);
   line-height: 1.25;
@@ -24,22 +25,21 @@ body {
   width: min(1000px, 90%); 
   margin: 0 auto;
 }
-body.solarized {
-  --primary: var(--clr-lvl-3);
-  --secondary: var(--clr-lvl-1);
-  --tertiary: var(--clr-lvl-8);
-}
-body.typeset,
-body.typeset * {
-  font-family: 'Roboto Mono', monospace;
+  body.solarized {
+    --primary: var(--clr-lvl-3);
+    --secondary: var(--clr-lvl-1);
+    --tertiary: var(--clr-lvl-8);
+    --fallback: var(--clr-lvl-7);
+  }
+  body.typeset,
+  body.typeset * {
+    font-family: 'Roboto Mono', monospace;
 
-  width: 80ch;
-}
+    width: 80ch;
+  }
 
-header,
-header a {
+header {
   margin: auto 0;
-  text-decoration: none;
 }
 footer {
   padding-top: 1rem;
@@ -47,7 +47,8 @@ footer {
 }
 
 main {
-  margin-bottom: 2rem;
+  padding-right: 1ch;
+  /* margin-bottom: 2rem; */
 }
   .content {
     width: auto;
