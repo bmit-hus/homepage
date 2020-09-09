@@ -1,0 +1,105 @@
+.banner {
+  /* 
+    make positioning absolute children possible,
+    meaning relative to this parent element
+  */
+  position: relative;
+  width: 100%;
+
+  /* make it flex horizontally */
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.banner *,
+.banner *::before,
+.banner *::after {
+  text-transform: uppercase;
+}
+
+
+.banner--item {
+  /* 
+    make elements center vertically,
+    while being able to have the children space-between properly
+  */
+  margin: auto 0;
+}
+
+/* PAGE MENU container */
+.page-menu--container {
+
+  /* position container */
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+
+  /* position childer */
+  justify-content: space-between;
+
+  /* stylize */
+  line-height: 2;
+  font-size: 1.5rem;
+  
+  /* put it in the back and make it invisible */
+  z-index: -1;
+  opacity: 0;
+  background: var(--tertiary);
+
+  /* 
+    set transition : 
+    page-menu--items opacity transition
+  */
+  transition: ease-in-out 200ms;
+}
+
+/* PAGE MENU items */
+.page-menu--item {
+  position: relative;
+  /* fill to width */
+  width: 100px;
+
+  /* align text horizontally */
+  text-align: center;
+}
+ 
+
+/* PAGE MENU javascript */
+.page-menu--display {
+  display: block;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .page-menu--icon {
+    display: none;
+  }
+
+  .page-menu--container {
+    /* reposition container */
+    display: inline-flex;
+    position: initial;
+
+    /* stylize */
+    line-height: 1;
+    font-size: 1rem;
+    
+    /* set it in front, but make it invisible */
+    z-index: 1;
+    opacity: 1;
+    background: var(--none);
+  }
+
+  .page-menu--item,
+  .return-home {
+    padding: 0.5rem;
+  }
+  .page-menu--item {
+    margin-left: 10px;
+  }
+
+}

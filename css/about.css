@@ -1,0 +1,8 @@
+@charset "uft-8";
+@import ".global.css";
+
+@import "elements/banner.css";
+
+:root {
+  --site-color: var(--home);
+}

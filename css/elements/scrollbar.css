@@ -1,0 +1,29 @@
+/* Firefox */
+  * {
+    scrollbar-width: thin; /* "auto" or "thin"  */
+    scrollbar-color: 
+      var(--secondary) var(--primary); /* scroll thumb & track */
+  }
+
+/* Chromium + Safari */
+  /* width */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 3px;
+  }
+
+  /* Handle */
+  *::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 3px;
+  }
+
+  /* Handle on hover */
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--site-color);
+  }

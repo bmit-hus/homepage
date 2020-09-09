@@ -1,0 +1,45 @@
+.toggle--rail {
+  cursor: pointer;
+
+  /* set anchor point for children */
+  position: relative;
+
+  /* size the rail */
+  height: 0.8rem;
+  width: 2rem;
+  padding: 0.4rem;
+
+  /* stylize rail */
+  background: var(--primary);
+  border-radius: 0.4rem;
+
+  transition: ease-in-out 100ms;
+}
+.toggle--rail::after {
+  content: 'off';
+  position: absolute;
+  left: 2.25rem;
+  top: 0;
+}
+
+.toggle--nipple {
+  /* use anchor point of parent */
+  position: absolute;  
+
+  /* position the nipple */
+  top: 0.1rem;
+  left: 0.1rem;
+  right: 1rem;
+  bottom: 0.1rem;
+
+  /* stylize rail */
+  background: var(--site-color);
+  border-radius: 0.4rem;
+}
+
+.toggle--active.toggle--rail::after {
+  content: 'on';
+}
+.toggle--active .toggle--nipple {
+  transform: translateX(0.8rem);
+}
