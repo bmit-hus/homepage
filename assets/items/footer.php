@@ -17,14 +17,14 @@ echo <<<FOOTER
 
     <p>
       This domain is sponsered by 
-        <a href="$espas_homepage"> 
+        <a href="$espas_homepage" target="_blank"> 
           ESPAS</a>. 
 
       Check out our
-        <a href="$espas_services"> 
+        <a href="$espas_services" target="_blank"> 
           offer of services</a>, 
       especially our
-        <a href="$espas_it_services"> 
+        <a href="$espas_it_services" target="_blank"> 
           IT services</a>.
     </p>
 
