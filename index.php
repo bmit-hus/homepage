@@ -1,7 +1,6 @@
 <?php
 
-$content_file = 'welcome';
-
-include_once 'includes/global.inc.php';
+include_once "includes/main.php";
+include_once ".pages.php";
 
 // EOF
