@@ -4,9 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
 /* import font : Roboto Mono Family (regular, italic & bold (+italic) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-
-@import "assets/reset.css";
-@import "assets/root.css";
+@import ".reset.css";
 
 :root {
   --clr-1: #001b36;
@@ -38,8 +36,7 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
 }
 
 html {
@@ -52,6 +49,10 @@ body {
   --secondary:var(--clr-6);
   --tertiary: var(--clr-1);
   --fallback: var(--clr-2);
+
+  max-width: 2000px;
+  margin: auto;
+  padding: 1rem;
 
   color: var(--primary);
   background: var(--tertiary);
@@ -106,20 +107,20 @@ h1, h2 {
   border-bottom: 2px solid;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 h5 {
   color: var(--secondary);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 h6 {
   color: var(--secondary);
@@ -130,4 +131,9 @@ h6 {
 ul, ol, li {
   margin: 0;
   padding: 0;
+}
+
+.textbox {
+  margin: auto;
+  max-width: 80ch;
 }

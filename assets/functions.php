@@ -4,9 +4,11 @@ function getFillerContent() {
   global $parsedown;
   global $ROOT;
 
-  echo $parsedown->text( file_get_contents( 
-    "$ROOT/md/test.md"
-  ));
+  echo "<div class=\"textbox\">";
+    echo $parsedown->text( file_get_contents( 
+      "$ROOT/md/test.md"
+    ));
+  echo "</div>";
 }
 
 function getMarkdown() {
@@ -14,9 +16,11 @@ function getMarkdown() {
   global $ROOT;
   global $SELF;
 
-  echo $parsedown->text( file_get_contents( 
-    "$ROOT/md/$SELF.md"
-  ));
+  echo "<div class=\"textbox\">";
+    echo $parsedown->text( file_get_contents( 
+      "$ROOT/md/$SELF.md"
+    ));
+  echo "</div>";
 }
 
 // EOF

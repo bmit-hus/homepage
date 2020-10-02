@@ -2,6 +2,6 @@
 
 include_once "includes/arch.php";
 
-getFillerContent();
+// getFillerContent();
 
 // EOF
