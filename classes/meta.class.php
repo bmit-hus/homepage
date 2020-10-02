@@ -111,10 +111,6 @@ ____META;
   private function init__content()
   {
     echo "<body>";
-
-    $this->get__root();
-    $this->get__self();
-    $this->get__file();
   }
   private function paste__closing_tags()
   {
@@ -125,6 +121,11 @@ ____META;
   // CONSTRUCTOR
   function __construct()
   {
+    Global $AUTHOR;
+    Global $ROOT;
+    Global $SELF;
+    Global $FILE;
+
     $this->set__lang();
     $this->set__root();
     $this->set__self();
@@ -133,6 +134,11 @@ ____META;
     $this->paste__opening_tags();
     $this->paste__metainfo();
     $this->init__content();
+
+    $AUTHOR = $this->get__author();
+    $ROOT = $this->get__root();
+    $SELF = $this->get__self();
+    $FILE = $this->get__file();
   }
 
   // DESTRUCTOR

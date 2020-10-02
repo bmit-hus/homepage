@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* import font : Open Sans Family (regular, italic & bold) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+/* import font : Roboto Mono Family (regular, italic & bold (+italic) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+@import "assets/reset.css";
+@import "assets/root.css";
+
+:root {
+  --clr-1: #001b36;
+  --clr-2: #073641;
+  --clr-3: #585e75;
+  --clr-4: #656b83;
+  --clr-5: #839495;
+  --clr-6: #92a1a1;
+  --clr-7: #eee7d5;
+  --clr-8: #fdf5e3;
+
+  --clr-b: #bbb890;
+  --gold: #ffd699;
+
+  --yellow: #b58900;
+  --orange: #cb3b16;
+  --crimson: #dc321f;
+  --magenta: #d33681;
+  --violet: #5c71c4;
+  --marine: #267bd2;
+  --cyan: #1aa198;
+  --green: #859900;
+
+  --home: var(--orange);
+  --work: var(--marine);
+  --idea: var(--magenta);
+  --contact: var(--green);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  padding: 1em;
+}
+
+body {
+  --primary:  var(--clr-4);
+  --secondary:var(--clr-6);
+  --tertiary: var(--clr-1);
+  --fallback: var(--clr-2);
+
+  color: var(--primary);
+  background: var(--tertiary);
+  line-height: 1.25;
+  font-family: 'Open Sans', sans-serif;
+}
+  body.solarized {
+    --primary: var(--clr-lvl-3);
+    --secondary: var(--clr-lvl-1);
+    --tertiary: var(--clr-lvl-8);
+    --fallback: var(--clr-lvl-7);
+  }
+  body.typeset,
+  body.typeset * {
+    font-family: 'Roboto Mono', monospace;
+    width: 80ch;
+  }
+
+a {
+  color: var(--main);
+  text-decoration: none;
+}
+a:hover, em, blockquote {
+  color: var(--secondary);
+}  
+strong {
+  color: var(--site-color);
+}
+blockquote {
+  text-transform: lowercase;
+  margin: 1ch 2ch;
+}
+
+p + p {
+  padding-top: 0.5rem;
+}
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+  padding-top: 1.25rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--site-color);
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+h1, h2 {
+  border-bottom: 2px solid;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+h6 {
+  color: var(--secondary);
+  font-size: 1.0rem;
+  margin-bottom: 0.2rem;
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
