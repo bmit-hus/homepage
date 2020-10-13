@@ -3,3 +3,22 @@
 :root {
   --site-color: var(--clr-b);
 }
+
+.page-grid {
+  display: grid;
+  grid-template-areas: 
+    'head'
+    'main'
+    'foot';
+  grid-gap: 1em;
+}
+
+header, main, footer { 
+  background: var(--clr-2);
+  border-radius: 1em;
+  padding: 1em;
+}
+
+header  { grid-area: head; }
+main    { grid-area: main; }
+footer  { grid-area: foot; }

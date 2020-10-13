@@ -110,7 +110,7 @@ ____META;
 
   private function init__content()
   {
-    echo "<body>";
+    echo "<body class=\"page-grid\">";
   }
   private function paste__closing_tags()
   {
