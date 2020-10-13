@@ -10,11 +10,17 @@ include_once "assets/arch.php";
 
 <main> <?php getFillerContent(); ?> </main>
 
+<?php
+$espas_homepage =     "https://www.espas.ch/";
+$espas_services =     "https://www.espas.ch/de/unsere-dienstleistungen";
+$espas_it_services =  "https://its-espas.ch/"
+?>
+
 <footer>
 
 <p>
   <strong> 
-    <?= "$copyright $author, $date__yyyy." ?>
+    <?= "$copyright $AUTHOR, $date__yyyy." ?>
   </strong>
 </p>
 
