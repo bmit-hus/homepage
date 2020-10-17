@@ -1,7 +1,7 @@
 @import ".init.css";
 
 :root {
-  --site-color: var(--clr-b);
+  --site-clr: var(--clr-b);
 }
 
 .page-grid {
