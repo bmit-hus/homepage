@@ -19,18 +19,18 @@
   --clr-b: #bbb890;
   --clr-g: #ffd699;
 
-  --yellow: #b58900;
-  --orange: #cb3b16;
+  --yellowx: #b58900;
+  --orangex: #cb3b16;
   --crimson: #dc321f;
   --magenta: #d33681;
-  --violet: #5c71c4;
-  --marine: #267bd2;
-  --cyan: #1aa198;
-  --green: #859900;
+  --violetx: #5c71c4;
+  --marinex: #267bd2;
+  --cyanxxx: #1aa198;
+  --greenxx: #859900;
 
-  --home: var(--orange);
-  --work: var(--marine);
-  --idea: var(--magenta);
+  --homexxx: var(--orange);
+  --workxxx: var(--marine);
+  --ideaxxx: var(--magenta);
   --contact: var(--green);
 }
 
@@ -76,7 +76,7 @@ a {
   text-decoration: none;
 }
 a:hover, em, blockquote {
-  color: var(--secondary);
+  color: var(--site-clr);
 }  
   a::after {
     position: absolute;
@@ -89,7 +89,7 @@ a:hover, em, blockquote {
     bottom: -2px;
     border-radius: 10px;
 
-    transform: scaleX(0.4);
+    transform: scaleX(0.2);
     transform-origin: left;
     transition-duration: 250ms;
   }

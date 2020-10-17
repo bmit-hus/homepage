@@ -1,0 +1,12 @@
+.banner {
+  display: grid;
+
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+.
+
+.page-menu {
+  display: flex;
+  flex-direction: row;
+}

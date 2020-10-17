@@ -3,7 +3,6 @@
 $leer = ' ';
 $eingabe = '</br>';
 
-
 // time
 $seconds = date('s');
 $minutes = date('i');
