@@ -1,5 +1,14 @@
 <?php
 
+function getHeader() {
+  global $ROOT;
+  include_once "$ROOT/assets/header.php";
+}
+function getFooter() {
+  global $ROOT;
+  include_once "$ROOT/assets/footer.php";
+}
+
 function getFillerContent() {
   global $parsedown;
   global $ROOT;
