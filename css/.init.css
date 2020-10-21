@@ -19,18 +19,18 @@
   --clr-b: #bbb890;
   --clr-g: #ffd699;
 
-  --yellowx: #b58900;
-  --orangex: #cb3b16;
+  --yellow: #b58900;
+  --orange: #cb3b16;
   --crimson: #dc321f;
   --magenta: #d33681;
-  --violetx: #5c71c4;
-  --marinex: #267bd2;
-  --cyanxxx: #1aa198;
-  --greenxx: #859900;
+  --violet: #5c71c4;
+  --marine: #267bd2;
+  --cyan: #1aa198;
+  --green: #859900;
 
-  --homexxx: var(--orange);
-  --workxxx: var(--marine);
-  --ideaxxx: var(--magenta);
+  --about: var(--orange);
+  --work: var(--marine);
+  --blog: var(--magenta);
   --contact: var(--green);
 }
 
