@@ -10,19 +10,28 @@ echo <<<FOOTER
 
 <p>
   <strong> 
-    $copyright $AUTHOR, $date__yyyy.
+    $copyright $AUTHOR_C, $date__yyyy.
   </strong>
 </p>
 
 <p>
   This domain is sponsered by 
-    <a href= $espas_homepage target="_blank">ESPAS</a>.
+    <a 
+      href=$espas_homepage 
+      target="_blank">
+        ESPAS</a>.
   Learn more about our 
-    <a href= $espas_services target="_blank">offer of services</a>. 
+    <a 
+      href=$espas_services 
+      target="_blank">
+        offer of services</a>. 
 </p>
 <p>
   We also got you covered in regards of ICT, check our
-    <a href= $espas_it_services target="_blank">IT services</a>
+    <a 
+      href=$espas_it_services 
+      target="_blank">
+        IT services</a>
   to learn more.
 </p>
 

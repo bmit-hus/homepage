@@ -63,7 +63,7 @@ class Meta
   }
   public function get__author()
   {
-    return 'Stigie Huber';
+    return 'stigie huber';
   }
   
   // PASTERS
@@ -80,7 +80,7 @@ ____START;
   {
     $author = $this->get__author();
 
-    $title = '';
+    $title = 'hus.bm-it.ch';
     $description = '';
     $keywords = '';
     // $title        = $_POST[ 'title'];
@@ -121,10 +121,10 @@ ____META;
   // CONSTRUCTOR
   function __construct()
   {
-    Global $AUTHOR;
-    Global $ROOT;
-    Global $SELF;
-    Global $FILE;
+    global $AUTHOR;
+    global $ROOT;
+    global $SELF;
+    global $FILE;
 
     $this->set__lang();
     $this->set__root();

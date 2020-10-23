@@ -39,11 +39,17 @@ function getFillerContent() {
   global $parsedown;
   global $ROOT;
 
+  echo "<main>";
+
   echo "<div class=\"textbox\">";
+
     echo $parsedown->text( file_get_contents( 
       "$ROOT/md/test.md"
     ));
+
   echo "</div>";
+
+  echo "<main>";
 }
 
 // EOF

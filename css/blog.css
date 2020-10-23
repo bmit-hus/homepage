@@ -2,7 +2,7 @@
 @import ".header.css";
 
 :root {
-  --site-clr: var(--clr-b);
+  --site-clr: var(--blog);
 }
 
 .page-grid {

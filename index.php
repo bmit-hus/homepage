@@ -1,9 +1,6 @@
 <?php
 
-include_once "assets/arch.php";
-
-include_once "$ROOT/assets/header.php";
-include_once "$ROOT/assets/footer.php";
+include_once ".arch.php";
 
 echo "<main>";
   lipsum(1);

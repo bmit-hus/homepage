@@ -1,5 +1,19 @@
 <?php
 
+// meta variables
+$AUTHOR_C = ucwords( $AUTHOR);
+$AUTHOR_U = strtoupper( $AUTHOR);
+
+// Umlaute
+$Ae = "Ä";
+$ae = "ä";
+$Oe = "Ö";
+$oe = "ö";
+$Ue = "Ü";
+$ue = "ü";
+
+// sentence structure
+$tab = '    ';
 $leer = ' ';
 $eingabe = '</br>';
 
