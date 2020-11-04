@@ -3,13 +3,13 @@
 include_once "classes/meta.class.php"; 
 $meta = new Meta;
 
-include_once "classes/parsedown.class.php";
+include_once "$ROOT/classes/parsedown.class.php";
 $parsedown = new Parsedown;
 
-include_once "assets/functions.php";
-include_once "assets/variables.php";
+include_once "$ROOT/assets/functions.php";
+include_once "$ROOT/assets/variables.php";
 
-include_once "elements/header.php";
-include_once "elements/footer.php";
+include_once "$ROOT/items/header.php";
+include_once "$ROOT/items/footer.php";
 
 // EOF

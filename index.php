@@ -1,6 +1,6 @@
 <?php
 
-include_once ".arch.php";
+include_once "/assets/arch.php";
 
 echo "<main>";
   lipsum(1);

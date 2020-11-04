@@ -1,6 +1,6 @@
 @import "src/init.css";
-@import "elements/header.css";
-@import "elements/footer.css";
+/* @import "elements/header.css"; */
+/* @import "elements/footer.css"; */
 
 :root {
   --site-clr: var(--about);
