@@ -1,27 +1,17 @@
 /* basic styling for header */
-header {
-  background-color: var(--site-clr);
-}
 
 /* color adjustments for header */
-header a,
-header a::after {
-  --clr-head: var(--tertiary);
-}
 header a {
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--clr-head);
+  color: var(--clr-b);
 
   width: 10ch;
   padding: 0.5em 1em;
   border-radius: 0.5em;
 }
-header a::after {
-  display: none;
-}
 header a:hover {
-  background: var(--site-clr);
+  color: var(--site-clr);
 
   transition: 250ms;
 }
@@ -37,9 +27,4 @@ header a:hover a::after {
 }
 .return-home {
   margin-right: auto;
-}
-
-/* hide */
-.page-menu--icon {
-  display: none;
 }

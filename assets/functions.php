@@ -43,9 +43,11 @@ function getFillerContent() {
 
   echo "<div class=\"textbox\">";
 
-    echo $parsedown->text( file_get_contents( 
-      "$ROOT/md/test.md"
-    ));
+    echo $parsedown->text( 
+      file_get_contents( 
+        "$ROOT/md/test.md"
+      )
+    );
 
   echo "</div>";
 

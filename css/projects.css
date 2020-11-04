@@ -1,24 +1,7 @@
-@import ".init.css";
-@import ".header.css";
+@import "src/init.css";
+@import "elements/header.css";
+@import "elements/footer.css";
 
 :root {
   --site-clr: var(--projects);
 }
-
-.page-grid {
-  display: grid;
-  grid-template-areas: 
-    'head'
-    'main'
-    'foot';
-  grid-gap: 1em;
-}
-
-header, main, footer { 
-  border-radius: 0.4em;
-  padding: 1em;
-}
-
-header  { grid-area: head; }
-main    { grid-area: main; }
-footer  { grid-area: foot; }
