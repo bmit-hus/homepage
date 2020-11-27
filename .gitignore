@@ -1,0 +1,11 @@
+# read more about .gitignore here:
+# 
+# https://www.pluralsight.com/guides/how-to-use-gitignore-file
+# 
+# notes:
+#   to remove a cached file use `` git rm --cached FILENAME ''
+
+# directories
+# .old/
+
+# files
