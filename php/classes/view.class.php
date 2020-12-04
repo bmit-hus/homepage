@@ -1,29 +1,7 @@
 <?php
 
-class View {
-  private $language;
+// this class displays the queried data
 
-  function __construct() {
+// code
 
-    echo <<<__HTML
-
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <meta 
-          name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-        
-        <title>$title</title>
-      </head>
-      <body>
-
-__HTML;
-    
-  }
-
-  function __destruct() {
-    echo "</body></html>";
-  }
-}
+// EOF
