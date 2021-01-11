@@ -1,7 +1,16 @@
 <?php
 
-$content_file = 'welcome';
+/**
+ * Author:              Stigie Huber
+ * Version Nr:          3.0 
+ * Version Codename:    dawn
+**/
 
-include_once 'includes/global.inc.php';
+// class autoloader
+include_once "classes/autoloader.cls.php";
+// initialize object "html" from init class
+$html = new Arch();
+
+
 
 // EOF
