@@ -26,13 +26,22 @@ Follow these Links to inform yourself about my coding styles
 Latest Patches
 =============
 
-2021-01-11
+<!-- 2021-02-12 -->
+<!-- ---------- -->
+<!-- ``` -->
+<!-- ``` -->
+
+2021-01-15
 ----------
 
 ``` 
     * Started new Branch 
     * 'Archived' old Branches
     * added ".gitignore" + "README.md" Files
+    * added Arch class properties, methods and functionality
+    * added Google Fonts `Overpass Mono`
+    * added Ajax library
+    * started with css styling
 
     * created folders: 
         /classes/
@@ -42,8 +51,11 @@ Latest Patches
         /js/
         /md/
         /pages/
+
     * created files:
         /index.php
         /classes/autoloader.cls.php
         /classes/arch.cls.php
+        /css/main.css
+        /pages/test.html
 ```

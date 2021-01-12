@@ -11,6 +11,6 @@ include_once "classes/autoloader.cls.php";
 // initialize object "html" from init class
 $html = new Arch();
 
-
+$html->get_page( "test" );
 
 // EOF
