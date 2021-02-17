@@ -23,7 +23,10 @@ class Arch {
 
     // getters
     public function get_page( $thepage ) {
-        include "pages/$thepage.html";
+        include "pages/$thepage.php";
+    }
+    public function get_testpage() {
+        echo $parsedown->text(file_get_contents("md/md.md"));
     }
 
 
@@ -55,7 +58,7 @@ class Arch {
         $this->css = "css/main.css";
     }
     protected function this_js() {
-        $this->js = "js.scripts.js";
+        $this->js = "js/scripts.js";
     }
 
 
@@ -79,7 +82,6 @@ class Arch {
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
                 <link href="$this->css" type="text/css" rel="stylesheet">
-                <link href="css/$this->self/main.css" type="text/css" rel="stylesheet">
                 <script defer src="$this->js"></script>
 
 HTML;

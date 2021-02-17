@@ -6,11 +6,8 @@
  * Version Codename:    dawn
 **/
 
-// class autoloader
-include_once "classes/autoloader.cls.php";
-// initialize object "html" from init class
-$html = new Arch();
+include_once "php/starterpack.php";
 
-$html->get_page( "test" );
+$arch->get_testpage();
 
 // EOF
