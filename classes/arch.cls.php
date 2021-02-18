@@ -26,6 +26,7 @@ class Arch {
         include "pages/$thepage.php";
     }
     public function get_testpage() {
+        global $parsedown;
         echo $parsedown->text(file_get_contents("md/md.md"));
     }
 
@@ -111,6 +112,7 @@ HTML;
         $this->begin();
 
         $this->end();
+
     }
 
     // destructor:
