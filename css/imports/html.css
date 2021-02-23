@@ -1,0 +1,93 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+html {
+    font-size: clamp(14px, 2vw, 22px);
+    font-family: 'Overpass Mono', monospace;
+}
+
+body {
+    /* spacing */
+    max-width: 80ch;
+    margin: 0 auto;
+    line-height: 1.2;
+    padding: 1em;
+
+    /* coloring */
+    background: var(--bg);
+    color: var(--clr);
+}
+
+h1 {
+    background: var(--acc);
+    margin-top: 0;
+    padding: .25em 1em;
+    padding-bottom: 0;
+    border-radius: .25em;
+
+    color: var(--bg);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: .25em;
+    border-radius: .25em;
+
+    color: var(--acc);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+h2::after {
+    display: block;
+    content: "";
+
+    height: 0.1em;
+    width: 100%;
+    border-radius: 0.05em;
+    background-color: var(--acc);
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: .25em;
+
+    color: var(--acc);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 2rem;
+    margin-bottom: .25em;
+
+    color: var(--acc);
+    font-size: 1.4rem;
+}
+
+h5 {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-right: 1em;
+
+    color: var(--acc);
+    font-size: 1.2rem;
+}
+h5 + * { display: inline; }
+
+h6 {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-right: 1em;
+
+    color: var(--acc);
+    font-size: 1rem;
+    font-style: italic;
+}
+h6 + * { display: inline; }
+
+p + p{
+    margin-top: 1em;
+}

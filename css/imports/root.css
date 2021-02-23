@@ -1,0 +1,33 @@
+:root {
+    --speed: 250ms;
+    --radius: 5px;
+
+    --clr-1: #001b36;
+    --clr-2: #073641;
+    --clr-3: #585e75;
+    --clr-4: #656b83;
+    --clr-5: #839495;
+    --clr-6: #92a1a1;
+    --clr-7: #eee7d5;
+    --clr-8: #fdf5e3;
+
+    --clr-b: #bbb890;
+    --clr-g: #ffd699;
+
+    --yellow: #b58900;
+    --orange: #cb3b16;
+    --crimson: #dc321f;
+    --magenta: #d33681;
+    --violet: #5c71c4;
+    --marine: #267bd2;
+    --cyan: #1aa198;
+    --green: #859900;
+
+    --index: var(--magenta);
+    --home: var(--yellow);
+    --about: var(--cyan);
+    --projects: var(--marine);
+    --blog: var(--violet);
+    --contact: var(--green);
+    --login: var(--crimson);
+}

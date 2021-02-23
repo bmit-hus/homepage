@@ -1,0 +1,10 @@
+@import "imports/reset.css";
+@import "imports/root.css";
+@import "imports/html.css";
+@import "imports/media.css";
+
+:root {
+    --bg: var(--clr-1);
+    --clr: var(--clr-6);
+    --acc: var(--index);
+}
