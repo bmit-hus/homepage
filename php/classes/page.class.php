@@ -96,15 +96,14 @@ class Page extends HTML {
 
     // constructor
     function __construct( 
-        // 8 parameters
+        // 7 parameters
         $pageLanguage,
         $pageFavicon,
         $pageTitle,
         $pageDescription,
         $pageKeywords,
         $pageStylesheet,
-        $pageScript,
-        $pageAjaxlib
+        $pageScript
     ) { 
         $lang = setLanguage( $pageLanguage );
         $charset = getCharset();
@@ -116,7 +115,7 @@ class Page extends HTML {
         $keywords = setKeywords( $pageKeywords );
         $stylesheet = setStylesheet( $pageStylesheet );
         $script = setScript( $pageScript );
-        $ajaxlib = setAjaxlib( $pageAjaxlib );
+        $ajaxlib = getAjaxlib();
 
         echo <<<"THIS"
             <!DOCTYPE html>
@@ -127,14 +126,14 @@ class Page extends HTML {
                 <meta name="viewport" content="$viewport">
                 <meta name="author" content="$author">
 
-                <link rel="icon" type="image/png" href="$favicon.png">
+                <link rel="icon" type="image/png" href="img/favicon/$favicon.png">
                 <title>$title</title>
                 <meta name="description" content="$description">
                 <meta name="keywords" content="$keywords">
 
-                <link type="text/css" rel="stylesheet" href="$css">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                <script defer src="$script"></script>
+                <link type="text/css" rel="stylesheet" href="css/$css.css">
+                <script src="$ajaxlib"></script>
+                <script defer src="js/$script.js"></script>
             </head>
             <body>
                 
