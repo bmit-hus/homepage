@@ -5,7 +5,7 @@ spl_autoload_register( 'autoload_class' );
 function autoload_class( $class ) {
     $uri = $_SERVER[ 'REQUEST_URI' ];
     $path = 'php/classes/';
-    $ext = ".cls.php";
+    $ext = ".class.php";
 
     $class_file = $path . $class . $ext;
 
