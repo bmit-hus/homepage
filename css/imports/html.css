@@ -1,6 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin-top: 0;
+    border-radius: 5px;
 }
 html {
     font-size: clamp(14px, 2vw, 22px);
@@ -84,7 +85,7 @@ h6 {
 
     color: var(--acc);
     font-size: 1rem;
-    font-style: italic;
+    /* font-style: italic; */
 }
 h6 + * { display: inline; }
 

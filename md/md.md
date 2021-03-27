@@ -13,7 +13,7 @@ qui officia deserunt mollit anim id est laborum.
 The Quick Brown Fox
 -------------------
 
-The quick brown fox jumps over the lazy dog
+The quick brown fox jumps over the lazy dog.
 
 ### The Quick Brown Fox
 Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore 
@@ -22,7 +22,7 @@ ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate ve
 dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
-The quick brown fox jumps over the lazy dog
+The quick brown fox jumps over the lazy dog.
 
 #### The Quick Brown Fox
 Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore 
@@ -31,7 +31,7 @@ ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate ve
 dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
-The quick brown fox jumps over the lazy dog
+The quick brown fox jumps over the lazy dog.
 
 ##### The Quick Brown Fox
 Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore 
@@ -40,7 +40,7 @@ ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate ve
 dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
-The quick brown fox jumps over the lazy dog
+The quick brown fox jumps over the lazy dog.
 
 ###### The Quick Brown Fox
 Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore 
@@ -49,7 +49,7 @@ ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate ve
 dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
-The quick brown fox jumps over the lazy dog
+The quick brown fox jumps over the lazy dog.
 
 ### The Quick Brown Fox
 Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore 
@@ -58,4 +58,4 @@ ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate ve
 dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
-The quick brown fox jumps over the lazy dog
+The quick brown fox jumps over the lazy dog.
